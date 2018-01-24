@@ -12,9 +12,8 @@ $(document).ready(function() {
 		posY = y - y_offset;
 		angleX = posX / width * 20 - 10;
 		angleY = posY / height * 20 - 10;
+		angleY *= -1;
 		element.css('transform', 'perspective(1500px) rotateX('+angleX+'deg) rotateY('+angleY+'deg) scale3d(1,1,1)');
-		console.log(-1 * angleX);
-		console.log(angleY);
 	});
 	element.mouseleave(function (e) {
 		element.css('transform', 'perspective(1500px) rotateX(0deg) rotateY(0deg)');
