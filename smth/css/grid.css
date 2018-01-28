@@ -36,6 +36,7 @@
 .flex-row {
 	-webkit-flex-direction: row;
 	flex-direction: row;
+	flex-wrap: wrap;
 	display: flex;
 }
 
@@ -77,4 +78,8 @@ section {
 
 .thin {
 	font-weight: 200;
+}
+
+.flex-safe-center {
+	justify-content: safe center;
 }

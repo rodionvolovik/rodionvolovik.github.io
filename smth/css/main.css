@@ -185,3 +185,102 @@ canvas {
 .dg.ac {
 	display: none;
 }
+
+.about-us {
+	position: relative;
+	max-width: 300px;
+}
+
+.bg-gray {
+	position: absolute;
+    top: 0;
+    left: -200px;
+    width: 100%;
+    height: 320px;
+    background-color: #f3f3f3;
+    z-index: 0;
+}
+
+.about-us-content {
+	position: relative;
+	z-index: 5;
+}
+
+
+/* slider
+----------------------*/
+.slide-wrap {
+	min-width: 320px;
+	height: 320px;
+	position: relative;
+}
+.slide-mask {
+	position: relative;
+	overflow: hidden;
+	height: 320px;
+}
+
+.slide-group {
+	position: absolute; 
+	top: 0px; 
+	left: 0;
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+.slide {
+	height: 320px;
+	width: 320px;
+}
+
+/* nav
+----------------------*/
+.slide-nav {
+	text-align: center;
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 100%;
+}
+.slide-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slide-bullets {
+	position: absolute;
+	right: 0;
+}
+
+.slide-bullets li {
+	display: inline-block;
+	width:	 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #363636;
+	background: #fff;
+	cursor: pointer;
+	margin-left: .5em;
+}
+.slide-bullets li.current {
+	background: #363636;
+}
+
+.slide-text > li {
+	text-align: left;
+	display: none;
+}
+
+.slide-text li.current {
+	display: block;
+}
+
+.occ {
+	font-weight: 300;
+}
+
+.name {
+	font-weight: 800;
+	font-size: 1.5em;
+}
