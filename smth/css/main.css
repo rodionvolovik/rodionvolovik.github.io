@@ -1,0 +1,187 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 14px;
+	font-family: ProximaNova;
+	color: #474747;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+.navbar {
+	padding: 25px 0;
+	top: 0;
+}
+
+
+.navbar-logo > img {
+	width: 75px;
+}
+
+.navbar-links {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.navbar-links > li {
+	display: inline;
+	list-style: none;
+	align-self: center;
+	padding-left: 10px;
+	font-weight: 500;
+	color: #363636;
+}
+
+.title {
+	font-weight: 700;
+	color: #363636;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.bg-red {
+	background-color: #c02336;
+	color: #fff;
+}
+
+.text-red {
+	color: #c02336;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.btn-main,
+.btn-main:focus,
+.btn-main:hover {
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #c02336;
+	color: #c02336;
+	text-decoration: none;
+	margin: 20px 0;
+	cursor: pointer;
+	-webkit-transition: 0.35s;
+	transition: 0.35s;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+  -webkit-box-shadow: inset 0 0 0 2em #c02336;
+          box-shadow: inset 0 0 0 2em #c02336;
+  color: #fff;
+}
+
+.first > .box {
+	margin-top: 200px;
+}
+
+.line {
+	position: relative;
+	padding: 5px 0;
+	color: #363636;
+	font-weight: 500;
+}
+
+.line:before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 0px;
+	border: 1px solid;
+	position: absolute;
+}
+
+.first-right.line:before {
+	bottom: 0;
+	right: 0;
+}
+
+ .first-left.line:before {
+	bottom: 0;
+	left: 0;
+}
+
+.services {
+	min-width: 320px;
+	max-width: 40%;
+	padding: 50px;
+	margin-top: 20px;
+	box-shadow: -10px 8px 26px 0px rgba(212,212,212,1);
+	z-index: 5;
+	background-color: #fff;
+}
+
+.toggle-box {
+	border-top: 1px solid #c9c9c9;
+}
+
+.services h2 {
+	margin-bottom: 20px;
+}
+
+.toggle-box-title {
+	position: relative;
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 3em;
+	width: 100%;
+	display: flex;
+	cursor: pointer;
+}
+
+.toggle-box-title:after {
+	content: "\f107";
+	font-family: FontAwesome;
+	position: absolute;
+	right: 0;
+}
+
+.toggle-box-title.active:after {
+	content: "\f106";
+}
+
+.toggle-box-content {
+	display: none;
+	opacity: 0;
+}
+
+.toggle-box-content {
+	margin-left: 25px;
+	padding: 15px 0;
+}
+
+canvas {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.dg.ac {
+	display: none;
+}

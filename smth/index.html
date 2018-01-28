@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/elements.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/toggle.js"></script>
+	<title>Web development agency Redcode</title>
+</head>
+<body>
+	<nav class="navbar container flex-row flex-between">
+		<a class="navbar-logo" href="#">
+			<img src="img/logo.png" />
+		</a>
+		<ul class="navbar-links">
+			<li>Услуги</li>
+			<li>Работы</li>
+			<li>О нас</li>
+			<li>Вакансии</li>
+			<li>Контакты</li>
+		</ul>
+	</nav>
+	<section class="container column first">
+		<div class="box box-center column">
+			<p><h1 class="title">Digital агентство <font class="bg-red thin">полного цикла</font></h1></p>
+			<h2>Технологически совершенные решения в создании</h2>
+			<h2><font class="uppercase text-red underlined title">Вебсайта</font> для вашего бизнеса</h2>
+			<a class="btn-main" href="#">Оценить проект</a>
+		</div>
+		<div class="bottom-box flex-row flex-between">
+			<div class="container flex-row flex-between">
+				<div class="box line first-left">Power development</div>
+				<div class="box line first-right">Creative design</div>
+		</div>
+	</section>
+	<section class="container column first">
+		<div class="title text-red uppercase">Что мы делаем?</div>
+		<div class="flex-row flex-between" style="position: relative;">
+			<div class="services">
+				<h2 class="title" style="font-weight: 500;">Основными направлениями нашей деятельности являются</h2>
+				<div class="toggle-box">
+					<a class="toggle-box-title" toggle-target="one">01. Веб-сайты и порталы</a>
+					<div id="one" class="toggle-box-content">Веб-сайты и порталы</div>
+				</div>
+				<div class="toggle-box">
+					<a class="toggle-box-title" toggle-target="two">02. Дизайн всех типов</a>
+					<div id="two" class="toggle-box-content">Дизайн всех типов</div>
+				</div>
+				<div class="toggle-box">
+					<a class="toggle-box-title" toggle-target="three">03. Андроид разработка</a>
+					<div id="three" class="toggle-box-content">Андроид разработка</div>
+				</div>
+				<div class="toggle-box">
+					<a class="toggle-box-title" toggle-target="four">04. Поддержка</a>
+					<div id="four" class="toggle-box-content">Поддержка</div>
+				</div>
+				<a class="btn-main" href="#">Узнать больше</a>
+			</div>
+			<div class="services-animation" style="position: absolute; top: 0; right: 0; width: 80%; height: 120%;">
+				<div class="title uppercase" style="color: #c9c9c9;float: right;z-index: 0;">Кликни курсором</div>
+				<canvas id="c"></canvas>
+			</div>
+		</div>
+	</section>
+	<script src="js/contr-lib.js"></script>
+	<script src="js/canvas.js"></script>
+</body>
+</html>
