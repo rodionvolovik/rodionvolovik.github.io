@@ -1,8 +1,16 @@
 $(document).scroll(function() {
 	element = $(".nav-wrapper");
 	if ($(document).scrollTop() >= 50) {
-		$(element).addClass("shadow");
+		$(".navbar-logo img").animate({
+			width: "50px",
+		}, 500, function () {
+			$(element).addClass("shadow");
+		});
 	} else {
-		$(element).removeClass("shadow");
+		$(".navbar-logo img").animate({
+			width: "75px",
+		}, 500, function () {
+			$(element).removeClass("shadow");
+		});
 	}
  });
