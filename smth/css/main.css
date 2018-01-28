@@ -96,7 +96,11 @@ h2 {
 }
 
 .first > .box {
-	margin-top: 200px;
+	margin-top: 250px;
+}
+
+.bottom-box {
+	bottom: 100px;
 }
 
 .line {
@@ -383,4 +387,8 @@ form .box {
 	left: 0;
 	background: #fff;
 	z-index: 10;
+}
+
+.shadow {
+	box-shadow: 0px 1px 3px #c7c7c7;
 }
