@@ -375,3 +375,12 @@ textarea {
 form .box {
 	min-width: 500px;
 }
+
+.nav-wrapper {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 10;
+}
