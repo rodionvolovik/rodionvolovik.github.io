@@ -41,7 +41,7 @@ var updateIndex = function(currentSlide) {
 
 var transition = function(slidePosition) {
     $slideGroup.animate({
-      'top': '-' + slidePosition + '00%'
+      'left': '-' + slidePosition + '00%'
     });
 };
 
