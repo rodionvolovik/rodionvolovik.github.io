@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-size: 15px;
+	font-size: 18px;
 	font-family: ProximaNova;
 	color: #474747;
 }
@@ -397,9 +397,9 @@ form .box {
 .masonry {
     margin: 1.5em 0;
     padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 10em;
+    -moz-column-gap: 5em;
+    -webkit-column-gap: 5em;
+    column-gap: 5em;
     font-size: .85em;
 }
 
@@ -407,15 +407,14 @@ form .box {
     display: inline-block;
     background: #fff;
     padding: 0em;
-    margin: 0 0 10em;
+    margin: 0 0 5em;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
     height: auto;
-    max-height: 600px;
-    overflow: hidden;
+    overflow: visible;
+	position: relative;
 }
 
 @media only screen and (min-width: 400px) {
