@@ -46,7 +46,7 @@ h2 {
 }
 
 .title {
-	font-weight: 700;
+	font-weight: 800;
 	color: #363636;
 }
 
@@ -126,7 +126,7 @@ h2 {
 
 .services {
 	min-width: 320px;
-	max-width: 40%;
+	max-width: 70%;
 	padding: 50px;
 	margin-top: 20px;
 	box-shadow: -10px 8px 26px 0px rgba(212,212,212,1);
@@ -397,17 +397,17 @@ form .box {
 .masonry {
     margin: 1.5em 0;
     padding: 0;
-    -moz-column-gap: 5em;
-    -webkit-column-gap: 5em;
-    column-gap: 5em;
-    font-size: .85em;
+    -moz-column-gap: 6em;
+    -webkit-column-gap: 6em;
+    column-gap: 6em;
+    /*font-size: .85em;*/
 }
 
 .masonry-brick {
     display: inline-block;
     background: #fff;
     padding: 0em;
-    margin: 0 0 5em;
+    margin: 0 0 6em;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -442,3 +442,37 @@ form .box {
 }
 
 .masonry-brick img {width: 100%;}
+
+.masonry-brick ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.mansory-brick-title {
+	background-color: #363636;
+	display: inline-block;
+	padding-right: 5px;
+	position: relative;
+	z-index: 5;
+}
+
+.mansory-brick-title:before {
+	content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+	margin-right: 100%;
+    width: 500%;
+    height: 100%;
+    background-color: #363636;
+    z-index: 0;
+}
+
+.masonry-brick:hover {
+	cursor: zoom-in;
+	cu
+}

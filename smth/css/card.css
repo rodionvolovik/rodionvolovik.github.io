@@ -46,6 +46,6 @@
 	opacity: 1;
 }
 
-.element-item:hover > .img {
-	transform: scale(1.04);
-}
+/*.element-item:hover > .img {*/
+	/*transform: scale(1.04);*/
+/*}*/
