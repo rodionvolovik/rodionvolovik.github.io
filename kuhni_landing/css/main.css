@@ -68,6 +68,10 @@ ul {
 /*CONSTRAINT ELEMENTS*/
 
 .col {
+    min-width: 300px;
+}
+
+.col-min {
     min-width: 250px;
 }
 
@@ -109,32 +113,22 @@ ul {
     color: #212529;
 }
 
+.text-bg-black {
+    background-color: #212529;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+
+
 .block-big {
     height: 800px;
     width: 100%;
 }
 
-@media (max-width: 320px) {
-    .block-big {
-        height: 400px;
-    }
-}
-
-@media (max-width: 475px) {
-    .block-big {
-        height: 500px;
-    }
-}
-
-@media (max-width: 600px) {
-    .block-big {
-        height: 500px;
-    }
-}
-
 @media (max-width: 768px) {
     .block-big {
-        height: 500px;
+        height: auto;
     }
 }
 
@@ -150,8 +144,10 @@ ul {
 
 .booking-title {
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 1.45em;
 }
+
+
 
 /*END BOOKING BLOCK*/
 
@@ -201,6 +197,27 @@ ul {
     height: 1px;
     background-color: #212529;
     z-index: 0;
+}
+
+.portfolio-title .text-bg-yellow {
+    position: relative;
+}
+
+@media (min-width: 475px) {
+    .portfolio-title .text-bg-yellow:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        background-color: #ffcc31;
+        height: 100%;
+        width: 25px;
+        left: -25px;
+        top: 0;
+    }
+
+    .portfolio-title .text-bg-black {
+        margin-left: 180px;
+    }
 }
 
 /*END OTHER ELEMENTS*/
