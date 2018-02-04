@@ -51,6 +51,10 @@ ul {
 
 /*CONSTRAINT ELEMENTS*/
 
+.title-big {
+    font-size: 1.25em;
+}
+
 .title {
     font-weight: 600;
 }
@@ -58,6 +62,7 @@ ul {
 .title-min {
     font-weight: 500;
     font-size: 0.875em;
+    line-height: 1.25em;
 }
 
 .height {
@@ -111,7 +116,7 @@ ul {
 
 .booking-title {
     font-size: 2em;
-    line-height: 1.25em;
+    line-height: 1.5em;
 }
 
 /*END BOOKING BLOCK*/
