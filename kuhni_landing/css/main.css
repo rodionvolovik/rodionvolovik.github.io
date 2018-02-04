@@ -47,10 +47,50 @@ ul {
     padding: 10px 20px;
 }
 
+<<<<<<< HEAD
+.btn-empty,
+.btn-empty:focus,
+.btn-empty:active {
+    color: #212529;
+    border-radius: 4px;
+    border: 1px solid;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.btn-empty:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+=======
+>>>>>>> f5743827b7358b3e64e31091588e9329c2f63e14
 /* END BUTTONS*/
 
 /*CONSTRAINT ELEMENTS*/
 
+<<<<<<< HEAD
+.col {
+    min-width: 250px;
+}
+
+.col-big {
+    min-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .col-big {
+        min-width: 300px;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+=======
+>>>>>>> f5743827b7358b3e64e31091588e9329c2f63e14
 .title-big {
     font-size: 1.25em;
 }
@@ -127,6 +167,51 @@ ul {
     font-weight: 500;
 }
 
+<<<<<<< HEAD
+.advantage {
+    text-align: center;
+    padding: 30px;
+    border-radius: 4px;
+    transition: 0.5s all cubic-bezier(.07,.57,1,.56);
+    margin: 0 15px 15px;
+}
+
+.advantage:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 7px 3px #ddd;
+}
+
+.advantage__icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+}
+
+.portfolio-item {
+    height: 250px;
+    margin: 20px;
+    padding: 0;
+    position: relative;
+}
+
+.portfolio-item-price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-line {
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    left: 0;
+    height: 1px;
+    background-color: #212529;
+    z-index: 0;
+}
+
+=======
+>>>>>>> f5743827b7358b3e64e31091588e9329c2f63e14
 /*END OTHER ELEMENTS*/
 
 /*FORM*/
