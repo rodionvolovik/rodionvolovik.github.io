@@ -70,7 +70,7 @@ h2 {
 .btn-main,
 .btn-main:focus,
 .btn-main:hover {
-	width: 150px;
+	width: 200px;
 	display: inline-block;
 	text-align: center;
 	padding: 10px;
@@ -475,4 +475,18 @@ form .box {
 .masonry-brick:hover {
 	cursor: zoom-in;
 	cu
+}
+
+.changing-wrapper {
+	position: relative;
+}
+
+.changing {
+	width: auto;
+	display: inline-block;
+}
+
+.changing-ease {
+	position: absolute;
+	left: 155px;
 }

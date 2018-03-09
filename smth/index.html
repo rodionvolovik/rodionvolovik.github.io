@@ -16,6 +16,7 @@
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  crossorigin="anonymous"></script>
 	<script src="js/header.js"></script>
+	<script src="js/changing.js"></script>
 	<script type="text/javascript" src="js/toggle.js"></script>
 	<title>Web development agency Redcode</title>
 </head>
@@ -26,11 +27,11 @@
 				<img src="img/logo.png" />
 			</a>
 			<ul class="navbar-links">
-				<li>Услуги</li>
-				<li>Работы</li>
-				<li>О нас</li>
-				<li>Вакансии</li>
-				<li>Контакты</li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Работы</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -38,7 +39,7 @@
 		<div class="box box-center column">
 			<h1 class="title">Digital агентство <font class="bg-red thin" style="padding: 0 10px;"> полного цикла </font></h1>
 			<h2>Технологически совершенные решения в создании</h2>
-			<h2><font class="uppercase text-red underlined title">Вебсайта</font> для вашего бизнеса</h2>
+			<h2 class="changing-wrapper"><span class="uppercase text-red underlined title changing" style="display: inline-block;">Вебсайта</span><span class="changing-ease">для вашего бизнеса</span></h2>
 			<a class="btn-main" href="#">Оценить проект</a>
 		</div>
 		<div class="bottom-box flex-row flex-between">
@@ -71,8 +72,6 @@
 				<a class="btn-main" href="#">Узнать больше</a>
 			</div>
 			<div class="services-animation" style="position: absolute; top: 0; right: 0; width: 80%; height: 120%;">
-				<div class="title uppercase" style="color: #c9c9c9;float: right;z-index: 0;">Кликни курсором</div>
-				<!-- <canvas id="c"></canvas> -->
 			</div>
 		</div>
 	</section>
