@@ -179,7 +179,7 @@ h1 {
 .works__item-description:hover .works__item-overlay {
     right: 0;
     box-shadow: 0rem 2.5rem 5rem 0.7rem rgba(0,0,0,.13);
-    opacity: 0.8;
+    opacity: 0.57;
 }
 
 .works__item-description:hover .works__item-description__title-min,
@@ -192,9 +192,10 @@ h1 {
 }
 
 .works__item-description:hover .works__item-description__title, {
-    background: none;
+    background: #fff;
+    background-attachment: fixed;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: initial;
+    -webkit-background-clip: text;
     color: #fff;
 }
 
