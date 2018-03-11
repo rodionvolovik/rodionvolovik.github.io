@@ -1,0 +1,17 @@
+.changing-wrapper {
+	position: relative;
+}
+
+.changing {
+	width: auto;
+    background: url(../img/clip-text.jpg) center/cover;
+    font-weight: 900;
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.changing-ease {
+	position: absolute;
+	left: 175px;
+}

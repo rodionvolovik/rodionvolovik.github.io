@@ -53,6 +53,10 @@
 	justify-content: space-between;
 }
 
+.flex-center {
+	justify-content: center;
+}
+
 .flex-around {
 	justify-content: space-around;
 }
@@ -98,4 +102,8 @@ section.first {
 
 .flex-safe-center {
 	justify-content: safe center;
+}
+
+.text-center {
+	text-align: center;
 }

@@ -1,4 +1,4 @@
-var words = ['приложения', 'программного обеспечения', 'вебсайта'];
+var words = ['дизайна', 'приложения', 'вебсайта'];
 function animateDisappear() {
     var block = $(".changing");
     width = block.width();
