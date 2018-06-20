@@ -1,0 +1,23 @@
+.navbar {
+	padding: 1.5em 1em;
+}
+
+
+.card-header {
+    padding: 0em;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+
+.card {
+	border-radius: 0;
+	box-shadow: 1px 1px 2px 1px #f1f1f1;
+	margin-bottom: 10px;
+}
+
+
+.card-body {
+	padding: 1.75em;
+}
