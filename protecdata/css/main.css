@@ -1,4 +1,5 @@
 body {
+	position: relative;
 	font-size: 16px;
 	font-family: Dubai;
 	font-weight: 400;
@@ -86,8 +87,8 @@ h2 {
 }
 
 .we-do {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 70px;
 }
 
 .we-do__count {
@@ -222,4 +223,14 @@ h2 {
 
 .btn-footer:hover {
 	color: #00105a;
+}
+
+.show-more {
+	display: none;
+}
+
+.show-more.in {
+	display: block;
+	color: #fd0000!important;
+	cursor: pointer;
 }

@@ -22,27 +22,35 @@
 	</script>
 	<script type="text/javascript">
 		// Select all links with hashes
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 120
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top - 120
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+		$(function() {
+			$(".show-more").click(function() {
+				el = $(".show-more");
+				el.slideDown(300);
+				$(this).slideUp();
+			});
+		});
 	</script>
 
 </head>
-<body>
-	<div class="container-fluid nav-wrapper">
+<body data-spy="scroll" data-target="#navbar" data-offset="70">
+	<div id="navbar" class="container-fluid nav-wrapper">
 		<nav class="container navbar navbar-light navbar-expand-lg justify-content-between">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="#home">
 				<img class="logo" src="img/logo.jpg">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +68,6 @@ $(function() {
 			</div>
 		</nav>
 	</div>
-
 	<div id="home" class="section-1 container-fluid fadeIn wow">
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 bg-white section-1__text">
@@ -191,15 +198,16 @@ $(function() {
 						This represents a challenge for organisations without visibility and control of the type of data
 						they handle, where the data is located and applicable regulations.
 						</p>
-						<p>
+						<p class="show-more">
 						Now is the time access and implement appropriate data security measures to locate, identify
 						and protect sensitive business and personal data within your organisation, enabling
 						compliance with applicable legislation such as the GDPR and UK DPA (Data Protection Act).
 						</p>
-						<p>
+						<p class="show-more">
 						Our approach is to keep things simple and easy throughout the GDPR process. Our
 						methodology is, Access, Discover, Plan, Implement and Manage.
 						</p>
+						<a class="show-more in btn-sec">More...</a>
 					</div>
 				</div>
 			</div>
