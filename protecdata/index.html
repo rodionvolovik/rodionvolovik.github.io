@@ -120,7 +120,7 @@
 			<div class="col-xs-12 col-md-7 we-do__items">
 				<div class="we-do__item">
 					<div class="row">
-						<div class="col-1 we-do__count we-do__count">01</div>
+						<div class="col-1 we-do__count we-do__count"></div>
 						<div class="col-11">
 							<div class="we-do__item-title">FREE INITIAL CONSULTATION</div>
 							<div class="">Firstly, we meet with you to give you an outline of the new regulation, get an overview of your oranisation and then give you a summary of what’s required towards becoming compliant. We offer this initial consultation for free.</div>
@@ -129,7 +129,7 @@
 				</div>
 				<div class="we-do__item">
 					<div class="row">
-						<div class="col-1 we-do__count">02</div>
+						<div class="col-1 we-do__count"></div>
 						<div class="col-11">
 							<div class="we-do__item-title">RISK ANALYSIS</div>
 							<div class="">We examine the personal data you are storing and using and create a risk matrix based on the importance of the data to your organisation and the risk to the rights of individuals. We then suggest ways to reduce these risks, for instance by minimising the types of personal data collected and implementing a data retention policy.</div>
@@ -138,7 +138,7 @@
 				</div>
 				<div class="we-do__item">
 					<div class="row">
-						<div class="col-1 we-do__count">03</div>
+						<div class="col-1 we-do__count"></div>
 						<div class="col-11">
 							<div class="we-do__item-title">COMPLIANCE GAP ANALYSIS</div>
 							<div class="">We then start by helping you complete a detailed GDPR gap analysis questionnaire. This will identify business practices that need addressing and forms the basis of an action plan. At this stage we can usually identify if you need to appoint a Data Protection Officer.</div>
@@ -147,7 +147,7 @@
 				</div>
 				<div class="we-do__item">
 					<div class="row">
-						<div class="col-1 we-do__count">04</div>
+						<div class="col-1 we-do__count"></div>
 						<div class="col-11">
 							<div class="we-do__item-title">COMPANY POLICIES</div>
 							<div class="">The next step is to create or update your company policies and procedures and give your staff awareness training on the rights of individuals that engage with your business.</div>
@@ -156,7 +156,7 @@
 				</div>
 				<div class="we-do__item">
 					<div class="row">
-						<div class="col-1 we-do__count">05</div>
+						<div class="col-1 we-do__count"></div>
 						<div class="col-11">
 							<div class="we-do__item-title">DATA AUDIT</div>
 							<div class="">We then perform a data audit and create a data flow map. These are important exercises that help to identify what personal data you store, where you store it, what you use it for and how it flows through your business.</div>
@@ -165,7 +165,7 @@
 				</div>
 				<div class="we-do__item">
 					<div class="row">
-						<div class="col-1 we-do__count">06</div>
+						<div class="col-1 we-do__count"></div>
 						<div class="col-11">
 							<div class="we-do__item-title">CONTINUOUS IMPROVEMENT</div>
 							<div class="">We recommend a policy of continuous improvement and suggest that you review your GDPR compliance at least once per annum.</div>
@@ -266,55 +266,57 @@
 		</div>
 	</div>
 
-	<div id="faq" class="container faq fadeIn wow" data-wow-delay="0.3s">
-		<div class="row justify-content-center">
-			<div class="col-sm-12 col-md-8 col-lg-8">
-				<div class="w-100">
-					<h2 class="faq__title">Frequently Asked Questions</h2>
+	<div id="faq" class="container-fluid faq">
+		<div class="container fadeIn wow" data-wow-delay="0.3s">
+			<div class="row justify-content-center">
+				<div class="col-sm-12 col-md-8 col-lg-8">
+					<div class="w-100">
+						<h2 class="faq__title">Frequently Asked Questions</h2>
+					</div>
+
+					<div class="accordion" id="accordion" style="margin-bottom: 50px;">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<a class="faq-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								What is the General Data Protection Regulation?
+								</a>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+								The GDPR is a European regulation that replaces the Data Protection Act 1998 in the UK. It provides greater protection for the personal data of individuals in the EU.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<a class="faq-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Is my business affected?
+								</a>
+							</div>
+
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+								The GDPR applies to all organisations operating within the EU. It also applies to organisations outside the EU that offer goods or services to individuals in the EU.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingThree">
+								<a class="faq-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								But I only offer business-to-business services, am I still affected?
+								</a>
+							</div>
+
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="card-body">
+								Yes. You still control the personal data of your employees, and even the work email addresses and phone numbers of your customers and suppliers can be classed as personal data that falls under the scope of GDPR.
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="btn-main" href="faq.html">Read More<i class="far fa-arrow-alt-circle-right"></i></a>
 				</div>
-
-				<div class="accordion" id="accordion" style="margin-bottom: 50px;">
-					<div class="card">
-						<div class="card-header" id="headingOne">
-							<a class="faq-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							What is the General Data Protection Regulation?
-							</a>
-						</div>
-
-						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-							<div class="card-body">
-							The GDPR is a European regulation that replaces the Data Protection Act 1998 in the UK. It provides greater protection for the personal data of individuals in the EU.
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="headingTwo">
-							<a class="faq-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							Is my business affected?
-							</a>
-						</div>
-
-						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-							<div class="card-body">
-							The GDPR applies to all organisations operating within the EU. It also applies to organisations outside the EU that offer goods or services to individuals in the EU.
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="headingThree">
-							<a class="faq-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							But I only offer business-to-business services, am I still affected?
-							</a>
-						</div>
-
-						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-							<div class="card-body">
-							Yes. You still control the personal data of your employees, and even the work email addresses and phone numbers of your customers and suppliers can be classed as personal data that falls under the scope of GDPR.
-							</div>
-						</div>
-					</div>
-				</div>
-				<a class="btn-main" href="faq.html">Read More<i class="far fa-arrow-alt-circle-right"></i></a>
 			</div>
 		</div>
 	</div>
