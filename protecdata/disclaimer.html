@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ProTecData</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-custom.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/from.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+	<!-- <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script type="text/javascript">
+		// Select all links with hashes
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top - 120
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+		$(function() {
+			$(".show-more").click(function() {
+				el = $(".show-more");
+				el.slideDown(300);
+				$(this).slideUp();
+			});
+		});
+
+		$(function() {
+			$(".slideDown").click(function() {
+				target = $(this).attr("show-target");
+				console.log(target);
+				$("." + target).slideDown(300);
+				$(this).slideUp();
+			});
+		});
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+		        document.getElementById("to_top").style.display = "block";
+		    } else {
+		        document.getElementById("to_top").style.display = "none";
+		    }
+		}
+
+		$(function() {
+			$('.navbar-nav a').click(function(){
+			     $('.navbar-toggler').click();
+			});
+		});
+	</script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="70">
+	<div id="navbar" class="container-fluid nav-wrapper">
+		<nav class="container navbar navbar-light navbar-expand-lg justify-content-between">
+			<a class="navbar-brand" href="/">
+				<img class="logo" src="img/logo.jpg">
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<div class="bar d-flex flex-column justify-content-between">
+					<div class="bar__item bar-1 align-self-baseline"></div>
+					<div class="bar__item bar-2 align-self-end"></div>
+					<div class="bar__item bar-3 align-self-end"></div>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" style="flex-grow: 0" id="navbarNavAltMarkup">
+				<div class="navbar-nav justify-content-between">
+					<a class="active" href="index.html#whatwedo">What We Do</a>
+					<a class="" href="index.html#services">Services</a>
+					<a class="" href="index.html#about">About Us</a>
+					<a class="" href="gmyths.html">GDPR Myths</a>
+					<a class="" href="faq.html">F.A.Q.</a>
+					<a class="" href="#contact">Contact Us</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="faq container-fluid" id="home">
+		<div class="container fadeIn wow" data-wow-delay="0.3s">
+			<h2>Disclaimer</h2>
+			<p>ProTecData Limited (“Us/we/our”) is not a law firm and is not providing legal advice.</p>
+ 
+			<p>The provided documents, policies, forms, agreements, job descriptions and any sample data on  (together referred to as “The Information”) is for informational purposes only and does not constitute legal advice. The Information should be used as guidance and modified to meet your requirements and the use of and reliance on The Information is at your sole risk. The Information is intended to be used as a starting point and you must apply adequate quality checks and take legal and other professional advice before using the resource.</p>
+			 
+			<p>The Information available on  is provided without any warranty, express or implied, including as to its legal effect and completeness. We make no claims, promises, or guarantees about the accuracy, completeness, or adequacy of The Information and assume no duty of care to any person in respect of The Information and its contents. We expressly exclude and disclaim liability for any cost, expense, loss or damage suffered or incurred in reliance on The Information or it meeting your needs, including (without limitation) as a result of misstatements, errors and omissions in their contents.</p>
+			 
+			<p>Communications between you and us is only protected by our Privacy Policy.</p>
+		</div>
+	</div>
+
+	<div id="contact" class="contact container fadeIn wow" data-wow-delay="0.3s">
+		<h2>Contact Us</h2>
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+
+				<span>Please contact us using this form if you want to arrange a free GDPR briefing, have a question, or would like further information about ProTecData’s services.</span>
+
+				<form onsubmit="" method="post">
+					<div class="styled-input">
+						<input type="text" id="name" name="name" required="" autocomplete="off">
+						<label>Name</label>
+						<span></span>
+					</div>
+					<div class="styled-input">
+						<input type="email" id="email" name="email" required="" autocomplete="off">
+						<label>Email</label>
+						<span></span>
+					</div>
+						<div class="styled-input">
+						<input type="text" id="comment" name="comment" required="">
+						<label>Comment</label>
+						<span></span>
+					</div>
+					<a class="btn-main" href="">Send<i class="far fa-arrow-alt-circle-right"></i></a>
+				</form>
+
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="row">
+					<div class="col-md-10 col-xs-12 offset-md-2">
+						<div class="row">
+							<div class="col-lg-6 col-xs-12 contact__item text-center">
+								<i class="fa fa-envelope"></i>
+								<br>
+								<span class="w-100">protecdata@consultant.com</span>
+							</div>
+							<div class="col-lg-6 col-xs-12 contact__item text-center">
+								<i class="fa fa-phone"></i>
+								<br>
+								<span class="w-100">+44 (0) 1223 968670</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-footer align-self-end text-right">
+						<div class="w-100">
+							<a href="#home" class="btn-footer">To Top</a>
+							<a href="index.html#whatwedo" class="btn-footer">What We Do</a>
+							<a href="index.html#services" class="btn-footer">Services</a>
+							<a href="index.html#about" class="btn-footer">About Us</a>
+							<a href="gmyths.html" class="btn-footer">GDPR Myths</a>
+							<a href="faq.html" class="btn-footer">F.A.Q.</a>
+							<br>
+							<a href="#home" class="btn-footer" target="_blank">Disclaimer</a>
+							<a href="privacy.html" class="btn-footer" target="_blank">Privacy Policy</a>
+						</div>
+						<div class="w-100">&copy; ProTecData Solutions 2018</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a id="to_top" href="#home" class="to_top">Top</a>
+
+</body>
+</html>
+
+
+
+

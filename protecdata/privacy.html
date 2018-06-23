@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ProTecData</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-custom.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/from.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+	<!-- <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script type="text/javascript">
+		// Select all links with hashes
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top - 120
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+		$(function() {
+			$(".show-more").click(function() {
+				el = $(".show-more");
+				el.slideDown(300);
+				$(this).slideUp();
+			});
+		});
+
+		$(function() {
+			$(".slideDown").click(function() {
+				target = $(this).attr("show-target");
+				console.log(target);
+				$("." + target).slideDown(300);
+				$(this).slideUp();
+			});
+		});
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+		        document.getElementById("to_top").style.display = "block";
+		    } else {
+		        document.getElementById("to_top").style.display = "none";
+		    }
+		}
+
+		$(function() {
+			$('.navbar-nav a').click(function(){
+			     $('.navbar-toggler').click();
+			});
+		});
+	</script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="70">
+	<div id="navbar" class="container-fluid nav-wrapper">
+		<nav class="container navbar navbar-light navbar-expand-lg justify-content-between">
+			<a class="navbar-brand" href="/">
+				<img class="logo" src="img/logo.jpg">
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<div class="bar d-flex flex-column justify-content-between">
+					<div class="bar__item bar-1 align-self-baseline"></div>
+					<div class="bar__item bar-2 align-self-end"></div>
+					<div class="bar__item bar-3 align-self-end"></div>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" style="flex-grow: 0" id="navbarNavAltMarkup">
+				<div class="navbar-nav justify-content-between">
+					<a class="active" href="index.html#whatwedo">What We Do</a>
+					<a class="" href="index.html#services">Services</a>
+					<a class="" href="index.html#about">About Us</a>
+					<a class="" href="gmyths.html">GDPR Myths</a>
+					<a class="" href="faq.html">F.A.Q.</a>
+					<a class="" href="#contact">Contact Us</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="faq container-fluid" id="home">
+		<div class="container fadeIn wow" data-wow-delay="0.3s">
+			<h2>Privacy Policy</h2>
+ 
+​
+			​<p>This privacy notice applies between you, the user of our services and ProTecData who are the owner and provider of those services.</p>
+			 
+			<p>We take the privacy of your information very seriously and by using our services you are accepting and consenting to our processing and use of your data as contained within this privacy notice.</p>
+			 
+			<p>Please read the following policy carefully to understand our views and practices regarding your personal data and how we will treat it.</p>
+			 
+			<h3>Definitions and interpretation</h3>
+			​
+			<p>In this privacy notice, the following definitions are used:</p>
+			​
+			<p><span class="heading">Data:</span> collectively all information that you submit to ProTecData via our Website. This definition incorporates, where applicable, the definitions provided in the Data Protection Act 1998 and the General Data Protection Regulation (GDPR);</p>
+			​
+			<p><span class="heading">ProTecData, or us:</span> whose registered office is at 25 Eves Close, Newborough, Peterborough, Cambridgeshire, PE6 7RF</p>
+			​
+			<p><span class="heading">User or you:</span> any third party that accesses the services and is not either employed by ProTecData and acting in the course of their employment or engaged as a consultant providing services to ProTecData and accessing the provision of such services.</p>
+			​​
+			<p><span class="heading">Website:</span> the website <a href="http://ProTecData.co.uk">www.ProTecData.co.uk</a> and any sub-domains of this site unless expressly excluded by their own terms and conditions.</p>
+			​​
+			<h3>Scope of this privacy notice</h3>
+			​
+			<p>This privacy notice applies only to the actions of ProTecData and Users with respect to the services provided by us. It does not extend to any other services or websites that can be accessed from this website including, but not limited to, any links we may provide to social media websites.</p>
+			​​
+			<h3>What data we collect</h3>
+			​
+			<p>In general terms, we may collect the following data, which may include personal data, from you:<br>
+			Name<br>
+			Contact Information such as<br>
+			email addresses<br>
+			postal addresses<br>
+			telephone numbers<br>
+			Credit and debit card details.  However please note that all payments will be processed through our trusted service partners and ProTecData will not retain nor store these details.</p>
+			​
+			<p>In terms of our website, we may collect the following:<br>
+			IP address<br>
+			geographical location<br>
+			browser type and version<br>
+			operating system & referral source<br>
+			length of visit<br>
+			page views & website navigation paths<br>
+			And any other information about the timing, frequency and pattern of your service use</p>
+			​
+			<p>Our privacy notice applies to all the above. Any or all of the above data may be required by us from time to time in order to provide you with good and services.</p>
+			​
+			<h3>How we use your data</h3>
+			​
+			<p>We, ProTecData are the "data controller" as defined by data protection regulations.</p>
+			​
+			<p>We will use your data for the following reasons:<br>
+			to provide goods and services to you<br>
+			for internal record keeping;<br>
+			for analysing and improving our products / services;<br>
+			for transmission by email, text message and social media of promotional materials that may be of interest to you;<br>
+			for contact for market research purposes which may be done using email, telephone or mail.<br>
+			where we have a legal right or duty to use or disclose your information (for example in relation to an investigation by a public authority or in a legal dispute).</p>
+			​
+			<p>In each case, this will be in accordance with this privacy notice.</p>
+			​
+			<h3>Our Legal basis for processing your data</h3>
+			​
+			<p>We are required to advise you of our legal basis for processing your data. ProTecData collects and uses customers’ personal data because is it necessary for:</p>
+			​
+			<p>the purposes of performance of a contract for the sale of goods and services (to which you are party) or in order to take steps at your request prior to entering into a contract
+			the pursuit of our legitimate interests (as set out below) or;
+			to comply with our legal obligations.</p>
+			​
+			<p>We may also seek your consent for processing and if we do, you have the right to withdraw this at any time.  However, we only rely on consent as a legal basis for processing in relation to sending direct marketing communications to customers via email, text message or by social media.</p>
+			​
+			<h3>Our legitimate interests</h3>
+			​
+			<p>ProTecData has a legitimate interest to process your personal data in order to fulfil the following:</p>
+			​
+			<p>selling and supplying goods and services to our customers;
+			protecting customers, employees and other individuals and maintaining their safety, health and welfare;</p>
+			<p>promoting, marketing and advertising our products and services;</p>
+			<p>understanding our customers’ behaviour, activities, preferences, and needs;</p>
+			<p>improving and developing products and services;</p>
+			<p>complying with our legal and regulatory obligations;</p>
+			<p>handling customer contacts, queries, complaints or disputes;</p>
+			<p>protecting ProTecData, its employees and customers, by taking appropriate legal action against third parties who have committed criminal acts or are in breach of legal obligations to ProTecData</p>
+			<p>effectively handling any legal claims or regulatory enforcement actions taken against ProTecData; and
+			fulfilling our duties to our customers, colleagues, shareholders and other stakeholders.</p>
+			​
+			<h3>​Retention Policy</h3>
+			​
+			<p>We will not retain your data for longer than necessary for the purposes set out in this policy. Different retention periods apply for different types of data.  Data retention periods maybe legally imposed upon us or we may need to retain data to protect the vital interests of you or another natural person. However, the longest we will normally hold any personal data is 6 years after which time it will be deleted from our systems</p>
+			​
+			​<h3>Providing your personal data to others</h3>
+			​
+			<p>In order to make certain services available to you, we may need to share your personal data with some of our service partners.  These include IT, delivery, marketing or professional service providers.</p>
+			​
+			<p>ProTecData only allows its service partners to handle your personal data when we have confirmed that they apply appropriate data protection and security controls.  We may also impose contractual obligations on service providers relating to data protection and security, which mean they can only use your data to provide services to ProTecData and to you, and for no other purposes.</p>
+			​
+			<p>All financial transactions relating to our services (incl. website) are handled by our payment services providers, PayPal. We will share transaction data with our payment services providers only to the extent necessary for the purposes of processing your payments, refunding such payments and dealing with complaints and queries relating to such payments and refunds. You can find information about the payment services providers' privacy policies and practices at:
+			<a href="https://www.paypal.com/ie/webapps/mpp/ua/privacy-full">https://www.paypal.com/ie/webapps/mpp/ua/privacy-full</a></p>
+			​
+			<p>Your data will be encrypted through the Payment Card Industry Data Security Standard (PCI-DSS).  All payment service providers adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council. PCI-DSS requirements help ensure the secure handling of credit card information by our store and its service providers. </p>
+			​
+			<p>We may also disclose your personal data where such disclosure is necessary for compliance with a legal obligation to which we are subject, or in order to protect your vital interests or the vital interests of another natural person. We may also disclose your personal data where such disclosure is necessary for the establishment, exercise or defence of legal claims, whether in court proceedings or in an administrative or out-of-court procedure</p>
+			​​
+			<p>ProTecData will not disclose your personal data to any third party, except as set out above We will never sell or rent our customer data to other organisations for marketing purposes.</p>
+			​
+			<h3>​Information collected</h3>
+			​
+			<p>Some cookies collect information about browsing and purchasing behaviour when you access this website via the same computer or device.  This includes information about pages viewed, products purchased and your journey around a website.  We do not use cookies to collect or record information on your name, address or other contact details.  ProTecData can use cookies to monitor your browsing and purchasing behaviour.</p>
+			​
+			<h3>How are cookies managed?</h3>
+			​
+			<p>The cookies stored on your computer or other device when you access our websites are designed by our website provider and are necessary to enable you to a make purchases on our website;</p>
+			​
+			<h3>What are cookies used for?</h3>
+			​
+			<p>The main purposes for which cookies are used are: </p>
+			​
+			<p>For technical purposes essential to effective operation of our websites, particularly in relation to on-line transactions and site navigation.</p>
+			<p>For ProTecData to market to you.</p>
+			<p>To enable ProTecData to collect information about your browsing and shopping patterns, including to monitor the success of campaigns, competitions etc.</p>
+			<p>To enable ProTecData to meet its contractual obligations to make payments to third parties when a product is purchased by someone who has visited our website from a site operated by those parties.</p>
+			​
+			<h3>How do I disable cookies?</h3>
+			​
+			<p>If you want to disable cookies you need to change your website browser settings to reject cookies.  How you can do this will depend on the browser you use. </p>
+			​
+			<h3>What happens if I disable cookies?</h3>
+			​
+			<p>This depends on which cookies you disable, but in general the website may not operate properly if cookies are switched off.  If you only disable third party cookies, you will not be prevented from making purchases on our sites.  If you disable all cookies, you will be unable to complete a purchase on our sites.</p>
+			​
+			<p>Please visit  to find out more about cookies</p>
+			​
+			<h3>Your rights</h3>
+			​
+			<p>You have a number of rights over your data as covered by data protection law.  We have produced a short summary of these rights (below) however full details can be found by visiting the Information Commissioners Office (ICO) via <a href="http://www.ico.org.uk">www.ICO.org.uk</a></p>
+			​
+			<p>A summary of your rights are as follows:</p>
+			<p>the right to be informed; before we begin processing your data, we will tell you what we need, why we need it and what we intend to do with it.</p>
+			<p>the right of access; You have the right to ask us to provide you with the data we hold about you.  This is usually completed via a Subject Access Request.</p>
+			<p>the right to rectification; You have the right to have any inaccurate personal data about you rectified and, taking into account the purposes of the processing, to have any incomplete personal data about you completed.</p>
+			<p>the right to erasure; In certain instances, you have the right to have your data erased without undue delay. There are however a number of exclusions and details of which can be found by contacting the ICO.</p>
+			<p>the right to restrict processing; In certain instances, you have the right to restrict the processing of your personal data. However, there are a number of exclusions and details of which can be found by contacting the ICO.</p>
+			<p>the right to object to processing; You have the right to object to our processing of your personal data on grounds relating to your particular situation. If you make such an objection, we will cease to process the personal information unless we can demonstrate compelling legitimate grounds for the processing which override your interests. You have the right to object to our processing of your personal data for direct marketing purposes (including profiling for direct marketing purposes). If you make such an objection, we will cease to process your personal data for this purpose.
+			the right to data portability; You have the right to ask us to provide you with the data we hold about you.  Where appropriate, we will provide this to you in a structured, commonly used and machine-readable format. This right does not apply where it would adversely affect the rights and freedoms of others.</p>
+			<p>rights in relation to automated decision making and profiling.  If we undertake these activities using your data, we will adopt suitable procedures and you have the right to understand and challenge these.</p>
+			​
+			<p>We would again stress that the above is not exhaustive and for full details of your rights, please visit the Information Commissioners website at <a href="https://www.ICO.org.uk">www.ICO.org.uk</a></p>
+			​
+			<h3>Links to other websites</h3>
+			​
+			<p>This website may, from time to time, provide links to other websites. We have no control over such websites and are not responsible for the content of these websites. This privacy notice does not extend to your use of such websites. You are advised to read the privacy notice or statement of other websites prior to using them.</p>
+			​
+			<h3>Transferring Information Internationally</h3>
+			​
+			<p>We may transfer information collected about you to third parties acting on our behalf that may be located in countries outside of the European Economic Area (“EEA”). Countries outside the EEA may not offer the same level of protection for the information collected about you as those inside the EEA, although we will at all times continue to collect, store and use your information in accordance with this Privacy notice and the Data Protection Act 1998.</p>
+			<p>You acknowledge that personal data that you submit for publication through our website or services may be available, via the internet, around the world. We cannot prevent the use (or misuse) of such personal data by others.</p>
+			 
+			<h3>Security</h3>
+			​
+			<p>Data security is of great importance to us and to protect your data we have put in place suitable physical, electronic and managerial procedures to safeguard and secure data collected.<p>
+			​​
+			<p>If password access is required for certain parts of the website, you are responsible for keeping this password confidential.</p>
+			​​
+			<p>We endeavour to do our best to protect your personal data. However, transmission of information over the internet is not entirely secure and is done at your own risk. We cannot ensure the security of your data transmitted to the Website.</p>
+			​​
+			<h3>Complaints</h3>
+			​
+			<p>We take complaints we receive very seriously. If you consider that we have in some way infringed your rights or data protection law, please let us know and we will do all we can to investigate this. Alternatively, you have a legal right to contact the relevant supervisory authority responsible for data protection.  In the case of the UK, this is the Information Commissioners Office. (Telephone - 0303 123 1113 or via email or in writing to Information Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshire. SK9 5AF)</p>
+			​
+			<h3>Changes of business ownership and control</h3>
+			​
+			<p>We may, from time to time, expand or reduce our business and this may involve the sale and/or the transfer of control of all or part of ProTecData Ltd. Data provided by Users will, where it is relevant to any part of our business so transferred, be transferred along with that part and the new owner or newly controlling party will, under the terms of this privacy notice, be permitted to use the data for the purposes for which it was originally supplied to us. We may also disclose data to a prospective purchaser of our business or any part of it.</p>
+			​​
+			<p>In the above instances, we will take steps with the aim of ensuring your privacy is protected.</p>
+			​
+			<h3>General</h3>
+			​
+			<p>You may not transfer any of your rights under this privacy notice to any other person. We may transfer our rights under this privacy notice where we reasonably believe your rights will not be affected.</p>
+			​​
+			<p>If any court or competent authority finds that any provision of this privacy notice (or part of any provision) is invalid, illegal or unenforceable, that provision or part-provision will, to the extent required, be deemed to be deleted, and the validity and enforceability of the other provisions of this privacy notice will not be affected.</p>
+			​​
+			<p>Unless otherwise agreed, no delay, act or omission by a party in exercising any right or remedy will be deemed a waiver of that, or any other, right or remedy.</p>
+			​​
+			<p>This Agreement will be governed by and interpreted according to the law of England and Wales. All disputes arising under the Agreement will be subject to the exclusive jurisdiction of the English and Welsh courts.</p>
+			​​
+			<h3>Changes to this privacy notice</h3>
+			​
+			<p>We keep our privacy notice under regular review. We reserve the right to change this privacy notice as we may deem necessary from time to time or as may be required by law. Any changes will be immediately posted on the Website and you are deemed to have accepted the terms of the privacy notice on your first use of the Website following the alterations.</p>
+			​
+			<h3>How to contact us</h3>
+			​
+			<p>If you want to request information about this privacy notice you can email us at <a href="mailto:paul.thomas@protecdata.co.uk">paul.thomas@protecdata.co.uk</a> or <a href="mailto:mohan.sahota@protecdata.co.uk">mohan.sahota@protecdata.co.uk</a> or write to:<br>
+			ProTecData<br>
+			25 Eves Close<br>
+			Newborough<br>
+			Peterborough<br>
+			Cambs.<br>
+			PE6 7RF</p>
+			​<br>
+			​
+			<p>April 2018</p>
+		</div>
+	</div>
+
+	<div id="contact" class="contact container fadeIn wow" data-wow-delay="0.3s">
+		<h2>Contact Us</h2>
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+
+				<span>Please contact us using this form if you want to arrange a free GDPR briefing, have a question, or would like further information about ProTecData’s services.</span>
+
+				<form onsubmit="" method="post">
+					<div class="styled-input">
+						<input type="text" id="name" name="name" required="" autocomplete="off">
+						<label>Name</label>
+						<span></span>
+					</div>
+					<div class="styled-input">
+						<input type="email" id="email" name="email" required="" autocomplete="off">
+						<label>Email</label>
+						<span></span>
+					</div>
+						<div class="styled-input">
+						<input type="text" id="comment" name="comment" required="">
+						<label>Comment</label>
+						<span></span>
+					</div>
+					<a class="btn-main" href="">Send<i class="far fa-arrow-alt-circle-right"></i></a>
+				</form>
+
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="row">
+					<div class="col-md-10 col-xs-12 offset-md-2">
+						<div class="row">
+							<div class="col-lg-6 col-xs-12 contact__item text-center">
+								<i class="fa fa-envelope"></i>
+								<br>
+								<span class="w-100">protecdata@consultant.com</span>
+							</div>
+							<div class="col-lg-6 col-xs-12 contact__item text-center">
+								<i class="fa fa-phone"></i>
+								<br>
+								<span class="w-100">+44 (0) 1223 968670</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-footer align-self-end text-right">
+						<div class="w-100">
+							<a href="#home" class="btn-footer">To Top</a>
+							<a href="index.html#whatwedo" class="btn-footer">What We Do</a>
+							<a href="index.html#services" class="btn-footer">Services</a>
+							<a href="index.html#about" class="btn-footer">About Us</a>
+							<a href="gmyths.html" class="btn-footer">GDPR Myths</a>
+							<a href="faq.html" class="btn-footer">F.A.Q.</a>
+							<br>
+							<a href="disclaimer.html" class="btn-footer" target="_blank">Disclaimer</a>
+							<a href="#home" class="btn-footer" target="_blank">Privacy Policy</a>
+						</div>
+						<div class="w-100">&copy; ProTecData Solutions 2018</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a id="to_top" href="#home" class="to_top">Top</a>
+
+</body>
+</html>
+
+
+
+

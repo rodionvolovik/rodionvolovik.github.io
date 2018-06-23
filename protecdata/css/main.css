@@ -25,6 +25,22 @@ h2 {
 	margin-bottom: 50px;
 }
 
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #00105a;
+	margin-bottom: 0px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.heading {
+	font-weight: 400;
+	color: #00105a;
+}
+
 .text-bold {
 	font-weight: 600;
 }
@@ -224,7 +240,7 @@ h2 {
 
 .btn-footer {
 	color: #444;
-	padding: 0 3px;
+	padding-left: 6px;
 }
 
 .btn-footer:hover {
@@ -346,4 +362,8 @@ h2 {
 .navbar-toggler .bar-3 {
 	width: 60%;
 	float: right;
+}
+
+form {
+	margin-bottom: 50px;
 }
