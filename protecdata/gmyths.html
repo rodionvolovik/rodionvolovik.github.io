@@ -45,6 +45,15 @@
 				$(this).slideUp();
 			});
 		});
+
+		$(function() {
+			$(".slideDown").click(function() {
+				target = $(this).attr("show-target");
+				console.log(target);
+				$("." + target).slideDown(300);
+				$(this).slideUp();
+			});
+		});
 	</script>
 
 </head>
@@ -79,37 +88,37 @@
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 1: It is just about hacking</div>
-					<span>Although many of the news stories focus on hacking and GDPR breaches, GDPR is not just about hacking. For example, it currently costs £10 for individuals to get their data from organisations under data protection law. Under the GDPR, it will be free subject to various exemptions such as repetitive requests, manifestly unfounded or excessive requests or further copies.</span>
+					<span>Although many of the news stories focus on hacking and GDPR breaches, GDPR is not just about hacking. <a class="btn-sec slideDown" show-target="slideDown-1">More...</a><span class="slideDown__target slideDown-1">For example, it currently costs £10 for individuals to get their data from organisations under data protection law. Under the GDPR, it will be free subject to various exemptions such as repetitive requests, manifestly unfounded or excessive requests or further copies.</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 2: It is all about avoiding fines</div>
-					<span>Many people focus on the high fines in the GDPR, which are up to €20m, or 4% of worldwide annual turnover. However, also of concern is that if there is a data breach that poses a high risk to individuals (for example, if all credit card wow fadeIn details are lost or stolen so that fraudsters can use those details), the organisation has to notify those individuals.</span>
+					<span>Many people focus on the high fines in the GDPR, which are up to €20m, or 4% of worldwide annual turnover. <a class="btn-sec slideDown" show-target="slideDown-2">More...</a><span class="slideDown__target slideDown-2">However, also of concern is that if there is a data breach that poses a high risk to individuals (for example, if all credit card wow fadeIn details are lost or stolen so that fraudsters can use those details), the organisation has to notify those individuals.</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 3: It is just an IT problem</div>
-					<span>Because GDPR is heavily linked with personal data, the word “data” often signals that this is some kind of IT issue. However, GDPR is a cultural change in terms of how organisations process personal data throughout the organisation – where personal data is obtained from, how it is used, where it is stored, who it is passed to and how those parties use that data.</span>
+					<span>Because GDPR is heavily linked with personal data, the word “data” often signals that this is some kind of IT issue. <a class="btn-sec slideDown" show-target="slideDown-3">More...</a><span class="slideDown__target slideDown-3">However, GDPR is a cultural change in terms of how organisations process personal data throughout the organisation – where personal data is obtained from, how it is used, where it is stored, who it is passed to and how those parties use that data.</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 4: GDPR compliance is a job for the IT director</div>
-					<span>It is mandatory for public sector bodies and certain other organisations to have a data protection officer. Many organisations may feel that if they need a data protection officer under the GDPR, then they might just appoint their IT director as a data protection officer.</span>
+					<span>It is mandatory for public sector bodies and certain other organisations to have a data protection officer. <a class="btn-sec slideDown" show-target="slideDown-4">More...</a><span class="slideDown__target slideDown-4">Many organisations may feel that if they need a data protection officer under the GDPR, then they might just appoint their IT director as a data protection officer.</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 5: Compliance can be achieved very quickly</div>
-					<span>The way the GDPR obliges organisations to take another look at how they process personal data, such as their customer database, will need significant organisational work, involving departments including sales and marketing, finance, HR, IT and legal. Given the GDPR comes into force in May 2018, this does not leave a lot of time for an organisation to become GDPR compliant.</span>
+					<span>The way the GDPR obliges organisations to take another look at how they process personal data, such as their customer database, will need significant organisational work, involving departments including sales and marketing, finance, HR, IT and legal. <a class="btn-sec slideDown" show-target="slideDown-5">More...</a><span class="slideDown__target slideDown-5">Given the GDPR comes into force in May 2018, this does not leave a lot of time for an organisation to become GDPR compliant.</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 6: ‘Legitimate interest‘ allows marketing uses of personal data without user consent.</div>
-					<span>While there is a “legitimate interest” exception in GDPR, it is always weighed against personal data rights. A company could, for instance, utilize data without consent under legitimate interest if it were under court order to do so, or if the data were needed to protect some vital interest like human rights, or if I needed your Social Security number after you’d already agreed to buy a car. But otherwise, consent is needed, and it’s not enough that a user has agreed to receive marketing info.</span>
+					<span>While there is a “legitimate interest” exception in GDPR, it is always weighed against personal data rights. <a class="btn-sec slideDown" show-target="slideDown-6">More...</a><span class="slideDown__target slideDown-6">A company could, for instance, utilize data without consent under legitimate interest if it were under court order to do so, or if the data were needed to protect some vital interest like human rights, or if I needed your Social Security number after you’d already agreed to buy a car. But otherwise, consent is needed, and it’s not enough that a user has agreed to receive marketing info.</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
@@ -121,13 +130,13 @@
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 8: When GDPR begins implementation on May 25, there will be massive data auditing.</div>
-					<span>The expectation is that “a narrow group of companies are probably on the prime target list,” but they’re not smaller companies. “What will trigger [GDPR] audits will be data breaches, or if your company cannot comply with user requests like ‘right to be forgotten.'”</span>
+					<span>The expectation is that “a narrow group of companies are probably on the prime target list,” but they’re not smaller companies. <a class="btn-sec slideDown" show-target="slideDown-8">More...</a><span class="slideDown__target slideDown-8">“What will trigger [GDPR] audits will be data breaches, or if your company cannot comply with user requests like ‘right to be forgotten.'”</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 9: Personal data is personal data, under GDPR.</div>
-					<span>There is an important GDPR distinction between personal data that is “private data” and that which is “sensitive data.” Private data includes IP address, name or street address. Sensitive data includes religion, sex, union membership or level of education. There are differences between how the two types of personal data can be stored and what you can do with them. Sensitive data, for instance, cannot be used for making business decisions like approving a mortgage.</span>
+					<span>There is an important GDPR distinction between personal data that is “private data” and that which is “sensitive data”. <a class="btn-sec slideDown" show-target="slideDown-9">More...</a><span class="slideDown__target slideDown-9">Private data includes IP address, name or street address. Sensitive data includes religion, sex, union membership or level of education. There are differences between how the two types of personal data can be stored and what you can do with them. Sensitive data, for instance, cannot be used for making business decisions like approving a mortgage.</span></span>
 					</div>
 				</div>
 				<div class="card wow fadeIn">
@@ -139,7 +148,7 @@
 				<div class="card wow fadeIn">
 					<div class="mansory-item">
 					<div class="title w-100">Myth 11: There is only one kind of user consent.</div>
-					<span>Incorrect. As with the “cookie law” that preceded GDPR, sites and apps can obtain user consent to deploy a cookie or capture data that is not specific to an individual, with a notice to the effect of: “If you continue using this site, you grant permission for us to deploy a cookie that shows which pages you viewed, so that we can send you a follow-up ad.” Unless matched with other data, this kind of cookie deployment and data capture only identifies, say, those users that looked at a page showing blue sneakers. But if that data — possibly matched with other data sets — can identify an individual, then “click here” explicit consent for stated uses is required. The required consent differs, depending on whether the granularity can identify you.</span>
+					<span>Incorrect. <a class="btn-sec slideDown" show-target="slideDown-11">More...</a><span class="slideDown__target slideDown-11">As with the “cookie law” that preceded GDPR, sites and apps can obtain user consent to deploy a cookie or capture data that is not specific to an individual, with a notice to the effect of: “If you continue using this site, you grant permission for us to deploy a cookie that shows which pages you viewed, so that we can send you a follow-up ad.” Unless matched with other data, this kind of cookie deployment and data capture only identifies, say, those users that looked at a page showing blue sneakers. But if that data — possibly matched with other data sets — can identify an individual, then “click here” explicit consent for stated uses is required. The required consent differs, depending on whether the granularity can identify you.</span></span>
 					</div>
 				</div>
 			</div>
@@ -197,6 +206,9 @@
 							<a href="index.html#about" class="btn-footer">About Us</a>
 							<a href="#home" class="btn-footer">GDPR Myths</a>
 							<a href="faq.html" class="btn-footer">F.A.Q.</a>
+							<br>
+							<a href="disclaimer.html" class="btn-footer" target="_blank">Disclaimer</a>
+							<a href="privacy.html" class="btn-footer" target="_blank">Privacy Policy</a>
 						</div>
 						<div class="w-100">&copy; ProTecData Solutions 2018</div>
 					</div>

@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/from.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 
 	<!-- <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
@@ -45,6 +46,16 @@
 				$(this).slideUp();
 			});
 		});
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+		        document.getElementById("to_top").style.display = "block";
+		    } else {
+		        document.getElementById("to_top").style.display = "none";
+		    }
+		}
 	</script>
 
 </head>
@@ -108,13 +119,13 @@
 
 	<div id="whatwedo" class="container fadeIn wow" data-wow-delay="0.3s">
 		<div class="row align-items-center we-do">
-			<div class="col-xs-12 col-md-5 we-do__bordered">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 we-do__bordered">
 				<span class="we-do__title w-100">
 					How do we help your business<br>to demonstrate ‘best efforts’ towards<br>GDPR compliance?
 				</span>
-				<a class="btn-main" href="#">Contact Us<i class="far fa-arrow-alt-circle-right"></i></a>
+				<a class="btn-main" href="#contact">Contact Us<i class="far fa-arrow-alt-circle-right"></i></a>
 			</div>
-			<div class="col-xs-12 col-md-7 we-do__items">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 we-do__items">
 				<div class="we-do__item">
 					<div class="row">
 						<div class="col-1 we-do__count we-do__count"></div>
@@ -218,11 +229,11 @@
 			<span class="services-line"></span>
 		</span>
 		<div class="row">
-			<div class="col-sm-12 col-md-3">
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
 				<span class="w-100 services__title">GDPR Compliance Software</span>
 				<p class="w-100">GDPR Software tools have an important part to play in your compliance process. They dramatically reduce the amount of effort needed to build data maps, help you to create GDPR Compliant policies and provide a safety net to protect your data when employees accidentally or intentionally do something that could possibly expose personal information held on your systems to the risk of a breach.</p>
 			</div>
-			<div class="col-sm-12 col-md-3">
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
 				<span class="w-100 services__title">GDPR Consultancy</span>
 				<p class="w-100">We provide GDPR consultancy services which guide you through the process of meeting
 				your responsibilities under the European General Data Protection Regulation (GDPR).
@@ -236,7 +247,7 @@
 				you will need to have in place not only to achieve compliance under the GDPR, but also to
 				stay on track as your business and IT processes evolve.</p>
 			</div>
-			<div class="col-sm-12 col-md-3">
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
 				<span class="w-100 services__title">DPO Service</span>
 				<p class="w-100">You will need to have someone available who can advise you on how to comply with the
 				GDPR and stay compliant. But unless you are a large company it is hard to justify employing
@@ -249,7 +260,7 @@
 				to carry out Privacy Impact Analysis work as and when needed as well as annual audits and
 				the provision of ad hoc data protection advice.</p>
 			</div>
-			<div class="col-sm-12 col-md-3">
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
 				<span class="w-100 services__title">Cyber Security Service</span>
 				<p class="w-100">With growing risks of cyber-attacks and data breaches, it is important to know your business
 				has the right cyber defense in place to reduce the risk of becoming a target.
@@ -349,12 +360,12 @@
 				<div class="row">
 					<div class="col-md-10 col-xs-12 offset-md-2">
 						<div class="row">
-							<div class="col-6 contact__item text-center">
+							<div class="col-lg-6 col-xs-12 contact__item text-center">
 								<i class="fa fa-envelope"></i>
 								<br>
 								<span class="w-100">protecdata@consultant.com</span>
 							</div>
-							<div class="col-6 contact__item text-center">
+							<div class="col-lg-6 col-xs-12 contact__item text-center">
 								<i class="fa fa-phone"></i>
 								<br>
 								<span class="w-100">+44 (0) 1223 968670</span>
@@ -370,8 +381,8 @@
 							<a href="faq.html" class="btn-footer">F.A.Q.</a>
 							<a href="gmyths.html" class="btn-footer">GDPR Myths</a>
 							<br>
-							<a href="disclaimer.html" class="btn-footer">Disclaimer</a>
-							<a href="privacy.html" class="btn-footer">Privacy Policy</a>
+							<a href="disclaimer.html" class="btn-footer" target="_blank">Disclaimer</a>
+							<a href="privacy.html" class="btn-footer" target="_blank">Privacy Policy</a>
 						</div>
 						<div class="w-100">&copy; ProTecData Solutions 2018</div>
 					</div>
@@ -379,6 +390,8 @@
 			</div>
 		</div>
 	</div>
+
+	<a id="to_top" href="#home" class="to_top">Top</a>
 
 </body>
 </html>
