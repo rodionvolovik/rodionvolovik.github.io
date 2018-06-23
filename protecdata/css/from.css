@@ -20,7 +20,7 @@ input {
   border: 0;
   width: 100%;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   background-color: transparent; }
 
 input {
@@ -52,3 +52,20 @@ input:focus ~ span {
   width: 100%;
   -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
   transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1); }
+
+[type=submit], button {
+    -webkit-appearance: button;
+    color: #00105a;
+    border: 1px solid #00105a;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 25px;
+    width: auto;
+    transition: all 0.3s ease-in;
+}
+
+[type=submit]:hover, button:hover {
+  color: #fd0000;
+  border-color: #fd0000;
+}
