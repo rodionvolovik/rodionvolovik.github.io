@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/from.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 
 	<!-- <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
@@ -63,8 +64,13 @@
 			<a class="navbar-brand" href="index.html">
 				<img class="logo" src="img/logo.jpg">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
+				<div class="bar d-flex flex-column justify-content-between">
+					<div class="bar__item bar-1 align-self-baseline"></div>
+					<div class="bar__item bar-2 align-self-end"></div>
+					<div class="bar__item bar-3 align-self-end"></div>
+				</div>
 			</button>
 			<div class="collapse navbar-collapse" style="flex-grow: 0" id="navbarNavAltMarkup">
 				<div class="navbar-nav justify-content-between">

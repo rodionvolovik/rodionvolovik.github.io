@@ -8,7 +8,7 @@ body {
 }
 
 .logo {
-	width: 150px;
+	width: 170px;
 }
 
 h1 {
@@ -319,4 +319,30 @@ h2 {
 	padding: 15px;
 	border-radius: 25px;
 	text-decoration: none!important;
+}
+
+.bar {
+	width: 33px; height: 26px;
+}
+
+.bar__item {
+	height: 4px;background-color: #00105a;
+	transition: all 0.3 ease-in;
+}
+
+.navbar-toggler.collapsed .bar__item {
+	width: 100%;
+}
+
+.bar-1 {
+	width: 100%;
+}
+
+.navbar-toggler .bar-2 {
+	width: 80%;
+	float: right;
+}
+.navbar-toggler .bar-3 {
+	width: 60%;
+	float: right;
 }

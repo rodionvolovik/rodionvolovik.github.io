@@ -16,6 +16,11 @@
 	.about {
 		padding: 25px;
 	}
+
+	.navbar-nav a {
+		padding-top: 25px;
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 1200px) {
