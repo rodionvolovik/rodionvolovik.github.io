@@ -319,6 +319,7 @@ h2 {
 	padding: 15px;
 	border-radius: 25px;
 	text-decoration: none!important;
+	z-index: 1000;
 }
 
 .bar {
@@ -327,7 +328,7 @@ h2 {
 
 .bar__item {
 	height: 4px;background-color: #00105a;
-	transition: all 0.3 ease-in;
+	transition: all 0.6s ease-in;
 }
 
 .navbar-toggler.collapsed .bar__item {

@@ -56,6 +56,12 @@
 		        document.getElementById("to_top").style.display = "none";
 		    }
 		}
+
+		$(function() {
+			$('.navbar-nav a').click(function(){
+			     $('.navbar-toggler').click();
+			});
+		});
 	</script>
 
 </head>
