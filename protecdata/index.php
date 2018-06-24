@@ -400,6 +400,7 @@
 							<a href="faq.html" class="btn-footer">F.A.Q.</a>
 							<a href="gmyths.html" class="btn-footer">GDPR Myths</a>
 							<br>
+							<a href="cookies.html" class="btn-footer" target="_blank">Cookies</a>
 							<a href="disclaimer.html" class="btn-footer" target="_blank">Disclaimer</a>
 							<a href="privacy.html" class="btn-footer" target="_blank">Privacy Policy</a>
 						</div>
