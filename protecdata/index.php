@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ProTecData</title>
+	<title>ProTecData Home</title>
+	<meta name="description" content="We assist small to medium size companies and business to become GDPR compliant. Our aim is to provide a hassle-free service from start to finish. Taking away all the legal layers and terminology to simplify process." />
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
