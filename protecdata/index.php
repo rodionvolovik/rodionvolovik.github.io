@@ -40,11 +40,24 @@
 		  });
 		});
 
+
 		$(function() {
-			$(".show-more").click(function() {
-				el = $(".show-more");
-				el.slideDown(300);
-				$(this).slideUp();
+			$(".slideDown").click(function() {
+				target = $(this).attr("show-target");
+				console.log(target);
+				$(".slideDown[show-target='" + target + "']").slideUp();
+				$("." + target).slideDown(300);
+				$(".slideUp[show-target='" + target + "']").slideDown();
+			});
+		});
+
+		$(function() {
+			$(".slideUp").click(function() {
+				target = $(this).attr("show-target");
+				console.log(target);
+				$(".slideUp[show-target='" + target + "']").slideUp();
+				$("." + target).slideUp(300);
+				$(".slideDown[show-target='" + target + "']").slideDown();
 			});
 		});
 
@@ -86,7 +99,7 @@
 					<a class="" href="#services">Services</a>
 					<a class="" href="#about">About Us</a>
 					<a class="" href="gmyths.html">GDPR Myths</a>
-					<a class="" href="faq.html">F.A.Q.</a>
+					<a class="" href="faq.html">FAQ</a>
 					<a class="" href="#contact">Contact Us</a>
 				</div>
 			</div>
@@ -123,7 +136,7 @@
 			<div class="col-xs-12 col-md-6">
 				<h2>How do I start preparing for GDPR?</h2>
 				<span class="w-100">
-					The <a href="https://ico.org.uk/" class="btn-sec" target="_blank">UK Information Commissioner’s Office website</a> is an excellent source of information, and their <a href="https://ico.org.uk/media/1624219/preparing-for-the-gdpr-12-steps.pdf" class="btn-sec" target="_blank">12 steps to take now</a> guide is a good place to start. Of course, you should then call us to arrange a free consultation!
+					The <a href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/" class="btn-sec" target="_blank">UK Information Commissioner’s Office website</a> is an excellent source of information, and their <a href="https://ico.org.uk/media/1624219/preparing-for-the-gdpr-12-steps.pdf" class="btn-sec" target="_blank">12 steps to take now</a> guide is a good place to start. Of course, you should then call us to arrange a free consultation!
 				</span>
 			</div>
 		</div>
@@ -196,6 +209,79 @@
 		</div>
 	</div>
 
+	<div id="services" class="container services fadeIn wow" data-wow-delay="0.3s">
+		<h2 class="w-100 text-center" style="margin-bottom: 25px;">Our Services</h1>
+		<span class="w-100">
+			<span class="services-line"></span>
+		</span>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
+				<span class="w-100 services__title">GDPR Compliance Software</span>
+				<p class="w-100">GDPR Software tools have an important part to play in your compliance process.</p>
+				<a class="btn-sec slideDown" show-target="slideDown-1">More...</a>
+				<span class="slideDown__target slideDown-1">
+					<p>
+					They dramatically reduce the amount of effort needed to build data maps, help you to create GDPR Compliant policies and provide a safety net to protect your data when employees accidentally or intentionally do something that could possibly expose personal information held on your systems to the risk of a breach.
+					</p>
+					<a class="btn-sec slideUp" show-target="slideDown-1">Less...</a>
+				</span>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
+				<span class="w-100 services__title">GDPR Consultancy</span>
+				<p class="w-100">We provide GDPR consultancy services which guide you through the process of meeting
+				your responsibilities under the European General Data Protection Regulation (GDPR).</p>
+				<a class="btn-sec slideDown" show-target="slideDown-2">More...</a>
+				<span class="slideDown__target slideDown-2">
+					<p>
+					Under GDPR, you are responsible for all the Data that you hold on your IT systems and
+					other locations in various formats. With this accountability comes the need to have the
+					appropriate policies, procedures and technical controls in place to protect all personal information that you store in your HR, sales, and marketing and indeed any other databases and folders.</p>
+					<p>
+					A Personal Information Management System is the set of processes and procedures that
+					you will need to have in place not only to achieve compliance under the GDPR, but also to
+					stay on track as your business and IT processes evolve.</p>
+					<a class="btn-sec slideUp" show-target="slideDown-2">Less...</a>
+				</span>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
+				<span class="w-100 services__title">DPO Service</span>
+				<p class="w-100">You will need to have someone available who can advise you on how to comply with the
+				GDPR and stay compliant. But unless you are a large company it is hard to justify employing
+				your own full-time Data Protection Officer.</p>
+				<a class="btn-sec slideDown" show-target="slideDown-3">More...</a>
+				<span class="slideDown__target slideDown-3">
+					<p>				
+					Every time your business workflows or processes change you will need to assess how the
+					proposed change effects on GDPR compliance. You will need access to a data protection
+					specialist to assess the proposed change, provide advice to minimise the risk of a data
+					breach.</p>
+					<p>
+					Our Virtual Data Protection Officer service provides you with access to a GDPR practitioner
+					to carry out Privacy Impact Analysis work as and when needed as well as annual audits and
+					the provision of ad hoc data protection advice.</p>
+					<a class="btn-sec slideUp" show-target="slideDown-3">Less...</a>
+				</span>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
+				<span class="w-100 services__title">Cyber Security Service</span>
+				<p class="w-100">With growing risks of cyber-attacks and data breaches, it is important to know your business
+				has the right cyber defense in place to reduce the risk of becoming a target.</p>
+				<a class="btn-sec slideDown" show-target="slideDown-4">More...</a>
+				<span class="slideDown__target slideDown-4">
+					<p>
+					Our Cyber Security Service provides a range of services to measure, manage and control
+					Cyber Risk within your organisation.</p>
+					<p>To best protect you, we work with your business to identify key business assets and risk of
+					cyber-attack or data breach from a range of threats.</p>
+					<p>
+					Our Cyber Security Service align to leading industry standards enabling us to identify the
+					most appropriate Cyber Security Framework for your business size and requirements.</p>
+					<a class="btn-sec slideUp" show-target="slideDown-4">Less...</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
 	<div id="about" class="container-fluid pb fadeIn wow" data-wow-delay="0.3s">
 		<div class="container about">
 			<div class="row align-items-center justify-content-center">
@@ -219,69 +305,21 @@
 						This represents a challenge for organisations without visibility and control of the type of data
 						they handle, where the data is located and applicable regulations.
 						</p>
-						<p class="show-more">
-						Now is the time access and implement appropriate data security measures to locate, identify
-						and protect sensitive business and personal data within your organisation, enabling
-						compliance with applicable legislation such as the GDPR and UK DPA (Data Protection Act).
-						</p>
-						<p class="show-more">
-						Our approach is to keep things simple and easy throughout the GDPR process. Our
-						methodology is, Access, Discover, Plan, Implement and Manage.
-						</p>
-						<a class="show-more in btn-sec">More...</a>
+						<a class="btn-sec slideDown" show-target="slideDown-about">More...</a>
+						<span class="slideDown__target slideDown-about">
+							<p>
+							Now is the time access and implement appropriate data security measures to locate, identify
+							and protect sensitive business and personal data within your organisation, enabling
+							compliance with applicable legislation such as the GDPR and UK DPA (Data Protection Act).
+							</p>
+							<p>
+							Our approach is to keep things simple and easy throughout the GDPR process. Our
+							methodology is, Access, Discover, Plan, Implement and Manage.
+							</p>
+							<a class="btn-sec slideUp" show-target="slideDown-about">Less...</a>
+						</span>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="services" class="container services fadeIn wow" data-wow-delay="0.3s">
-		<h2 class="w-100 text-center" style="margin-bottom: 25px;">Our Services</h1>
-		<span class="w-100">
-			<span class="services-line"></span>
-		</span>
-		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
-				<span class="w-100 services__title">GDPR Compliance Software</span>
-				<p class="w-100">GDPR Software tools have an important part to play in your compliance process. They dramatically reduce the amount of effort needed to build data maps, help you to create GDPR Compliant policies and provide a safety net to protect your data when employees accidentally or intentionally do something that could possibly expose personal information held on your systems to the risk of a breach.</p>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
-				<span class="w-100 services__title">GDPR Consultancy</span>
-				<p class="w-100">We provide GDPR consultancy services which guide you through the process of meeting
-				your responsibilities under the European General Data Protection Regulation (GDPR).
-				Under GDPR, you are responsible for all the Data that you hold on your IT systems and
-				other locations in various formats. With this accountability comes the need to have the
-				appropriate policies, procedures and technical controls in place to protect all personal
-
-				information that you store in your HR, sales, and marketing and indeed any other databases
-				and folders.
-				A Personal Information Management System is the set of processes and procedures that
-				you will need to have in place not only to achieve compliance under the GDPR, but also to
-				stay on track as your business and IT processes evolve.</p>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
-				<span class="w-100 services__title">DPO Service</span>
-				<p class="w-100">You will need to have someone available who can advise you on how to comply with the
-				GDPR and stay compliant. But unless you are a large company it is hard to justify employing
-				your own full-time Data Protection Officer.
-				Every time your business workflows or processes change you will need to assess how the
-				proposed change effects on GDPR compliance. You will need access to a data protection
-				specialist to assess the proposed change, provide advice to minimise the risk of a data
-				breach.
-				Our Virtual Data Protection Officer service provides you with access to a GDPR practitioner
-				to carry out Privacy Impact Analysis work as and when needed as well as annual audits and
-				the provision of ad hoc data protection advice.</p>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 50px;">
-				<span class="w-100 services__title">Cyber Security Service</span>
-				<p class="w-100">With growing risks of cyber-attacks and data breaches, it is important to know your business
-				has the right cyber defense in place to reduce the risk of becoming a target.
-				Our Cyber Security Service provides a range of services to measure, manage and control
-				Cyber Risk within your organisation.
-				To best protect you, we work with your business to identify key business assets and risk of
-				cyber-attack or data breach from a range of threats.
-				Our Cyber Security Service align to leading industry standards enabling us to identify the
-				most appropriate Cyber Security Framework for your business size and requirements.</p>
 			</div>
 		</div>
 	</div>
@@ -383,12 +421,12 @@
 							<div class="col-lg-6 col-xs-12 contact__item text-center">
 								<i class="fa fa-envelope"></i>
 								<br>
-								<span class="w-100">protecdata@consultant.com</span>
+								<span class="w-100"><a href="mailto:protecdata@consultant.com">protecdata@consultant.com</a></span>
 							</div>
 							<div class="col-lg-6 col-xs-12 contact__item text-center">
 								<i class="fa fa-phone"></i>
 								<br>
-								<span class="w-100">+44 (0) 1223 968670</span>
+								<span class="w-100"><a href="tel:+44 (0) 1223 968670">+44 (0) 1223 968670</a></span>
 							</div>
 						</div>
 					</div>
@@ -398,7 +436,7 @@
 							<a href="#whatwedo" class="btn-footer">What We Do</a>
 							<a href="#about" class="btn-footer">About Us</a>
 							<a href="#services" class="btn-footer">Services</a>
-							<a href="faq.html" class="btn-footer">F.A.Q.</a>
+							<a href="faq.html" class="btn-footer">FAQ</a>
 							<a href="gmyths.html" class="btn-footer">GDPR Myths</a>
 							<br>
 							<a href="cookies.html" class="btn-footer" target="_blank">Cookies</a>

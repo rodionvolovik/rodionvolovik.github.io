@@ -8,7 +8,7 @@ body {
 }
 
 .logo {
-	width: 170px;
+	width: 200px;
 }
 
 h1 {
@@ -225,6 +225,10 @@ p {
 	box-shadow: 1px 1px 2px 1px #f1f1f1;
 }
 
+.contact__item a {
+	color: #01005f;
+}
+
 .contact__item i {
 	margin-bottom: 20px;
 	font-size: 24px;
@@ -316,11 +320,18 @@ p {
 
 .slideDown__target {
 	display: none;
+	width: 100%!important;
 }
 
 .slideDown {
 	color: #fd0000!important;
 	cursor: pointer;
+}
+
+.slideUp {
+	color: #fd0000!important;
+	cursor: pointer;
+	display: none;
 }
 
 .to_top,
@@ -329,13 +340,18 @@ p {
 	position: fixed;
 	bottom: 25px;
 	right: 25px;
-	color: #444!important;
+	color: #fd0000!important;
 	background-color: #f5f5f5;
-	/*opacity: 0.6;*/
+	opacity: 0.6;
 	padding: 15px;
 	border-radius: 25px;
 	text-decoration: none!important;
 	z-index: 1000;
+	border: 1px solid #fd0000;
+}
+
+.to-top:hover {
+	opacity: 1;
 }
 
 .bar {
