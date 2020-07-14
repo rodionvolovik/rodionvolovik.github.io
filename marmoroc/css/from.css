@@ -1,0 +1,71 @@
+.styled-input {
+  width: 100%;
+  display: flex;
+  margin: 25px 0;
+  position: relative; }
+
+.styled-input label {
+  width: 100%;
+  color: #fd0000;
+  padding: 0.5em 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+  pointer-events: none; }
+
+input {
+  padding: 0.5rem 0;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  text-align: left;
+  background-color: transparent; }
+
+input {
+  border-bottom: 1px solid #76767a; }
+
+input ~ span {
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1); }
+
+input:focus ~ label,
+input:valid ~ label {
+  font-size: 0.75em;
+  color: #fd0000;
+  top: -1.25rem;
+  -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1); }
+
+input:focus {
+  outline: 0; }
+
+input:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1); }
+
+[type=submit], button {
+    -webkit-appearance: button;
+    color: #00105a;
+    border: 1px solid #00105a;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 25px;
+    width: auto;
+    transition: all 0.3s ease-in;
+}
+
+[type=submit]:hover, button:hover {
+  color: #fd0000;
+  border-color: #fd0000;
+}
