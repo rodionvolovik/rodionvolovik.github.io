@@ -96,6 +96,11 @@
 
 @media (max-width: 991px)
 {
+	.main__text
+	{
+	    margin-left: 100px;
+	}
+
 	.dots_decoration
 	{
 		display: none;
@@ -144,6 +149,11 @@
 
 @media (max-width: 768px)
 {
+	.main__text
+	{
+	    margin-left: 40px;
+	}
+
 	section
 	{
 		padding-left: 0!important;
@@ -176,5 +186,18 @@
 
 	.calc__table table tr:nth-child(1) td {
 	    font-size: 20px;
+	}
+
+	.process__slider .slick-list
+	{
+		min-width: 300px;
+		max-width: 350px;
+	    height: 400px;
+	}
+
+	.process__slider .slick-slide
+	{
+		width: 100%;
+	    height: 400px;
 	}
 }
