@@ -1,0 +1,180 @@
+@media (max-width: 1600px)
+{
+	.size img
+	{
+		max-width: 400px;
+	}
+
+	.process__slider .slick-list
+	{
+		min-width: 300px;
+		max-width: 500px;
+	    height: 500px;
+	}
+
+	.process__slider .slick-slide
+	{
+		width: 100%;
+	    height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.calc__widget {
+	    padding: 50px;
+	}
+}
+
+@media (max-width: 1400px)
+{
+	.rectangle_decoration
+	{
+		display: none;
+	}
+
+	.size img
+	{
+		max-width: 350px;
+	}
+
+	.section_title_left
+	{
+    	left: -30px;
+	}
+
+    .section_title_right
+    {
+    	right: -30px;
+	    left: auto;
+	    top: -50px;
+    }
+
+    .process__slider .slick-dots li.slick-active button {
+	    font-size: 18px;
+	}
+
+    .process__slider .slick-dots
+    {
+    	width: 400px;
+    	min-width: 400px;
+    }
+
+	.calc__widget {
+	    padding: 0;
+	}
+
+	.calc__result {
+	    padding: 0;
+	}
+
+	.calc__table table td {
+		min-width: 0;
+	}
+
+	.calc__table
+	{
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 1090px)
+{
+	.process__slider .slick-list
+	{
+		min-width: 300px;
+		max-width: 400px;
+	    height: 400px;
+	}
+
+	.process__slider .slick-slide
+	{
+		width: 100%;
+	    height: 400px;
+	}
+}
+
+@media (max-width: 991px)
+{
+	.dots_decoration
+	{
+		display: none;
+		top: auto;
+	}
+
+	.section_title
+	{
+		left: 0;
+    	top: 80px;
+    }
+
+    .section_title_right
+    {
+    	right: 0;
+    	left: auto;
+    }
+
+    .size__elements_item img
+    {
+    	width: 500px;
+    }
+
+    .works__slider
+    {
+    	padding-top: 50px;
+    }
+
+    .works .works__slider img
+    {
+    	max-width: 100%;
+    	min-width: 300px;
+    }
+
+    .work__info
+    {
+    	max-width: 100%;
+    	height: auto;
+    }
+
+    .calc__table
+	{
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px)
+{
+	section
+	{
+		padding-left: 0!important;
+		padding-right: 0!important; 
+	}
+
+	.size img
+	{
+		width: 300px;
+	}
+
+	.calc
+	{
+		min-height: 722px;
+	}
+
+	.calc__icon
+	{
+		display: none;
+	}
+
+	.calc__table table
+	{
+		font-size: 16px;
+	}
+
+	.calc__table table td:nth-child(3), .calc__table table td:nth-child(4) {
+	    min-width: 0;
+	}
+
+	.calc__table table tr:nth-child(1) td {
+	    font-size: 20px;
+	}
+}
