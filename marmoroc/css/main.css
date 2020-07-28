@@ -538,7 +538,7 @@ section
 
 .works__image
 {
-	max-width: 1120px;
+	width: 1120px;
 	height: 690px;
 	z-index: 2000;
 	background-size: cover;
