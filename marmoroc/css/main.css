@@ -909,6 +909,12 @@ section
 	height: 100px;
 	margin-right: 10px;
 	margin-bottom: 10px;
+	border: 2px solid transparent;
+}
+
+.constructor__color_picker > div.active
+{
+	border: 2px solid #415271;
 }
 
 .materials

@@ -4,6 +4,10 @@ $(document).ready(function(){
 		$(".constructor__image").each(function() {
 			$(this).removeClass("active");
 		});
+		$(".pick").each(function() {
+			$(this).removeClass("active");
+		});
+		$(this).addClass("active");
 		$("#" + idShow).addClass("active");
 	});
 });

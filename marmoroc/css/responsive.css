@@ -1,3 +1,11 @@
+@media (max-width: 1850px)
+{
+	.constructor__house img
+	{
+		max-width: 882px;
+	}
+}
+
 @media (max-width: 1600px)
 {
 	body
@@ -183,6 +191,11 @@
 	{
 		width: 800px;
 	}
+	.constructor__color_picker > div
+	{
+		width: 70px;
+		height: 70px;
+	}
 
 	.constructor .section_title {
 		top: 100px;
@@ -364,6 +377,24 @@
 		margin-bottom: 0;
 	}
 
+	.constructor__house img
+	{
+		max-width: 700px;
+	}
+
+	.constructor__color_picker
+	{
+		max-height: 800px;
+		overflow-y: scroll;
+	}
+
+	.constructor__color_picker > div
+	{
+		margin: 0;
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+
 	.works__image {
 		width: 600px;
 		height: 400px;
@@ -520,6 +551,41 @@
 	    font-size: 20px;
 	}
 
+	.constructor__house img
+	{
+		max-width: 100%;
+		margin: auto;
+	}
+
+	.constructor__controls
+	{
+		padding-left: 20px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+
+	.constructor__color_picker
+	{
+		max-height: 800px;
+		margin-bottom: 0;
+		height: 70px;
+		width: 900px;
+	}
+
+	.constructor__color_picker > div
+	{
+		width: 50px;
+		height: 50px;
+
+	}
+
+	.constructor__color_picker > div
+	{
+		margin: 0;
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+
 	.process__slider .slick-list
 	{
 		min-width: 300px;
@@ -531,5 +597,18 @@
 	{
 		width: 100%;
 	    height: 400px;
+	}
+}
+
+
+@media (max-width: 600px)
+{
+	.size__elements_data {
+		width: 100%;
+	}
+
+	.size__elements_item
+	{
+		margin: 10px 0;
 	}
 }
