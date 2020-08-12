@@ -654,4 +654,35 @@
 		position: absolute;
 		color: #fff;
 	}
+
+	.size img
+	{
+		max-width: 100%;
+	}
+
+	.size__product
+	{
+		padding: 0;
+	}
+
+	.size__elements_data
+	{
+		width: 100%;
+		height: auto;
+	}
+
+	.size__elements_title
+	{
+		text-align: center;
+	}
+
+	.size__elements_item
+	{
+		margin: 0;
+	}
+
+	.size__elements_item img
+	{
+		margin-bottom: 20px;
+	}
 }
