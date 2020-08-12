@@ -385,7 +385,6 @@
 	.constructor__color_picker
 	{
 		max-height: 800px;
-		overflow-y: scroll;
 	}
 
 	.constructor__color_picker > div
@@ -517,6 +516,19 @@
 		padding: 25px;
 	}
 
+	.section_title,
+	.constructor .section_title
+	{
+		position: relative;
+		transform: none;
+		top: 0;
+	}
+
+	.constructor .section_title
+	{
+		padding: 0 20px;
+	}
+
 	.main
 	{
 		padding-right: 0;
@@ -581,7 +593,6 @@
 	{
 		padding-left: 20px;
 		overflow-x: scroll;
-		overflow-y: hidden;
 	}
 
 	.constructor__color_picker
@@ -589,7 +600,7 @@
 		max-height: 800px;
 		margin-bottom: 0;
 		height: 70px;
-		width: 900px;
+		width: 1220px;
 	}
 
 	.constructor__color_picker > div
@@ -623,73 +634,89 @@
 
 @media (max-width: 600px)
 {
-	.size__elements_data {
-		width: 100%;
-	}
-
-	.size__elements_item
+	.f1
 	{
-		margin: 10px 0;
+		font-size: 36px;
 	}
 
-	.main__slider button.slick-arrow {
-		bottom: 50px;
-		right: 50px;
-		width: 50px;
-		height: 50px;
+	.f2
+	{
+		font-size: 25px
 	}
 
-	.main__slider button.slick-arrow.slick-prev {
-		right: 99px;
+	.f3
+	{
+		font-size: 18px;
+	}
+
+	.f4
+	{
+		font-size: 18px;
+	}
+
+	.f5
+	{
+		font-size: 18px;
+	}
+
+	.f6
+	{
+		font-size: 16px;
 	}
 
 	.btn
 	{
-		padding: 10px 30px;
+		padding: 10px 15px;
 	}
 
-	.process {
-		padding: 0;
-	}
-
-	.process__slider .slick-list
-	{
-		max-width: 100%;
-		height: 500px;
-	}
-
-	.process__slider .slick-slide
-	{
-		height: 500px;
-	}
-
-	.process .process__slider img
-	{
-		width: 300px;
-		height: auto;
-	}
-
-	.size
-	{
-		padding: 25px;
-	}
-
-	.size__product
-	{
-		min-width: 0;
-	}
-
-	.size img {
-		width: 250px;
-	}
-
-	.calc
+	.main
 	{
 		padding: 0;
+		height: 100vh;
 	}
 
-	.calc__count
+	.main__text_title
 	{
-		width: 100%;
+		font-size: 40px;
+		line-height: 40px;
+		margin-bottom: 0;
+	}
+
+	.main__text_text
+	{
+		line-height: 40px;
+	}
+
+	.main__slider .slider_item
+	{
+		height: 100vh;
+	}
+
+	.main__slider button.slick-arrow.slick-prev {
+		right: auto;
+		left: 40px;
+	}
+
+	.main__slider button.slick-arrow {
+		bottom: 40px;
+		right: 40px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.main__slider .slick-dots {
+		bottom: 40px;
+		right: 70px;
+		justify-content: center;
+	}
+
+	.slick-dots li button
+	{
+		font-size: 18px;
+	}
+
+	.main__slider .slick-dots li.slick-active button
+	{
+		font-size: 18px;
 	}
 }
