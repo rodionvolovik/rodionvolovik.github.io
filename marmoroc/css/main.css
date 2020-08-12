@@ -565,6 +565,11 @@ section
 	justify-content: center;
 }
 
+.process__slider_description
+{
+	display: none;
+}
+
 .process .process__slider img
 {
 	width: 358px;

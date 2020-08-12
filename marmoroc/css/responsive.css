@@ -513,15 +513,22 @@
 {
 	section
 	{
-		padding: 25px;
+		padding: 50px 25px!important;
 	}
 
-	.section_title,
-	.constructor .section_title
+	.section_title
 	{
 		position: relative;
 		transform: none;
-		top: 0;
+		top: 0!important;
+		margin-bottom: 25px;
+	}
+
+	.section_title::before
+	{
+		top: 14px!important;
+		left: auto!important;
+		right: 0!important;
 	}
 
 	.constructor .section_title
@@ -661,7 +668,7 @@
 
 	.f6
 	{
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.btn
@@ -671,7 +678,7 @@
 
 	.main
 	{
-		padding: 0;
+		padding: 0!important;
 		height: 100vh;
 	}
 
@@ -718,5 +725,43 @@
 	.main__slider .slick-dots li.slick-active button
 	{
 		font-size: 18px;
+	}
+
+	.about
+	{
+		padding-top: 50px;
+	}
+
+	.about__title {
+		margin-top: 0;
+	}
+
+	.process__slider .slick-list
+	{
+		min-width: 0;
+		width: 100%;
+		height: 500px;
+	}
+
+	.process__slider .slick-slide
+	{
+		height: 500px;
+	}
+
+	.process .process__slider img
+	{
+		width: 90%;
+		height: auto;
+	}
+
+	.process__slider_description
+	{
+		display: block;
+		width: 100%;
+		bottom: 25px;
+		text-align: center;
+		left: 0;
+		position: absolute;
+		color: #fff;
 	}
 }
