@@ -1,3 +1,26 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+    font-weight: bold;
+    font-style: italic, oblique;
+    font-weight: 600;
+}
+
 body
 {
 	font-family: Ubuntu;
@@ -205,7 +228,7 @@ section
 	margin: 0 18px;
 }
 
-.navbar__navigation_menu_text.
+.navbar__navigation_menu_text,
 .navbar__navigation_menu_icon
 {
 	font-size: 24px;
