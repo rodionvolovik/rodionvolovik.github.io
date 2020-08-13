@@ -842,7 +842,7 @@ section
 {
 	background: url('../assets/images/sky.png');
 	background-size: cover;
-	padding: 0;
+	padding: 0!important;
 }
 
 .advantages
