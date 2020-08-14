@@ -667,6 +667,7 @@
 	.main__slider .slider_item
 	{
 		height: 100vh;
+		background-position: center!important;
 	}
 
 	.main__slider button.slick-arrow.slick-prev {
