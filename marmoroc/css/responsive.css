@@ -568,6 +568,17 @@
 		padding: 10px 15px;
 	}
 
+	.menu__close
+	{
+		font-size: 20px;
+		padding: 20px 20px;
+	}
+
+	.menu__items
+	{
+		padding: 0 25px;
+	}
+
 	.main
 	{
 		padding: 0!important;
