@@ -6,7 +6,16 @@ $(document).ready(function(){
 		});
 	}
 
+	function showMenu()
+	{
+		$("#menu").addClass("active").delay(5000).ready(function() {
+			$("body").addClass("modal__open").ready();
+		});
+	}
+
 	$("#close").on('click', closeMenu);
+
+	$("#show").on('click', showMenu);
 
 	$(".menu__link").on('click', closeMenu);
 });

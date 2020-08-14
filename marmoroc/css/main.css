@@ -209,7 +209,6 @@ section
 .navbar
 {
 	color: #fff;
-	min-height: 106px;
 	padding: 0 40px;
 }
 
@@ -231,6 +230,7 @@ section
 {
 	margin-right: 100px;
 	font-weight: 500;
+	margin-right: 20px;
 }
 
 .navbar__navigation_phone i
