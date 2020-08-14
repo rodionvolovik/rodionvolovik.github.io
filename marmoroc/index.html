@@ -20,7 +20,7 @@
 </head>
 <body>
 	<nav class="navbar f3 fixed-top navbar-light d-flex justify-content-between">
-		<div class="logo"><img src="assets/images/logo.png"></div>
+		<div class="logo"><a href="#"><img src="assets/images/logo.png"></a></div>
 		<div class="navbar__navigation d-flex justify-content-between align-items-baseline">
 			<div class="navbar__navigation_language active">RU</div>
 			<div class="navbar__navigation_language">UA</div>
@@ -171,8 +171,10 @@
 			<div class="calc__count d-flex flex-column">
 				<div class="title f2">Укажите площадь фасада</div>
 				<div class="calc__input f2">
-					<input type="text" value="1" name="calculation">
-					м<sup>2</sup>
+					<form id="calc__form">
+						<input id="calc__value" type="text" value="1" name="calculation"> м<sup>2</sup>
+						<button class="calc__button" name="submit">
+					</form>
 				</div>
 				<div class="calc__description">Например, 180, 240, 360, 600 для коттеджей и 1500, 3200, 7500 для многоэтажек</div>
 			</div>
@@ -187,27 +189,27 @@
 						</tr>
 						<tr>
 							<td>Плитка Марморок</td>
-							<td>1</td>
-							<td>2</td>
-							<td>2</td>
+							<td id="aPriceItem">1</td>
+							<td id="aItemCount">2</td>
+							<td id="aTotalPrice">2</td>
 						</tr>
 						<tr>
 							<td>Консоль монтажная</td>
-							<td>1</td>
-							<td>2</td>
-							<td>2</td>
+							<td id="bPriceItem">1</td>
+							<td id="bItemCount">2</td>
+							<td id="bTotalPrice">2</td>
 						</tr>
 						<tr>
 							<td>Вертикальный профиль</td>
-							<td>1</td>
-							<td>2</td>
-							<td>2</td>
+							<td id="cPriceItem">1</td>
+							<td id="cItemCount">2</td>
+							<td id="cTotalPrice">2</td>
 						</tr>
 						<tr>
 							<td>Горизонтальный профиль</td>
-							<td>1</td>
-							<td>2</td>
-							<td>2</td>
+							<td id="dPriceItem">1</td>
+							<td id="dItemCount">2</td>
+							<td id="dTotalPrice">2</td>
 						</tr>
 					</tbody>
 				</table>

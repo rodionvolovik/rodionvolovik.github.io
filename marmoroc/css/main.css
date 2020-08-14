@@ -457,7 +457,7 @@ section
     background: #435371;
     padding: 100px 40px 90px;
     color: #fff;
-    z-index: 3000;
+    z-index: 2996;
     width: 909px;
     height: 805px;
 }
@@ -550,7 +550,7 @@ section
 
 .main__slider .slider_item
 {
-	height: 926px;
+	height: calc(100vh - 100px);
 	min-height: 568px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -978,6 +978,11 @@ section
 	color: #fff;
 	padding: 0 100px;
 	text-align: right;
+}
+
+.calc__button
+{
+	display: none;
 }
 
 .skybg
