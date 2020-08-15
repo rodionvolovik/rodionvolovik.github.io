@@ -36,35 +36,41 @@ $(document).ready(function(){
 		const cPriceUnit = " грн./м.пог."
 		const dPriceUnit = " грн./шт."
 
-		aOutItemPrice = aItemPrice + aPriceUnit
-		bOutItemPrice = bItemPrice + bPriceUnit
-		cOutItemPrice = cItemPrice + cPriceUnit
-		dOutItemPrice = dItemPrice + dPriceUnit
+		aOutItemPrice = aItemPrice
+		bOutItemPrice = bItemPrice
+		cOutItemPrice = cItemPrice
+		dOutItemPrice = dItemPrice
 
-		aOutCount = aItemCount * value + aItemUnit
-		bOutCount = bItemCount * value + bItemUnit
-		cOutCount = cItemCount * value + cItemUnit
-		dOutCount = dItemCount * value + dItemUnit
+		aOutCount = aItemCount * value
+		bOutCount = bItemCount * value
+		cOutCount = cItemCount * value
+		dOutCount = dItemCount * value
 
-		aOutPrice = (aItemPrice * aItemCount * value).toFixed(2) + totalUnit
-		bOutPrice = (bItemPrice * bItemCount * value).toFixed(2) + totalUnit
-		cOutPrice = (cItemPrice * cItemCount * value).toFixed(2) + totalUnit
-		dOutPrice = (dItemPrice * dItemCount * value).toFixed(2) + totalUnit
+		aOutPrice = aItemPrice * aItemCount * value
+		bOutPrice = bItemPrice * bItemCount * value
+		cOutPrice = cItemPrice * cItemCount * value
+		dOutPrice = dItemPrice * dItemCount * value
+
+		total = aOutPrice + bOutPrice + cOutPrice + dOutPrice
 
 		console.log(aOutPrice);
 
-		$("#aPriceItem").text(aOutItemPrice);
-		$("#aItemCount").text(aOutCount);
-		$("#aTotalPrice").text(aOutPrice);
-		$("#bPriceItem").text(bOutItemPrice);
-		$("#bItemCount").text(bOutCount);
-		$("#bTotalPrice").text(bOutPrice);
-		$("#cPriceItem").text(cOutItemPrice);
-		$("#cItemCount").text(cOutCount);
-		$("#cTotalPrice").text(cOutPrice);
-		$("#dPriceItem").text(dOutItemPrice);
-		$("#dItemCount").text(dOutCount);
-		$("#dTotalPrice").text(dOutPrice);
+		$("#aPriceItem").text(aOutItemPrice + aPriceUnit);
+		$("#bPriceItem").text(bOutItemPrice + bPriceUnit);
+		$("#cPriceItem").text(cOutItemPrice + cPriceUnit);
+		$("#dPriceItem").text(dOutItemPrice + dPriceUnit);
+
+		$("#aItemCount").text(aOutCount + aItemUnit);
+		$("#bItemCount").text(bOutCount + bItemUnit);
+		$("#cItemCount").text(cOutCount + cItemUnit);
+		$("#dItemCount").text(dOutCount + dItemUnit);
+
+		$("#aTotalPrice").text(aOutPrice.toFixed(2) + totalUnit);
+		$("#bTotalPrice").text(bOutPrice.toFixed(2) + totalUnit);
+		$("#cTotalPrice").text(cOutPrice.toFixed(2) + totalUnit);
+		$("#dTotalPrice").text(dOutPrice.toFixed(2) + totalUnit);
+
+		$("#total").text("Итоговая сумма: " + total.toFixed(2) + totalUnit)
 
 		$("#value").val(value);
 	}
@@ -81,4 +87,9 @@ $(document).ready(function(){
 	});
 
 	calculatePrice(1);
+});
+
+$(document).scroll(function () {
+	var $nav = $("#navbar");
+	$nav.toggleClass('navbar__scrolled', $(this).scrollTop() > 10);
 });
