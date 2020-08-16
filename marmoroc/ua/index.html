@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" type="text/css" href="assets/3rdparty/slick/slick.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="assets/3rdparty/slick/slick-theme.css"/> -->
+
+	<link href="assets/3rdparty/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/3rdparty/bootstrap/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/3rdparty/bootstrap/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/3rdparty/bootstrap/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/3rdparty/wow/css/libs/animate.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	<nav id="navbar" class="navbar f3 fixed-top navbar-light d-flex justify-content-between">
+		<div class="logo"><a href="#"><img src="assets/images/logo.png"></a></div>
+		<div class="navbar__navigation d-flex justify-content-between align-items-center">
+			<div class="navbar__navigation_language"><a href="../index.html">RU</a></div>
+			<div class="navbar__navigation_language active">UA</div>
+			<div class="navbar__navigation_phone"><a href="tel:+38 (067) 00 00 000"><i class="fas fa-phone fa-rotate-90"></i>+38 (067) 00 00 000</a></div>
+			<div id="show" class="navbar__navigation_menu d-flex flex-column justify-content-between align-items-end">
+				<div class="navbar__navigation_menu_text">Меню</div>
+				<div class="navbar__navigation_menu_bar top"></div>
+				<div class="navbar__navigation_menu_bar bottom"></div>
+			</div>
+		</div>
+	</nav>
+	<div id="menu" class="menu flex-column align-items-baseline justify-content-start">
+		<div class="menu__close d-flex flex-row justify-content-between align-items-center justify-content-sm-end">
+			<div class="menu__logo__min"><img src="assets/images/logo.png"></div>
+			<div id="close" class="close"></div>
+		</div>
+		<div class="d-flex flex-column menu__items align-items-baseline justify-content-base">
+			<div class="menu__logo"><img src="assets/images/logo.png"></div>
+			<div class=""><a class="menu__link" href="#about">Продукт</a></div>
+			<div class=""><a class="menu__link" href="#process">Этапы монтажа</a></div>
+			<div class=""><a class="menu__link" href="#size">Основа системы</a></div>
+			<div class=""><a class="menu__link" href="#elements">Элементы каркаса</a></div>
+			<div class=""><a class="menu__link" href="#calc">Цены</a></div>
+			<div class=""><a class="menu__link" href="#advantages">Преимущества</a></div>
+			<div class=""><a class="menu__link" href="#constructor">Подбор цвета</a></div>
+			<div class=""><a class="menu__link" href="#works">Реализованные проекты</a></div>
+			<div class=""><a class="menu__link" href="#materials">Сырье</a></div>
+			<div class=""><a class="menu__link" href="#faq">FAQ</a></div>
+			<div class=""><a class="menu__link" href="#contacts">Контакты</a></div>
+			<div class="menu__separator"></div>
+			<div class="d-flex flex-row justify-content-end menu__bottom">
+				<div class="menu__lang active">
+					<a href="#">RU</a>
+				</div>
+				<div class="menu__lang">
+					<a href="#">UA</a>
+				</div>
+			</div>
+			<div class="menu__bottom"><a href="#"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a></div>
+			<div class="menu__bottom"><a href="#"><i class="fas fa-envelope"></i> info@marmoroc.com.ua</a></div>
+		</div>
+	</div>
+	<section class="main">
+		<div class="main__text d-flex flex-column justify-content-center">
+			<div class="main__text_title">Фасадная система</div>
+			<div class="main__text_text">Марморок</div>
+			<div class="main__text_button"><a class="btn f3 btn-blick" href="#about">Подробнее</a></div>
+		</div>
+		<div class="main__slider">
+			<div class="slider_item" style="background: url('assets/images/presentation/pres1.png') no-repeat; background-size: cover;"></div>
+			<div class="slider_item" style="background: url('assets/images/presentation/pres2.png') no-repeat; background-size: cover;"></div>
+			<div class="slider_item" style="background: url('assets/images/presentation/pres3.png') no-repeat; background-size: cover;"></div>
+			<div class="slider_item" style="background: url('assets/images/presentation/pres4.png') no-repeat; background-size: cover;"></div>
+		</div>
+	</section>
+	<section class="about d-flex flex-column">
+		<div id="about" class="anchor"></div>
+		<div class="about__title wow fadeInLeft">
+			<div class="small_title f4">Продукт</div>
+			<div class="d-flex"><span class="title f1 title__decoration">Что такое Марморок?</span></div>
+		</div>
+		<div class="about__description d-flex flex-column flex-lg-row align-items-center align-items-md-center justify-content-around wow fadeInUp"  data-wow-delay=".2s">
+			<div class="about__description__text f5 order-1 order-lg-0">
+				<div class="title f1">Марморок</div>
+				<div>Энергосберегающий фасад с вентилируемым воздушным зазором.<br>
+				Вентилируемая фасадная система отменно защищает внешние стены зданий от воздействий окружающей среды.<br>
+				Монтаж вентилируемой фасадной системы производится только сухим методом.</div>
+			</div>
+			<div class="about__image wow fadeInUp order-0 order-lg-1" data-wow-delay=".5s">
+				<img src="assets/images/brick.png">
+			</div>
+		</div>
+	</section>
+	<section class="process wow fadeInUp">
+		<div id="process" class="anchor"></div>
+		<div class="section_title f3 section_title section_title_left">Этапы монтажа</div>
+		<div class="dots_decoration col-5"></div>
+		<div class="process__slider d-flex flex-column flex-lg-row justify-content-center align-items-center">
+			<div data-text="Установка монтажных консолей"><img src="assets/images/steps/step_1.png"><div class="process__slider_description f5">01. Установка монтажных консолей</div></div>
+			<div data-text="Крепление горизонтальных профилей"><img src="assets/images/steps/step_2.png"><div class="process__slider_description f5">02. Крепление горизонтальных профилей</div></div>
+			<div data-text="Монтаж усилителя"><img src="assets/images/steps/step_3.png"><div class="process__slider_description f5">03. Монтаж усилителя</div></div>
+			<div data-text="Монтаж вертикальных профилей"><img src="assets/images/steps/step_4.png"><div class="process__slider_description f5">04. Монтаж вертикальных профилей</div></div>
+			<div data-text="Монтаж плитки"><img src="assets/images/steps/step_5.png"><div class="process__slider_description f5">05. Монтаж плитки</div></div>
+		</div>
+	</section>
+	<section class="size d-flex flex-column flex-xl-row justify-content-center align-items-left align-items-md-center wow fadeInUp">
+		<div id="size" class="anchor"></div>
+		<div class="section_title f3 section_title section_title_left">Основа системы</div>
+		<div class="dots_decoration col-4"></div>
+		<div class="size__product d-flex flex-lg-row flex-xl-column flex-column align-items-center align-items-xl-baseline align-items-lg-center">
+			<div class="d-flex justify-content-center"><img src="assets/images/item.png"></div>
+			<div class="d-flex flex-column">
+				<div class="title f1">Плитка Марморок</div>
+				<div class="size__product_description f5"><span class="f5"><b>Безопасная и прочная</b></span>
+				<span class="f5">Специально спроектирована и рассчитана как защитный экран здания высотой до 100 метров. Выполнена из негорючих и экологически чистых материалов. Разнообразная цветовая палитра (24 стандартных цвета + любой цвет согласно RAL 
+				под заказ).<br></span>
+				<span><b>Состав плитки:</b>&nbsp;цементная основа с мраморной крошкой.</span></div>
+			</div>
+		</div>
+		<div class="size__elements d-flex flex-column wow fadeInUp" data-wow-delay=".5s">
+			<div class="rectangle_decoration"></div>
+			<div class="size__elements_data">
+				<div class="size__elements_title f2">Размеры плитки</div>
+				<div class="d-flex flex-sm-row flex-column justify-content-center justify-content-xl-start justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.1s">
+					<div class="size__elements_item"><img src="assets/images/sizes/large.png"></div>
+					<div class="">Длина: 600 мм<br>Ширина: 205 мм<br>Толщина: 25 мм</div>
+				</div>
+				<div class="d-flex flex-sm-row flex-column justify-content-center justify-content-xl-start justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
+					<div class="size__elements_item"><img src="assets/images/sizes/medium.png"></div>
+					<div class="">Длина: 600 мм<br>Ширина: 105 мм<br>Толщина: 25 мм</div>
+				</div>
+				<div class="d-flex flex-sm-row flex-column justify-content-center justify-content-xl-start justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.5s">
+					<div class="size__elements_item"><img src="assets/images/sizes/small.png"></div>
+					<div class="">Длина: 300 мм<br>Ширина: 205 мм<br>Толщина: 25 мм</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="elements d-flex flex-column flex-lg-row justify-content-center wow fadeInUp align-items-center align-items-lg-baseline">
+		<div id="elements" class="anchor"></div>
+		<div class="section_title f3 section_title section_title_right">Элементы каркаса</div>
+		<div class="element d-flex flex-column justify-content-base wow fadeInUp" data-wow-delay=".1s">
+			<div class="element__image d-flex"><img src="assets/images/elements/el1.png"></div>
+			<div class="d-flex justify-content-between">
+				<div class="title f1">Консоль монтажная</div>
+				<div class="element__number">.01</div>
+			</div>
+			<div class="element_description f6">Предназначена для крепления горизонтального профиля, компенсации неровностей поверхности стен, а так же для восприятия нагрузок конструкции.</div>
+		</div>
+		<div class="element d-flex flex-column justify-content-base wow fadeInUp" data-wow-delay=".3s">
+			<div class="element__image d-flex"><img src="assets/images/elements/el2.png"></div>
+			<div class="d-flex justify-content-between">
+				<div class="title f1">Профиль горизонтальный</div>
+				<div class="element__number">.02</div>
+			</div>
+			<div class="element_description f6">Спроектирован для применения теплоизоляционных материалов на основе эластичных волокон. Плотно удерживает утеплитель без дополнительного крепления.</div>
+		</div>
+		<div class="element d-flex flex-column justify-content-base wow fadeInUp" data-wow-delay=".5s">
+			<div class="element__image d-flex"><img src="assets/images/elements/el3.png"></div>
+			<div class="d-flex justify-content-between">
+				<div class="title f1">Профиль вертикальный</div>
+				<div class="element__number">.03</div>
+			</div>
+			<div class="element_description f6">Создает дополнительную вентиляцию в результате гравитационного давления. Надежно удерживает искусственный камень с помощью специальных зажимов от выпадения наружу. Позволяет легко заменить поврежденный камень в любом месте фасада.</div>
+		</div>
+	</section>
+
+	<section class="calc wow fadeInUp">
+		<div id="calc" class="anchor"></div>
+		<div class="d-flex flex-column flex-md-row justify-content-base justify-content-md-between align-items-start">
+			<div class="calc__title">
+				<div class="small_title f4">Калькулятор</div>
+				<div  class="title f1 title__decoration">Предварительный расчет<br>стоимости материалов</div>
+			</div>
+			<div class="calc__icon"><img src="assets/images/calc-icon.png"></div>
+		</div>
+		<div class="calc__widget d-flex flex-column flex-xl-row justify-content-around">
+			<div class="calc__count d-flex flex-column">
+				<div class="title f2">Укажите площадь фасада</div>
+				<div class="calc__input f2">
+					<form id="calc__form">
+						<input id="calc__value" autocomplete="off" type="text" value="1" name="calculation"> м<sup>2</sup>
+						<button class="calc__button" name="submit">
+					</form>
+				</div>
+				<div class="calc__description">Например, 180, 240, 360, 600 для коттеджей и 1500, 3200, 7500 для многоэтажек</div>
+			</div>
+			<div class="d-flex flex-grow-1 calc__table justify-content-end">
+				<table>
+					<tbody>
+						<tr>
+							<td>Основные материалы</td>
+							<td>Цена</td>
+							<td>Количество</td>
+							<td>Сумма</td>
+						</tr>
+						<tr>
+							<td>Плитка Марморок</td>
+							<td id="aPriceItem">1</td>
+							<td id="aItemCount">2</td>
+							<td id="aTotalPrice">2</td>
+						</tr>
+						<tr>
+							<td>Консоль монтажная</td>
+							<td id="bPriceItem">1</td>
+							<td id="bItemCount">2</td>
+							<td id="bTotalPrice">2</td>
+						</tr>
+						<tr>
+							<td>Вертикальный профиль</td>
+							<td id="cPriceItem">1</td>
+							<td id="cItemCount">2</td>
+							<td id="cTotalPrice">2</td>
+						</tr>
+						<tr>
+							<td>Горизонтальный профиль</td>
+							<td id="dPriceItem">1</td>
+							<td id="dItemCount">2</td>
+							<td id="dTotalPrice">2</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="total" class="calc__result"></div>
+		<div class="calc__option f4"><span><font style="font-size: 30px; line-height: 30px">*</font>Данный просчет является предварительным.&nbsp;<br>Каждый объект рассмаривается индивидуально.</span></div>
+	</section>
+	<section class="skybg d-flex flex-column">
+		<div class="advantages">
+			<div id="advantages" class="anchor"></div>
+			<div class="advantages__title wow fadeInRight">
+				<div class="small_title f4">Преимущества</div>
+				<div class="d-flex justify-content-start justify-content-md-end"><span class="title f1 title__decoration">Системы Марморок</span></div>
+			</div>
+			<div class="d-flex flex-row flex-wrap">
+				<div class="advantages__item d-flex justify-content-base  wow fadeInUp" data-wow-delay=".1s">
+					<div class="advantages__item_icon"><img src="assets/images/advantages/ad_1.png"></div>
+					<div class="advantages__item_description">
+						<div class="advantages__item_title">Энергосбережение</div>
+						<div class="advantages__item_text f5">
+							Повышает энергоэффективность и позволяет свести теплопотери к минимуму.  До 40% снижаются затраты на энергопотребление при эксплуатации объекта. Сокращаются расходы на отопление и кондиционирование.
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item d-flex justify-content-base  wow fadeInUp" data-wow-delay=".3s">
+					<div class="advantages__item_icon"><img src="assets/images/advantages/ad_2.png"></div>
+					<div class="advantages__item_description">
+						<div class="advantages__item_title">Всесезонный монтаж</div>
+						<div class="advantages__item_text f5">
+							Всесезонный простой монтаж, при любых погодных условиях. «Мокрые» процессы в монтаже отсутствуют.
+							Высокая локальная ремонтопригодность за счет мелко-форматности фасадной плиты. Есть возможность заменить любую часть фасада при повреждениях.
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item d-flex justify-content-base  wow fadeInUp" data-wow-delay=".5s">
+					<div class="advantages__item_icon"><img src="assets/images/advantages/ad_3.png"></div>
+					<div class="advantages__item_description">
+						<div class="advantages__item_title">Эстетика</div>
+						<div class="advantages__item_text f5">
+							Кирпичная структура и фактурность поверхности плитки придает фасадам неповторимый облик.  Имеет стойкий цвет на протяжении многих лет за счет окрашивания фасадной плиты в массе.
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item d-flex justify-content-base  wow fadeInUp" data-wow-delay=".7s">
+					<div class="advantages__item_icon"><img src="assets/images/advantages/ad_4.png"></div>
+					<div class="advantages__item_description">
+						<div class="advantages__item_title">Срок службы</div>
+						<div class="advantages__item_text f5">
+							Система специально спроектирована и рассчитана как защитный экран зданий высотой до 100 метров. Защищает внешние стены и теплоизоляционный материал, продлевает срок их службы.
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item d-flex justify-content-base  wow fadeInUp" data-wow-delay=".9s">
+					<div class="advantages__item_icon"><img src="assets/images/advantages/ad_5.png"></div>
+					<div class="advantages__item_description">
+						<div class="advantages__item_title">Сейсмостойкость</div>
+						<div class="advantages__item_text f5">
+							Имеет высокую сейсмостойкость – до 9 баллов, устойчива к подвижности грунта.
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item d-flex justify-content-base  wow fadeInUp" data-wow-delay="1.1s">
+					<div class="advantages__item_icon"><img src="assets/images/advantages/ad_6.png"></div>
+					<div class="advantages__item_description">
+						<div class="advantages__item_title">Пожаробезопасность</div>
+						<div class="advantages__item_text f5">
+							Выполнена из негорючих и экологически чистых материалов.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="constructor d-flex flex-lg-row flex-column justify-content-between">
+			<div id="constructor" class="anchor"></div>
+			<div class="section_title f3 section_title section_title_left">Подбор цвета</div>
+			<div class="constructor__controls d-flex flex-wrap flex-column justify-content-end">
+				<div class="constructor__color_picker d-flex flex-wrap">
+					<div class="pick active" data-img="color_1" style="background-color: #f2f2f2;"></div>
+					<div class="pick" data-img="color_2" style="background-color: #fcf5d2;"></div>
+					<div class="pick" data-img="color_3" style="background-color: #faf094;"></div>
+					<div class="pick" data-img="color_4" style="background-color: #f8e764;"></div>
+					<div class="pick" data-img="color_5" style="background-color:#f9dac0;"></div>
+					<div class="pick" data-img="color_6" style="background-color: #f3a285;"></div>
+					<div class="pick" data-img="color_7" style="background-color: #d3963d;"></div>
+					<div class="pick" data-img="color_8" style="background-color: #812e07;"></div>
+					<div class="pick" data-img="color_9" style="background-color: #e3d7d7;"></div>
+					<div class="pick" data-img="color_10" style="background-color: #d57d71;"></div>
+					<div class="pick" data-img="color_11" style="background-color: #643f37;"></div>
+					<div class="pick" data-img="color_12" style="background-color: #382825;"></div>
+					<div class="pick" data-img="color_13" style="background-color: #a9a9a9;"></div>
+					<div class="pick" data-img="color_14" style="background-color: #773829;"></div>
+					<div class="pick" data-img="color_15" style="background-color: #b9988f;"></div>
+					<div class="pick" data-img="color_16" style="background-color: #4a240e;"></div>
+					<div class="pick" data-img="color_17" style="background-color: #918280;"></div>
+					<div class="pick" data-img="color_18" style="background-color: #93ddfe;"></div>
+					<div class="pick" data-img="color_19" style="background-color: #76b76c;"></div>
+					<div class="pick" data-img="color_20" style="background-color: #2a2c29;"></div>
+				</div>
+			</div>
+			<div class="constructor__house">
+				<div id="color_1" class="constructor__image active"><img src="assets/images/constructor/1.png"></div>
+				<div id="color_2" class="constructor__image"><img src="assets/images/constructor/2.png"></div>
+				<div id="color_3" class="constructor__image"><img src="assets/images/constructor/3.png"></div>
+				<div id="color_4" class="constructor__image"><img src="assets/images/constructor/4.png"></div>
+				<div id="color_5" class="constructor__image"><img src="assets/images/constructor/5.png"></div>
+				<div id="color_6" class="constructor__image"><img src="assets/images/constructor/6.png"></div>
+				<div id="color_7" class="constructor__image"><img src="assets/images/constructor/7.png"></div>
+				<div id="color_8" class="constructor__image"><img src="assets/images/constructor/8.png"></div>
+				<div id="color_9" class="constructor__image"><img src="assets/images/constructor/9.png"></div>
+				<div id="color_10" class="constructor__image"><img src="assets/images/constructor/10.png"></div>
+				<div id="color_11" class="constructor__image"><img src="assets/images/constructor/11.png"></div>
+				<div id="color_12" class="constructor__image"><img src="assets/images/constructor/12.png"></div>
+				<div id="color_13" class="constructor__image"><img src="assets/images/constructor/13.png"></div>
+				<div id="color_14" class="constructor__image"><img src="assets/images/constructor/14.png"></div>
+				<div id="color_15" class="constructor__image"><img src="assets/images/constructor/15.png"></div>
+				<div id="color_16" class="constructor__image"><img src="assets/images/constructor/16.png"></div>
+				<div id="color_17" class="constructor__image"><img src="assets/images/constructor/17.png"></div>
+				<div id="color_18" class="constructor__image"><img src="assets/images/constructor/18.png"></div>
+				<div id="color_19" class="constructor__image"><img src="assets/images/constructor/19.png"></div>
+				<div id="color_20" class="constructor__image"><img src="assets/images/constructor/20.png"></div>
+			</div>
+		</div>
+	</section>
+	<section class="works d-flex flex-column wow fadeInUp">
+		<div id="works" class="anchor"></div>
+		<div class="works__title wow fadeInLeft">
+			<div class="small_title f4">Кейсы</div>
+			<div class="d-flex"><span class="title f1 title__decoration">Реализованные проекты</span></div>
+		</div>
+		<div class="d-flex flex-column">
+			<div class="works__portfolio">
+				<div class="works__slider d-flex">
+					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+						<div class="works__image" style="background: url('assets/images/works/work_1.png'); background-size: cover; background-position: center;"></div>
+						<div class="d-flex flex-column">
+							<div class="work__info d-flex flex-column">
+								<div class="d-flex flex-row flex-lg-column align-items-center align-items-lg-baseline">
+									<div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-baseline">
+										<div class="btn-round"><i class="fas fa-play"></i></div>
+										<div class="button__text">Смотреть видео</div>
+									</div>
+									<div class="title f1">Фасады для IT-Park</div>
+								</div>
+								<div class="work__description">Многофункциональный комплекс it-park Manufactura - это первый инновационный парк Харькова и лучший проект IT-недвижимости в Украине 2019 года.</div>
+								<div class="work__stats"><b>Локация:</b> Харьков</div>
+								<div class="work__stats"><b>Площадь фасада:</b> 12500 м<sup>2</sup></div>
+								<div class="work__stats"><b>Год:</b> 2019-2020</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+						<div class="works__image" class="" style="background: url('assets/images/works/work_2.png'); background-size: cover; background-position: center;"></div>
+						<div class="d-flex flex-column">
+							<div class="work__info d-flex flex-column">
+								<div class="d-flex flex-row flex-lg-column align-items-center align-items-lg-baseline">
+									<div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-baseline">
+										<div class="btn-round"><i class="fas fa-play"></i></div>
+										<div class="button__text">Смотреть видео</div>
+									</div>
+									<div class="title f1">Фасады для IT-Park</div>
+								</div>
+								<div class="work__description">Многофункциональный комплекс it-park Manufactura - это первый инновационный парк Харькова и лучший проект IT-недвижимости в Украине 2019 года.</div>
+								<div class="work__stats"><b>Локация:</b> Харьков</div>
+								<div class="work__stats"><b>Площадь фасада:</b> 12500 м<sup>2</sup></div>
+								<div class="work__stats"><b>Год:</b> 2019-2020</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="clients d-flex flex-wrap justify-content-around align-items-center wow fadeInUp">
+		<div class="clients__item wow fadeInUp" data-wow-delay=".1s">
+			<img src="assets/images/clients/logo3.png">
+		</div>
+		<div class="clients__item wow fadeInUp" data-wow-delay=".3s">
+			<img src="assets/images/clients/logo4.png">
+		</div>
+	</section>
+	<section class="materials d-flex flex-column wow fadeInUp">
+		<div id="materials" class="anchor"></div>
+		<div class="d-flex flex-row justify-content-md-end justify-content-start materials__title_block">
+			<div class="materials__title wow fadeInLeft">
+				<div class="small_title f4">Сырье</div>
+				<div class="d-flex"><span class="title f1 title__decoration">Экологичность и<br>природность</span></div>
+			</div>
+		</div>
+		<div class="d-flex flex-row flex-wrap">
+			<div class="materials__description f5 flex-fill flex-grow-0">
+				<div class="d-flex flex-row">
+					<div><img src="assets/images/item.png"></div>
+					<div class="title f1">Составные&nbsp;<br>компоненты</div>
+				</div>
+				<div class="materials__description_text_bold">Гармония природных компонентов</div>
+				<div class="materials__description_text">Натуральные природные материалы «дышат», не позволяют конденсироваться влаге, уберегая стены и пол от появления плесени, создают особый благотворный микроклимат.</div>
+			</div>
+			<div class="material__item d-flex flex-fill flex-row justify-content-end align-content-end" style="background: url('assets/images/materials/1.png') no-repeat; background-size: cover;"><div class="material__title f6">Белый цемент</div></div>
+			<div class="material__item d-flex flex-fill flex-row justify-content-end align-content-end" style="background: url('assets/images/materials/2.png') no-repeat; background-size: cover;"><div class="material__title f6">Вода</div></div>
+		</div>
+		<div class="d-flex flex-row flex-wrap">
+			<div class="material__item d-flex flex-row flex-fill justify-content-end align-content-end" style="background: url('assets/images/materials/3.png') no-repeat; background-size: cover;"><div class="material__title f6">Минеральные<br>красители</div></div>
+			<div class="material__item d-flex flex-row flex-fill justify-content-end align-content-end" style="background: url('assets/images/materials/4.png') no-repeat; background-size: cover;"><div class="material__title f6">Кварцевый<br>песок</div></div>
+			<div class="material__item d-flex flex-row flex-fill justify-content-end align-content-end" style="background: url('assets/images/materials/5.png') no-repeat; background-size: cover;"><div class="material__title f6">Мраморная<br>крошка</div></div>
+		</div>
+	</section>
+	<section class="faq wow fadeInUp">
+		<div id="faq" class="anchor"></div>
+		<div class="faq__title wow fadeInLeft">
+			<div class="small_title f4">FAQ</div>
+			<div class="d-flex"><span class="title f1 title__decoration">Часто задаваемые<br>вопросы</span></div>
+		</div>
+		<div id="accordion">
+			<div class="card">
+			  <div class="card-header" id="headingOne">
+				<a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="f3">
+				Collapsible Group Item #1
+				</a>
+			  </div>
+			  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+				<div class="card-body f5">
+				  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			  </div>
+			</div>
+			<div class="card">
+			  <div class="card-header" id="headingTwo">
+				  <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="f3">
+					Collapsible Group Item #2
+				  </a>
+			  </div>
+			  <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
+				<div class="card-body f5">
+				  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			  </div>
+			</div>
+			<div class="card">
+			  <div class="card-header" id="headingThree">
+				  <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="f3">
+					Collapsible Group Item #3
+				  </a>
+			  </div>
+			  <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
+				<div class="card-body f5">
+				  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			  </div>
+			</div>
+		  </div>
+	</section>
+	<section class="contact d-flex flex-column flex-sm-row justify-content-center align-items-center wow fadeInUp">
+		<div class="d-flex flex-column">
+			<div class="title f1">Остались вопросы?</div>
+			<div class="contact__description f6">Оставьте заявку, наши специалисты свяжутся с вами в кратчайшие сроки и дадут исчерпывающие ответы</div>
+		</div>
+		<div><a class="btn btn-blick">Заявка</a></div>
+	</section>
+	<footer class="fadeInUp">
+		<div class="footer d-flex flex-column flex-lg-row justify-content-between">
+			<div class="d-flex flex-column">
+				<div class="footer-logo"><img src="assets/images/logo footer.png"></div>
+				<div class="d-flex flex-column">
+					<div class="footer__title">Язык сайта</div>
+					<a class="btn-sec">Украинский</a>
+					<a class="btn-sec active">Русский</a>
+				</div>
+			</div>
+			<div class="contact__list d-flex flex-column">
+				<div id="contacts" class="anchor"></div>
+				<div class="title f1">Контакты</div>
+				<div class="d-flex flex-column flex-lg-row">
+					<div class="d-flex flex-column contact__item order-md-2 order-lg-0">
+						<div class="footer__title">Почта</div>
+						<a class="btn-sec"><i class="fas fa-envelope"></i> sup@marmoroc.com.ua</a>
+						<a class="btn-sec"><i class="fas fa-envelope"></i> info@marmoroc.com.ua</a>
+					</div>
+					<div class="d-flex flex-column contact__item order-1">
+						<div class="footer__title">Бухгалтерия</div>
+						<a class="btn-sec"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a>
+						<a class="btn-sec active"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a>
+					</div>
+					<div class="d-flex flex-column contact__item order-md-0 order-lg-2">
+						<div class="footer__title">Отдел продаж</div>
+						<a class="btn-sec"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a>
+						<a class="btn-sec active"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright f6">&copy; 2020 marmoroc.com.ua все права защищены</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="assets/3rdparty/slick/slick.min.js"></script>
+	<script src="assets/3rdparty/bootstrap/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/constructor.js"></script>
+
+	<script src="assets/3rdparty/wow/dist/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Main slider
+			var slickOptions = {
+				dots: true,
+				autoplay: true,
+				infinite: true,
+				speed: 500,
+				fade: true,
+				cssEase: 'linear',
+				prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+				nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+				customPaging: function (slider, i) {
+					//FYI just have a look at the object to find available information
+					//press f12 to access the console in most browsers
+					//you could also debug or look in the source
+					console.log(slider);
+					return "<div class='current-slick'>.0" + (i + 1) + "</div>" + "<div class='delim-slick'>/</div>" + "<div class='total-slick'>.0" + slider.slideCount + "</div>";
+				}
+			},
+			$slick = $('.main__slider');
+
+			$slick.slick(slickOptions);
+
+			// built-in feature, for more info check the [doc](http://kenwheeler.github.io/slick/)
+			$slick.on('swipe', function(event, slick, direction) {
+			    reinitSlick();
+			});
+
+			$('.slick-prev, .slick-next').on('click', function(){
+			    reinitSlick();
+			});
+
+			var reinitSlick = function() {    
+			    $slick.slick('slickSetOption', {
+			      'autoplay': false
+			    }, false);
+			}
+
+			// Process slider
+			$('.process__slider').slick({
+				dots: true,
+				arrows: false,
+				infinite: false,
+				autoplay: true,
+				speed: 0,
+				autoplaySpeed: 1500,
+				fade: true,
+				cssEase: 'linear',
+				customPaging : function(slider, i) {
+			        var title = $(slider.$slides[i]).data('title');
+			        var text = $(slider.$slides[i]).data('text');
+			        return $('<button type="button" />').text(text);
+			    }
+			});
+
+			// Process slider
+			$('.works__slider').slick({
+				dots: true,
+				arrows: true,
+				infinite: true,
+				autoplay: true,
+				fade: true,
+				speed: 700,
+				prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-play" style="transform: rotate(180deg)"></i></button>',
+				nextArrow: '<button type="button" class="slick-next"><i class="fas fa-play""></i></button>'
+			});
+
+			$('.collapse').collapse();
+		});
+  </script>
+</body>
+</html>
+
+
+
+

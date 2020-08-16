@@ -41,6 +41,12 @@
 
 @media (max-width: 1400px)
 {
+
+	.modal__inputs
+	{
+		padding: 0 100px;
+	}
+
 	.main::before
 	{
 		width: 800px;
@@ -179,7 +185,7 @@
 
 	.calc__table
 	{
-		padding: 0 40px;
+		padding-left: 40px;
 	}
 
 	.advantages__item
@@ -240,22 +246,6 @@
 	}
 }
 
-@media (max-width: 1090px)
-{
-	.process__slider .slick-list
-	{
-		min-width: 300px;
-		max-width: 400px;
-	    height: 400px;
-	}
-
-	.process__slider .slick-slide
-	{
-		width: 100%;
-	    height: 400px;
-	}
-}
-
 @media (max-width: 1200px)
 {
 	body
@@ -263,14 +253,50 @@
 		font-size: 16px;
 	}
 
-	.title
+	.f1
 	{
-		font-size: 35px;
+		font-size: 40px;
+	}
+	
+	.f2
+	{
+		font-size: 26px;
+    	line-height: 35px;
+	}
+	
+	.f3
+	{
+		font-size: 20px;
+	}
+	
+	.f4
+	{
+		font-size: 22px;
+	}
+	
+	.f5
+	{
+		font-size: 20px;
+	}
+	
+	.f6
+	{
+		font-size: 18px;
 	}
 
-	.main__slider .slider_item
+	.modal__inputs
 	{
-		height: 600px;
+		padding: 0;
+	}
+
+	.main
+	{
+		padding: 100px 70px;
+	}
+
+	.main::before
+	{
+		width: calc(100vw - 366px);
 	}
 
 	.main__text
@@ -280,7 +306,7 @@
 
 	.main__text_title
 	{
-		margin-top: 100px;
+		margin-top: 0;
 		margin-bottom: 10px;
 		font-size: 60px;
 	}
@@ -288,6 +314,36 @@
 	.main__text_text
 	{
 		font-size: 45px;
+	}
+
+	.process__slider .slick-list
+	{
+		min-width: 0;
+		width: 100%;
+		height: 600px;
+	}
+
+	.process__slider .slick-slide
+	{
+		height: 600px;
+		padding-bottom: 120px;
+	}
+
+	.process .process__slider img
+	{
+		width: 50%;
+		height: auto;
+	}
+
+	.process__slider_description
+	{
+		display: block;
+		width: 100%;
+		bottom: 25px;
+		text-align: center;
+		left: 0;
+		position: absolute;
+		color: #fff;
 	}
 
 	.about__title {
@@ -310,6 +366,11 @@
 		height: 500px;
 	}
 
+	.size .dots_decoration
+	{
+		display: none;
+	}
+
 	.size__product
 	{
 		margin-right: 0;
@@ -318,15 +379,25 @@
 		margin-bottom: 40px;
 	}
 
+	.size__elements
+	{
+		width: 100%;
+	}
+
 	.size__elements_data
 	{
-		width: 992px;
+		width: 100%;
 		height: 750px;
 	}
 
 	.size img
 	{
-		max-width: 550px;
+		max-width: 400px;
+	}
+
+	.size__product img
+	{
+		margin: 0 25px;
 	}
 
 	.elements
@@ -347,27 +418,78 @@
 
 	.element__image
 	{
-		width: 250px;
-		height: 250px;
+		width: 200px;
+		height: 200px;
 	}
 
 	.element__number
 	{
-		font-size: 95px;
+		font-size: 65px;
+		right: 20px;
+		top: -80px;
+	}
+
+	.calc__table
+	{
+		padding: 0;
+		width: 100%;
+	}
+
+	.calc__table table
+	{
+		max-width: 100%;
+	}
+
+	.calc__icon
+	{
+		position: relative;
+	}
+
+	.calc__icon img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 200px;
+	}
+
+	.calc__option
+	{
+		padding: 20px 0;
+	}
+
+	.work__info
+	{
+		height: auto;
+		max-width: 400px;
+		padding: 30px;
+	}
+
+	.work__info::after
+	{
+		display: none;
+	}
+
+	.clients
+	{
+		padding: 0;
 	}
 
 	.advantages__item {
 		flex: 1 0 40%;
+	}
+	
+	.advantages__item_icon img {
+		width: 50px;
+		margin-right: 15px;
 	}
 
 	.advantages__title
 	{
 		margin-bottom: 0;
 	}
-
-	.constructor__house img
-	{
-		max-width: 700px;
+	
+	.constructor__house img {
+		width: calc(100vw - 450px);
 	}
 
 	.constructor__color_picker
@@ -449,9 +571,13 @@
 		display: none;
 	}
 
+	.modal__widget input
+	{
+		margin-bottom: 25px;
+	}
+
 	.main
 	{
-		padding: 100px 50px;
 		height: 600px;
 	}
 
@@ -461,13 +587,17 @@
 		width: 500px;
 	}
 
+	.main__slider .slider_item
+	{
+		height: 600px;
+	}
+
 	.main__text {
 		margin-left: 100px;
 	}
 
 	.main__text_title
 	{
-		margin-bottom: 0;
 		margin-top: 0;
 	}
 
@@ -483,45 +613,17 @@
 		margin-top: 50px;
 	}
 
-	.process__slider .slick-list
-	{
-		min-width: 0;
-		width: 100%;
-		height: 600px;
-	}
-
-	.process__slider .slick-slide
-	{
-		height: 600px;
-		padding-bottom: 120px;
-	}
-
-	.process .process__slider img
-	{
-		width: 50%;
-		height: auto;
-	}
-
-	.process__slider_description
-	{
-		display: block;
-		width: 100%;
-		bottom: 25px;
-		text-align: center;
-		left: 0;
-		position: absolute;
-		color: #fff;
-	}
-
-	.size .dots_decoration
-	{
-		display: none;
-	}
-
 	.size__elements_data
 	{
 		width: 100%;
 		height: auto;
+	}
+
+	.size img
+	{
+		max-width: 320px;
+		width: 100%;
+		margin-right: 20px;
 	}
 
 	.element
@@ -530,18 +632,15 @@
 		margin-top: 50px;
 	}
 
+	.element__image
+	{
+		width: 250px;
+		height: 250px;
+	}
+
 	.calc
 	{
 		min-height: auto;
-	}
-
-	.calc__table
-	{
-		padding: 0;
-	}
-
-	.calc__icon img {
-		width: 130px;
 	}
 
 	.calc__table table
@@ -657,11 +756,6 @@
 		margin-bottom: 25px;
 	}
 
-	.clients
-	{
-		padding: 0;
-	}
-
 	.materials__description_text
 	{
 		max-width: 100%;
@@ -724,6 +818,11 @@
 		font-size: 14px;
 	}
 
+	.about .anchor
+	{
+		top: -50px;
+	}
+
 	section
 	{
 		padding: 50px 25px!important;
@@ -767,7 +866,7 @@
 	.navbar
 	{
 		padding: 15px 25px;
-		background-color: #fff;
+		background-color: #f9f9f9;
 		color: #435371;
 		min-height: 0;
 	}
@@ -879,13 +978,6 @@
 
 	.about__title {
 		margin-top: 0;
-	}
-
-	.size img
-	{
-		max-width: 320px;
-		width: 100%;
-		margin-right: 20px;
 	}
 
 	.size__product
@@ -1083,6 +1175,28 @@
 	.menu__close .close {
 		width: 20px;
 		height: 20px;
+	}
+
+	.modal__title
+	{
+		margin-top: 0;
+	}
+
+	.modal__close
+	{
+		top: 0;
+		width: 20px;
+		height: 20px;
+	}
+
+	.modal__widget
+	{
+		padding: 25px 25px 100px!important;
+	}
+
+	.modal__widget .title
+	{
+		font-size: 24px;
 	}
 }
 

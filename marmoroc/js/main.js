@@ -13,6 +13,16 @@ $(document).ready(function(){
 		});
 	}
 
+	function showModal()
+	{
+		$("#modal").fadeIn(500);
+	}
+
+	function closeModal()
+	{
+		$("#modal").fadeOut(500);
+	}
+
 	function calculatePrice(value)
 	{
 		const aItemPrice = 506.40;
@@ -73,6 +83,8 @@ $(document).ready(function(){
 		$("#total").text("Итоговая сумма: " + total.toFixed(2) + totalUnit)
 
 		$("#value").val(value);
+
+		return {"value": value, "total": total.toFixed(2)}
 	}
 
 	$("#close").on('click', closeMenu);
@@ -81,10 +93,18 @@ $(document).ready(function(){
 
 	$(".menu__link").on('click', closeMenu);
 
+	$("#modal__close").on('click', closeModal);
+
+	$(".modal__open").on('click', showModal);
+
 	$("#calc__form").submit(function(e) {
 		e.preventDefault();
-		calculatePrice($("#calc__value").val());
-	});
+		var info = calculatePrice($("#calc__value").val());
+
+		setTimeout(function() {
+			$("#user__request").val("Предварительный расчет стоимости материалов для моего проекта площадью " + info["value"] + " м.кв. составил " + info["total"] + " грн. Хочу запросить более детальный подсчет.");
+			showModal();
+		 }, 10000);	});
 
 	calculatePrice(1);
 });

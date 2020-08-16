@@ -23,8 +23,8 @@
 		<div class="logo"><a href="#"><img src="assets/images/logo.png"></a></div>
 		<div class="navbar__navigation d-flex justify-content-between align-items-center">
 			<div class="navbar__navigation_language active">RU</div>
-			<div class="navbar__navigation_language">UA</div>
-			<div class="navbar__navigation_phone"><i class="fas fa-phone fa-rotate-90"></i>+38 (067) 00 00 000</div>
+			<div class="navbar__navigation_language"><a href="ua/index.html">UA</a></div>
+			<div class="navbar__navigation_phone"><a href="tel:+38 (067) 00 00 000"><i class="fas fa-phone fa-rotate-90"></i>+38 (067) 00 00 000</a></div>
 			<div id="show" class="navbar__navigation_menu d-flex flex-column justify-content-between align-items-end">
 				<div class="navbar__navigation_menu_text">Меню</div>
 				<div class="navbar__navigation_menu_bar top"></div>
@@ -63,6 +63,36 @@
 			<div class="menu__bottom"><a href="#"><i class="fas fa-envelope"></i> info@marmoroc.com.ua</a></div>
 		</div>
 	</div>
+	<section id="modal" class="modal__widget">
+		<form class="d-flex flex-column justify-content-between">
+			<div class="modal__title">
+				<div id="modal__close" class="modal__close"></div>
+				<div class="small_title f4">Остались вопросы?</div>
+				<div class="d-flex"><span class="title f1 title__decoration">Давайте обсудим Ваш проект</span></div>
+			</div>
+			<div class="modal__inputs d-flex flex-column flex-lg-row justify-content-between">
+				<div class="d-flex flex-column">
+					<div class="small_title f4">Имя</div>
+					<input class="small_title f4" type="text">
+				</div>
+				<div class="d-flex flex-column">
+					<div class="small_title f4">Email</div>
+					<input class="small_title f4" type="text">
+				</div>
+				<div class="d-flex flex-column">
+					<div class="small_title f4">Телефон</div>
+					<input class="small_title f4" type="text">
+				</div>
+			</div>
+			<div class="modal__inputs d-flex flex-column">
+				<div class="small_title f4">Сообщение</div>
+				<textarea id="user__request" class="small_title f4"></textarea>
+			</div>
+			<div class="modal__inputs d-flex justify-content-end">
+				<button class="btn btn-blick" type="submit">Отправить</button>
+			</div>
+		</form>
+	</section>
 	<section class="main">
 		<div class="main__text d-flex flex-column justify-content-center">
 			<div class="main__text_title">Фасадная система</div>
@@ -76,7 +106,8 @@
 			<div class="slider_item" style="background: url('assets/images/presentation/pres4.png') no-repeat; background-size: cover;"></div>
 		</div>
 	</section>
-	<section id="about" class="about d-flex flex-column">
+	<section class="about d-flex flex-column">
+		<div id="about" class="anchor"></div>
 		<div class="about__title wow fadeInLeft">
 			<div class="small_title f4">Продукт</div>
 			<div class="d-flex"><span class="title f1 title__decoration">Что такое Марморок?</span></div>
@@ -93,7 +124,8 @@
 			</div>
 		</div>
 	</section>
-	<section id="process" class="process wow fadeInUp">
+	<section class="process wow fadeInUp">
+		<div id="process" class="anchor"></div>
 		<div class="section_title f3 section_title section_title_left">Этапы монтажа</div>
 		<div class="dots_decoration col-5"></div>
 		<div class="process__slider d-flex flex-column flex-lg-row justify-content-center align-items-center">
@@ -104,7 +136,8 @@
 			<div data-text="Монтаж плитки"><img src="assets/images/steps/step_5.png"><div class="process__slider_description f5">05. Монтаж плитки</div></div>
 		</div>
 	</section>
-	<section id="size" class="size d-flex flex-column flex-xl-row justify-content-center align-items-left align-items-md-center wow fadeInUp">
+	<section class="size d-flex flex-column flex-xl-row justify-content-center align-items-left align-items-md-center wow fadeInUp">
+		<div id="size" class="anchor"></div>
 		<div class="section_title f3 section_title section_title_left">Основа системы</div>
 		<div class="dots_decoration col-4"></div>
 		<div class="size__product d-flex flex-lg-row flex-xl-column flex-column align-items-center align-items-xl-baseline align-items-lg-center">
@@ -136,7 +169,8 @@
 			</div>
 		</div>
 	</section>
-	<section id="elements" class="elements d-flex flex-column flex-lg-row justify-content-center wow fadeInUp align-items-center align-items-lg-baseline">
+	<section class="elements d-flex flex-column flex-lg-row justify-content-center wow fadeInUp align-items-center align-items-lg-baseline">
+		<div id="elements" class="anchor"></div>
 		<div class="section_title f3 section_title section_title_right">Элементы каркаса</div>
 		<div class="element d-flex flex-column justify-content-base wow fadeInUp" data-wow-delay=".1s">
 			<div class="element__image d-flex"><img src="assets/images/elements/el1.png"></div>
@@ -164,7 +198,8 @@
 		</div>
 	</section>
 
-	<section id="calc" class="calc wow fadeInUp">
+	<section class="calc wow fadeInUp">
+		<div id="calc" class="anchor"></div>
 		<div class="d-flex flex-column flex-md-row justify-content-base justify-content-md-between align-items-start">
 			<div class="calc__title">
 				<div class="small_title f4">Калькулятор</div>
@@ -172,12 +207,12 @@
 			</div>
 			<div class="calc__icon"><img src="assets/images/calc-icon.png"></div>
 		</div>
-		<div class="calc__widget d-flex flex-column flex-lg-row justify-content-around">
+		<div class="calc__widget d-flex flex-column flex-xl-row justify-content-around">
 			<div class="calc__count d-flex flex-column">
 				<div class="title f2">Укажите площадь фасада</div>
 				<div class="calc__input f2">
 					<form id="calc__form">
-						<input id="calc__value" type="text" value="1" name="calculation"> м<sup>2</sup>
+						<input id="calc__value" autocomplete="off" type="text" value="1" name="calculation"> м<sup>2</sup>
 						<button class="calc__button" name="submit">
 					</form>
 				</div>
@@ -224,7 +259,8 @@
 		<div class="calc__option f4"><span><font style="font-size: 30px; line-height: 30px">*</font>Данный просчет является предварительным.&nbsp;<br>Каждый объект рассмаривается индивидуально.</span></div>
 	</section>
 	<section class="skybg d-flex flex-column">
-		<div id="advantages" class="advantages">
+		<div class="advantages">
+			<div id="advantages" class="anchor"></div>
 			<div class="advantages__title wow fadeInRight">
 				<div class="small_title f4">Преимущества</div>
 				<div class="d-flex justify-content-start justify-content-md-end"><span class="title f1 title__decoration">Системы Марморок</span></div>
@@ -287,7 +323,8 @@
 				</div>
 			</div>
 		</div>
-		<div id="constructor" class="constructor d-flex flex-lg-row flex-column justify-content-between">
+		<div class="constructor d-flex flex-lg-row flex-column justify-content-between">
+			<div id="constructor" class="anchor"></div>
 			<div class="section_title f3 section_title section_title_left">Подбор цвета</div>
 			<div class="constructor__controls d-flex flex-wrap flex-column justify-content-end">
 				<div class="constructor__color_picker d-flex flex-wrap">
@@ -337,7 +374,8 @@
 			</div>
 		</div>
 	</section>
-	<section id="works" class="works d-flex flex-column wow fadeInUp">
+	<section class="works d-flex flex-column wow fadeInUp">
+		<div id="works" class="anchor"></div>
 		<div class="works__title wow fadeInLeft">
 			<div class="small_title f4">Кейсы</div>
 			<div class="d-flex"><span class="title f1 title__decoration">Реализованные проекты</span></div>
@@ -393,7 +431,8 @@
 			<img src="assets/images/clients/logo4.png">
 		</div>
 	</section>
-	<section id="materials" class="materials d-flex flex-column wow fadeInUp">
+	<section class="materials d-flex flex-column wow fadeInUp">
+		<div id="materials" class="anchor"></div>
 		<div class="d-flex flex-row justify-content-md-end justify-content-start materials__title_block">
 			<div class="materials__title wow fadeInLeft">
 				<div class="small_title f4">Сырье</div>
@@ -418,7 +457,8 @@
 			<div class="material__item d-flex flex-row flex-fill justify-content-end align-content-end" style="background: url('assets/images/materials/5.png') no-repeat; background-size: cover;"><div class="material__title f6">Мраморная<br>крошка</div></div>
 		</div>
 	</section>
-	<section id="faq" class="faq wow fadeInUp">
+	<section class="faq wow fadeInUp">
+		<div id="faq" class="anchor"></div>
 		<div class="faq__title wow fadeInLeft">
 			<div class="small_title f4">FAQ</div>
 			<div class="d-flex"><span class="title f1 title__decoration">Часто задаваемые<br>вопросы</span></div>
@@ -467,7 +507,7 @@
 			<div class="title f1">Остались вопросы?</div>
 			<div class="contact__description f6">Оставьте заявку, наши специалисты свяжутся с вами в кратчайшие сроки и дадут исчерпывающие ответы</div>
 		</div>
-		<div><a class="btn btn-blick">Заявка</a></div>
+		<div><a class="btn btn-blick modal__open">Заявка</a></div>
 	</section>
 	<footer class="fadeInUp">
 		<div class="footer d-flex flex-column flex-lg-row justify-content-between">
@@ -475,27 +515,28 @@
 				<div class="footer-logo"><img src="assets/images/logo footer.png"></div>
 				<div class="d-flex flex-column">
 					<div class="footer__title">Язык сайта</div>
-					<a class="btn-sec">Украинский</a>
+					<a class="btn-sec" href="ua/index.html">Украинский</a>
 					<a class="btn-sec active">Русский</a>
 				</div>
 			</div>
-			<div id="contacts" class="contact__list d-flex flex-column">
+			<div class="contact__list d-flex flex-column">
+				<div id="contacts" class="anchor"></div>
 				<div class="title f1">Контакты</div>
 				<div class="d-flex flex-column flex-lg-row">
 					<div class="d-flex flex-column contact__item order-md-2 order-lg-0">
 						<div class="footer__title">Почта</div>
-						<a class="btn-sec"><i class="fas fa-envelope"></i> sup@marmoroc.com.ua</a>
-						<a class="btn-sec"><i class="fas fa-envelope"></i> info@marmoroc.com.ua</a>
+						<a class="btn-sec" href="mailto:sup@marmoroc.com.ua"><i class="fas fa-envelope"></i> sup@marmoroc.com.ua</a>
+						<a class="btn-sec" href="mailto:info@marmoroc.com.ua"><i class="fas fa-envelope"></i> info@marmoroc.com.ua</a>
 					</div>
 					<div class="d-flex flex-column contact__item order-1">
 						<div class="footer__title">Бухгалтерия</div>
-						<a class="btn-sec"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a>
-						<a class="btn-sec active"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a>
+						<a class="btn-sec" href="tel:+38 067 949-42-66"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a>
+						<a class="btn-sec" href="tel:+38 050 788-86-55"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a>
 					</div>
 					<div class="d-flex flex-column contact__item order-md-0 order-lg-2">
 						<div class="footer__title">Отдел продаж</div>
-						<a class="btn-sec"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a>
-						<a class="btn-sec active"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a>
+						<a class="btn-sec" href="tel:+38 067 949-42-66"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a>
+						<a class="btn-sec" href="tel:+38 050 788-86-55"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a>
 					</div>
 				</div>
 			</div>
