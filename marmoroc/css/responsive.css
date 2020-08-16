@@ -141,19 +141,19 @@
 	}
 
 	.process .section_title {
-		top: 380px;
+		top: 330px;
 	}
 
 	.section_title_left {
 		top: 150px;
-		left: 50px;
+		left: -30px;
 	}
 
     .section_title_right
     {
 	    left: auto;
-		top: 200px;
-		right: -70px;
+		top: 100px;
+		right: -30px;
     }
 
     .process__slider .slick-dots li button {
@@ -204,7 +204,8 @@
 	}
 
 	.constructor .section_title {
-		top: 100px;
+		top: 50px;
+		left: 0;
 	}
 
 	.works__image {
@@ -246,7 +247,7 @@
 	}
 }
 
-@media (max-width: 1200px)
+@media (max-width: 1199px)
 {
 	body
 	{
@@ -487,6 +488,12 @@
 	{
 		margin-bottom: 0;
 	}
+
+
+	.constructor .section_title {
+		top: 50px;
+		left: -30px;
+	}
 	
 	.constructor__house img {
 		width: calc(100vw - 450px);
@@ -520,9 +527,18 @@
 		height: 50px;
 		font-size: 20px;
 	}
+
+	.contact__item
+	{
+		font-size: 17px;
+	}
+
+	footer img {
+		width: 135px;
+	}
 }
 
-@media (max-width: 992px)
+@media (max-width: 991px)
 {
 	.f1
 	{
@@ -779,6 +795,7 @@
 	.contact__item
 	{
 		margin: 0;
+		text-align: left;
 	}
 
 	.contact__list .footer__title, .contact__list .title {
@@ -786,7 +803,7 @@
 	}
 }
 
-@media (max-width: 768px)
+@media (max-width: 767px)
 {
 	.f1
 	{
@@ -1039,6 +1056,7 @@
 	.calc__table table td
 	{
 		padding: 10px 0;
+		min-width: 0;
 	}
 
 	.calc__table table td:nth-child(3),
@@ -1197,6 +1215,11 @@
 	.modal__widget .title
 	{
 		font-size: 24px;
+	}
+
+	.calc__table table
+	{
+		font-size: 14px;
 	}
 }
 

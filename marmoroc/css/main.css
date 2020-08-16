@@ -257,7 +257,7 @@ section,
 	position: absolute;
 	top: 90px;
 	left: 0;
-	transform-origin: 0 0;
+	transform-origin: center;
 	left: 70px;
 }
 
@@ -487,6 +487,7 @@ section,
 	max-width: 280px;
 	border: none;
 	border-bottom: 1px solid #222126;
+	border-radius: 0;
 	outline: none;
 	text-transform: none;
 }
@@ -1369,6 +1370,11 @@ section,
 {
 	max-width: 455px;
 	margin-right: 50px;
+}
+
+.contact__item
+{
+	text-align: right;
 }
 
 footer
