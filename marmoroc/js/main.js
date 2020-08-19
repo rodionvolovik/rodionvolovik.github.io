@@ -87,16 +87,6 @@ $(document).ready(function(){
 		return {"value": value, "total": total.toFixed(2)}
 	}
 
-	$("#close").on('click', closeMenu);
-
-	$("#show").on('click', showMenu);
-
-	$(".menu__link").on('click', closeMenu);
-
-	$("#modal__close").on('click', closeModal);
-
-	$(".modal__open").on('click', showModal);
-
 	$("#calc__form").submit(function(e) {
 		e.preventDefault();
 		var info = calculatePrice($("#calc__value").val());
@@ -107,6 +97,18 @@ $(document).ready(function(){
 		 }, 10000);	});
 
 	calculatePrice(1);
+
+	$("#close").on('click', closeMenu);
+
+	$("#show").on('click', showMenu);
+
+	$(".menu__link").on('click', closeMenu);
+
+	$("#modal__close").on('click', closeModal);
+
+	$(".modal__open").on('click', showModal);
+
+	$("#navbar").toggleClass('navbar__scrolled', $(this).scrollTop() > 10);
 });
 
 $(document).scroll(function () {
