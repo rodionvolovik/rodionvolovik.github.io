@@ -1022,7 +1022,8 @@ section,
     background: transparent;
     width: 35px;
     color: transparent;
-    border: none;
+	border: none;
+	outline: none;
 }
 
 .works__slider .slick-dots li:before
