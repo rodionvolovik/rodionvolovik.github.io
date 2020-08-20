@@ -126,14 +126,36 @@
 	</section>
 	<section class="process wow fadeInUp">
 		<div id="process" class="anchor"></div>
+		<div class="rectangle_decoration"></div>
 		<div class="section_title f3 section_title section_title_left">Этапы монтажа</div>
 		<div class="dots_decoration col-5"></div>
+		<div class="process__slogan f6">Простая и надежная система сборки</div>
 		<div class="process__slider d-flex flex-column flex-lg-row justify-content-center align-items-center">
-			<div data-text="Установка монтажных консолей"><img src="assets/images/steps/step_1.png"><div class="process__slider_description f5">01. Установка монтажных консолей</div></div>
-			<div data-text="Крепление горизонтальных профилей"><img src="assets/images/steps/step_2.png"><div class="process__slider_description f5">02. Крепление горизонтальных профилей</div></div>
-			<div data-text="Монтаж усилителя"><img src="assets/images/steps/step_3.png"><div class="process__slider_description f5">03. Монтаж усилителя</div></div>
-			<div data-text="Монтаж вертикальных профилей"><img src="assets/images/steps/step_4.png"><div class="process__slider_description f5">04. Монтаж вертикальных профилей</div></div>
-			<div data-text="Монтаж плитки"><img src="assets/images/steps/step_5.png"><div class="process__slider_description f5">05. Монтаж плитки</div></div>
+			<div data-text="Установка монтажных консолей">
+				<img src="assets/images/steps/step_1.png">
+				<div class="process__slider_description f5">01. Установка монтажных консолей</div>
+				<div class="process__slider_id">.01</div>
+			</div>
+			<div data-text="Крепление горизонтальных профилей">
+				<img src="assets/images/steps/step_2.png">
+				<div class="process__slider_description f5">02. Крепление горизонтальных профилей</div>
+				<div class="process__slider_id">.02</div>
+			</div>
+			<div data-text="Монтаж усилителя">
+				<img src="assets/images/steps/step_3.png">
+				<div class="process__slider_description f5">03. Монтаж усилителя</div>
+				<div class="process__slider_id">.03</div>
+			</div>
+			<div data-text="Монтаж вертикальных профилей">
+				<img src="assets/images/steps/step_4.png">
+				<div class="process__slider_description f5">04. Монтаж вертикальных профилей</div>
+				<div class="process__slider_id">.04</div>
+			</div>
+			<div data-text="Монтаж плитки">
+				<img src="assets/images/steps/step_5.png">
+				<div class="process__slider_description f5">05. Монтаж плитки</div>
+				<div class="process__slider_id">.05</div>
+			</div>
 		</div>
 	</section>
 	<section class="size d-flex flex-column flex-xl-row justify-content-center align-items-left align-items-md-center wow fadeInUp">
@@ -323,7 +345,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="constructor d-flex flex-lg-row flex-column justify-content-between">
+		<div class="constructor d-flex flex-md-row flex-column justify-content-between">
 			<div id="constructor" class="anchor"></div>
 			<div class="section_title f3 section_title section_title_left">Подбор цвета</div>
 			<div class="constructor__controls d-flex flex-wrap flex-column justify-content-end">
@@ -350,7 +372,7 @@
 					<div class="pick" data-img="color_20" style="background-color: #2a2c29;"></div>
 				</div>
 			</div>
-			<div class="constructor__house">
+			<div class="constructor__house  d-flex flex-column justify-content-end">
 				<div id="color_1" class="constructor__image active"><img src="assets/images/constructor/1.png"></div>
 				<div id="color_2" class="constructor__image"><img src="assets/images/constructor/2.png"></div>
 				<div id="color_3" class="constructor__image"><img src="assets/images/constructor/3.png"></div>
@@ -606,9 +628,9 @@
 				fade: true,
 				cssEase: 'linear',
 				customPaging : function(slider, i) {
-			        var title = $(slider.$slides[i]).data('title');
+			        // var title = $(slider.$slides[i]).data('title');
 			        var text = $(slider.$slides[i]).data('text');
-			        return $('<button type="button" />').text(text);
+			        return '<div class="process__item_id">.0' + (i + 1) + '</div><div class="process__item_title">' + text + '</div>';
 			    }
 			});
 
