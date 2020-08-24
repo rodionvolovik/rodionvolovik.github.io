@@ -40,12 +40,12 @@
 	
 	.f5
 	{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	
 	.f6
 	{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.modal__inputs
@@ -55,7 +55,7 @@
 
 	.navbar.f3
 	{
-		font-size: 18px;
+		font-size: 17px;
 	}
 
 	.main::before
@@ -80,7 +80,7 @@
 
 	.about__description__text
 	{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.title
@@ -426,12 +426,12 @@
 	
 	.f5
 	{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	
 	.f6
 	{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.modal__inputs
@@ -623,6 +623,19 @@
 		padding: 20px 0;
 	}
 
+	.calc__count
+	{
+		width: 100%;
+	}
+
+	.calc__button {
+		width: 200px;
+		margin-right: 0;
+		margin-left: 25px;
+		align-self: auto;
+		margin-top: 0;
+	}
+
 	.work__info
 	{
 		height: auto;
@@ -748,7 +761,7 @@
 
 	.f5
 	{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.f6
@@ -1006,6 +1019,21 @@
 	.contact__list .footer__title, .contact__list .title {
 		text-align: left;
 	}
+
+	.contact__list .anchor
+	{
+		top: -120px
+	}
+
+	.footer-logo.max
+	{
+		display: none;
+	}
+
+	.footer-logo.min
+	{
+		display: flex;
+	}
 }
 
 @media (max-width: 767px)
@@ -1032,12 +1060,12 @@
 
 	.f5
 	{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.f6
 	{
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.rectangle_decoration
@@ -1254,6 +1282,13 @@
 		margin-bottom: 20px;
 	}
 
+	.calc {
+		background: url(../assets/images/calc.png);
+		background-attachment: unset;
+		background-size: cover;
+		background-position: center;
+	}
+
 	.calc__icon
 	{
 		display: none;
@@ -1276,7 +1311,7 @@
 
 	.calc__input input
 	{
-		max-width: 85%;
+		max-width: 76%;
 	}
 
 	.calc__result
@@ -1305,6 +1340,13 @@
 	.calc__table table tr:nth-child(1) td
 	{
 		font-size: 12px;
+	}
+	.calc__button {
+		width: 200px;
+		margin-right: calc(24% - 54px);
+		margin-left: auto;
+		align-self: flex-end;
+		margin-top: 20px;
 	}
 
 	.advantages
@@ -1383,7 +1425,7 @@
 
 	.clients__item {
 		max-width: 300px;
-		flex: 1 0 100%;
+		flex: 1 0 40%;
 		margin: 0 30px 50px;
 		text-align: center;
 	}
@@ -1459,9 +1501,24 @@
 		padding: 25px 25px 100px!important;
 	}
 
-	.modal__widget .title
+	.modal__widget .small_title
 	{
-		font-size: 24px;
+		font-size: 16px;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.modal__widget input.small_title
+	{
+		margin-top: 0;
+	}
+
+	.modal__widget .title,
+	.modal__widget .btn
+	{
+		font-size: 16px;
+		margin-bottom: 0;
+		margin-bottom: 0;
 	}
 
 	.calc__table table
@@ -1494,6 +1551,16 @@
 	.menu.active
 	{
 		min-width: 100%;
+	}
+
+	.main__text {
+		max-height: 85%;
+		min-height: 85%;
+		margin-right: 40px;
+	}
+
+	.main__text_text {
+		font-size: 35px;
 	}
 
 	.clients__item {

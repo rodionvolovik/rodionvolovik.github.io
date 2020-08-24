@@ -4,6 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	<meta name="version" content="1.0" />
 
+	<title>Марморок - Фасадная система</title>
+
+	<link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+
 	<link rel="preload" href="assets/3rdparty/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="assets/3rdparty/bootstrap/bootstrap-reboot.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="assets/3rdparty/bootstrap/bootstrap-grid.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -38,7 +42,7 @@
 		<div class="navbar__navigation d-flex justify-content-between align-items-center">
 			<div class="navbar__navigation_language active">RU</div>
 			<div class="navbar__navigation_language"><a href="ua/index.html">UA</a></div>
-			<div class="navbar__navigation_phone"><a href="tel:+38 050 788-86-55"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a></div>
+			<div class="navbar__navigation_phone"><a href="tel:+38 067 949-42-66"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a></div>
 			<div id="show" class="navbar__navigation_menu d-flex flex-column justify-content-between align-items-end">
 				<div class="navbar__navigation_menu_text">Меню</div>
 				<div class="navbar__navigation_menu_bar top"></div>
@@ -73,7 +77,7 @@
 					<a href="#">UA</a>
 				</div>
 			</div>
-			<div class="menu__bottom"><a href="tel: +38 050 788-86-55"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a></div>
+			<div class="menu__bottom"><a href="tel: +38 067 949-42-66"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a></div>
 			<div class="menu__bottom"><a href="mainlto: info@marmoroc.com.ua"><i class="fas fa-envelope"></i> info@marmoroc.com.ua</a></div>
 		</div>
 	</div>
@@ -131,7 +135,7 @@
 				</div>
 				<div class="slider_item_square d-flex flex-row">
 					<div class="slider_item_icon"></div>
-					<div>Более 8000 кв.м.</div>
+					<div>5000 кв.м.</div>
 				</div>
 			</div>
 			<div class="slider_item" style="background: url('assets/images/presentation/pres1.png') no-repeat; background-size: cover;">
@@ -141,7 +145,7 @@
 				</div>
 				<div class="slider_item_square d-flex flex-row">
 					<div class="slider_item_icon"></div>
-					<div>Более 3500 кв.м.</div>
+					<div>Более 45000 кв.м.</div>
 				</div>
 			</div>
 			<div class="slider_item" style="background: url('assets/images/presentation/pres4.png') no-repeat; background-size: cover;">
@@ -296,8 +300,13 @@
 				<div class="title f2">Укажите площадь фасада</div>
 				<div class="calc__input f2">
 					<form id="calc__form">
-						<input id="calc__value" autocomplete="off" type="text" value="1" name="calculation"> м<sup>2</sup>
-						<!-- <button class="calc__button" name="submit"> -->
+						<div class="d-flex flex-column flex-sm-column flex-md-row flex-lg-column">
+							<div class="d-flex flex-row flex-wrap">
+								<input id="calc__value" class="d-flex flex-fill flex-grow-1" autocomplete="off" type="number" min="1" value="1" name="calculation">
+								<div class="calc__unit">м<sup>2</sup></div>
+							</div>
+							<button class="calc__button btn btn-blick" name="submit">Рассчитать</button>
+						</div>
 					</form>
 				</div>
 				<div class="calc__description">Например, 180, 240, 360, 600 для коттеджей и 1500, 3200, 7500 для многоэтажек</div>
@@ -338,7 +347,7 @@
 					</tbody>
 				</table>
 				<div id="total" class="calc__result"></div>
-				<div class="calc__option f4">
+				<div class="calc__option f6">
 					<span>
 						<font style="font-size: 30px; line-height: 30px">*</font>
 						Данный просчет является предварительным и может изменяться в зависимости от технологических или проектных решений.&nbsp;<br>
@@ -640,8 +649,9 @@
 	</section>
 	<footer class="fadeInUp">
 		<div class="footer d-flex flex-column flex-lg-row justify-content-between">
-			<div class="d-flex flex-column">
-				<div class="footer-logo"><img src="assets/images/logo footer.png"></div>
+			<div class="footer-logo min"><img src="assets/images/logo footer.png"></div>
+			<div class="d-flex flex-column order-1 order-lg-0">
+				<div class="footer-logo max"><img src="assets/images/logo footer.png"></div>
 				<div class="d-flex flex-column">
 					<div class="footer__title">Язык сайта</div>
 					<a class="btn-sec" href="ua/index.html">Украинский</a>
@@ -659,8 +669,8 @@
 					</div>
 					<div class="d-flex flex-column contact__item order-1">
 						<div class="footer__title">Бухгалтерия</div>
-						<a class="btn-sec" href="tel:+38 067 949-42-66"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a>
-						<a class="btn-sec" href="tel:+38 050 788-86-55"><i class="fas fa-phone fa-rotate-90"></i>+38 050 788-86-55</a>
+						<a class="btn-sec" href="tel:+38 067 214-09-09"><i class="fas fa-phone fa-rotate-90"></i>+38 067 214-09-09</a>
+						<a class="btn-sec" href="tel:+38 050 222-90-11"><i class="fas fa-phone fa-rotate-90"></i>+38 050 222-90-11</a>
 					</div>
 					<div class="d-flex flex-column contact__item order-md-0 order-lg-2">
 						<div class="footer__title">Отдел продаж</div>
