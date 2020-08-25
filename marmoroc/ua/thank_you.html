@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="version" content="1.0" />
+
+	<link rel="shortcut icon" href="../assets/favicon.png" type="image/png">
+
+	<title>Дякуємо | Марморок - Фасадные системы</title>
+
+	<link rel="preload" href="../assets/3rdparty/bootstrap/bootstrap-reboot.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="../assets/3rdparty/bootstrap/bootstrap-grid.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="../assets/3rdparty/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="../assets/3rdparty/fontawesome-free-5.14.0-web/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="../assets/3rdparty/wow/css/libs/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="../css/thank.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+	<noscript><link rel="stylesheet" href="../assets/3rdparty/bootstrap/bootstrap-reboot.min.css"></noscript>
+	<noscript><link rel="stylesheet" href="../assets/3rdparty/bootstrap/bootstrap-grid.min.css"></noscript>
+	<noscript><link rel="stylesheet" href="../assets/3rdparty/bootstrap/bootstrap.min.css"></noscript>
+	<noscript><link rel="stylesheet" href="../assets/3rdparty/fontawesome-free-5.14.0-web/css/all.css"></noscript>
+	<noscript><link rel="stylesheet" href="../css/thank.css"></noscript>
+
+	<style>
+		@font-face {
+			font-family: "Ubuntu";
+			src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+			font-weight: 300;
+		}
+		@font-face {
+			font-family: "Ubuntu";
+			src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+			font-weight: 400;
+		}
+		@font-face {
+			font-family: "Ubuntu";
+			src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
+			font-weight: 500;
+		}
+		@font-face {
+			font-family: "Ubuntu";
+			src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+			font-weight: bold;
+			font-style: italic, oblique;
+			font-weight: 600;
+		}
+
+		body
+		{
+			font-family: Ubuntu;
+			width: 100%;
+			height: 100vh;
+			position: relative;
+			max-width: 1600px;
+			margin: auto;
+		}
+
+		.thank
+		{
+			height: 100%;
+		}
+
+		.thank__icon
+		{
+			color: #6cb15d;
+			font-size: 120px;
+		}
+
+		.close
+		{
+			width: 40px;
+			height: 40px;
+			background: url(../assets/images/cross.png);
+			background-size: contain;
+			cursor: pointer;
+			position: absolute;
+			top: 100px;
+			right: 100px;
+		}
+
+		.close a
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+		}
+
+		.title
+		{
+			font-size: 100px;
+			font-weight: 500;
+		}
+
+		.description
+		{
+			text-align: center;
+		}
+
+		.btn
+		{
+			border: none;
+			background-color: #415271;
+			z-index: 2996;
+			outline: none;
+			color: #fff!important;
+			padding: 15px 50px;
+			border-radius: 0;
+			margin-top: 40px;
+			outline: none;
+			box-shadow: none!important;
+		}
+
+		.btn-blick
+		{
+			background-image: linear-gradient(-45deg,rgba(255,255,255,0) 5%,rgba(255,255,255,.6),rgba(255,255,255,0) 60%);
+			-webkit-animation: blick 3s ease infinite;
+			animation: blick 2.5s ease infinite;
+			background-size: 200% 100%,auto;
+			background-position: 100% 0,0 0;
+			background-repeat: no-repeat;
+		}
+
+		@-webkit-keyframes blick{
+			0%
+			{
+				background-position:200% 0,0 0
+			}
+			100%
+			{
+				background-position:-200% 0,0 0
+			}
+		}
+
+		@keyframes blick{
+			0%
+			{
+				background-position:200% 0,0 0
+			}
+			100%
+			{
+				background-position:-200% 0,0 0
+			}
+		}
+
+		@media (max-width: 768px)
+		{
+			body
+			{
+				padding: 25px;
+			}
+
+			.title
+			{
+				font-size: 60px;
+			}
+
+			.close
+			{
+				width: 20px;
+				height: 20px;
+				top: 25px;
+				right: 25px;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="thank d-flex flex-column justify-content-center align-items-center">
+		<div class="close"><a href="index.html">&nbsp;</a></div>
+		<div class="thank__icon"><i class="fas fa-check-circle"></i></div>
+		<div class="title">Дякуємо!</div>
+		<div class="description">Ми отримали Вашу заявку и зв'яжемося з Вами в найкоротший термін</div>
+		<div><a class="btn btn-blick" href="index.html">На главную</a></div>
+	</div>
+</body>
+</html>
+
+
+
+

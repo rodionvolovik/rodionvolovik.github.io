@@ -12,7 +12,7 @@ $(function () {
 				// data.redirect contains the string URL to redirect to
 				console.log(data.redirect);
 				console.log(data.status);
-				// window.location.href = data.redirect;
+				window.location.href = data.redirect;
 			}
 			else
 			{

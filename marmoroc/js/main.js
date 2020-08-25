@@ -63,8 +63,6 @@ $(document).ready(function(){
 
 		total = aOutPrice + bOutPrice + cOutPrice + dOutPrice
 
-		console.log(aOutPrice);
-
 		$("#aPriceItem").text(aOutItemPrice + aPriceUnit);
 		$("#bPriceItem").text(bOutItemPrice + bPriceUnit);
 		$("#cPriceItem").text(cOutItemPrice + cPriceUnit);
