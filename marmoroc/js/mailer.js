@@ -11,14 +11,15 @@ $(function () {
 			if (data.redirect) {
 				// data.redirect contains the string URL to redirect to
 				console.log(data.redirect);
-				window.location.href = data.redirect;
+				console.log(data.status);
+				// window.location.href = data.redirect;
 			}
 			else
 			{
-				console.log("FAIL");
+				console.log(data.status);
 			}
 		}).fail(function (data) {
-			console.log("fail");
+			console.log(data.status);
 		});
 	}); 
 });
