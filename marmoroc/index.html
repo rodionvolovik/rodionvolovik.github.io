@@ -82,7 +82,7 @@
 		</div>
 	</div>
 	<section id="modal" class="modal__widget">
-		<form id="modal__form" class="d-flex flex-column justify-content-between">
+		<form id="modal__form" method="POST" class="d-flex flex-column justify-content-between">
 			<div class="modal__title">
 				<div id="modal__close" class="modal__close"></div>
 				<div class="small_title f4">Остались вопросы?</div>
@@ -107,7 +107,7 @@
 				<textarea rows="3" id="user__request" name="user_message" class="small_title f4"></textarea>
 			</div>
 			<div class="modal__inputs d-flex justify-content-end">
-				<button class="btn btn-blick" type="submit">Отправить</button>
+				<button class="btn btn-blick" type="submit" name="submit">Отправить</button>
 			</div>
 		</form>
 	</section>
