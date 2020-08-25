@@ -10,7 +10,12 @@ $(function () {
 		}).done(function (data) {
 			if (data.redirect) {
 				// data.redirect contains the string URL to redirect to
+				console.log(data.redirect);
 				window.location.href = data.redirect;
+			}
+			else
+			{
+				console.log("FAIL");
 			}
 		}).fail(function (data) {
 			console.log("fail");
