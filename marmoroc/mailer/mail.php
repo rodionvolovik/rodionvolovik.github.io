@@ -1,5 +1,7 @@
 <?php
 
+    echo("Started script");
+
 if((isset($_POST['user_name'])) && (isset($_POST['user_phone']) && $_POST['user_email']!="")){ 
     $to = 'rodionvolovik@gmail.com';
     $subject = 'Новый контакт с сайта marmoroc.com.ua';
