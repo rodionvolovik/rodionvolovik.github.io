@@ -63,20 +63,20 @@ $(document).ready(function(){
 
 		total = aOutPrice + bOutPrice + cOutPrice + dOutPrice
 
-		$("#aPriceItem").text(aOutItemPrice + aPriceUnit);
-		$("#bPriceItem").text(bOutItemPrice + bPriceUnit);
-		$("#cPriceItem").text(cOutItemPrice + cPriceUnit);
-		$("#dPriceItem").text(dOutItemPrice + dPriceUnit);
+		$("#aPriceItem").text(aOutItemPrice.toLocaleString('ru-RU') + aPriceUnit);
+		$("#bPriceItem").text(bOutItemPrice.toLocaleString('ru-RU') + bPriceUnit);
+		$("#cPriceItem").text(cOutItemPrice.toLocaleString('ru-RU') + cPriceUnit);
+		$("#dPriceItem").text(dOutItemPrice.toLocaleString('ru-RU') + dPriceUnit);
 
-		$("#aItemCount").text(aOutCount + aItemUnit);
-		$("#bItemCount").text(bOutCount + bItemUnit);
-		$("#cItemCount").text(cOutCount + cItemUnit);
-		$("#dItemCount").text(dOutCount + dItemUnit);
+		$("#aItemCount").text(aOutCount.toLocaleString('ru-RU') + aItemUnit);
+		$("#bItemCount").text(bOutCount.toLocaleString('ru-RU') + bItemUnit);
+		$("#cItemCount").text(cOutCount.toLocaleString('ru-RU') + cItemUnit);
+		$("#dItemCount").text(dOutCount.toLocaleString('ru-RU') + dItemUnit);
 
-		$("#aTotalPrice").text(aOutPrice.toFixed(2) + totalUnit);
-		$("#bTotalPrice").text(bOutPrice.toFixed(2) + totalUnit);
-		$("#cTotalPrice").text(cOutPrice.toFixed(2) + totalUnit);
-		$("#dTotalPrice").text(dOutPrice.toFixed(2) + totalUnit);
+		$("#aTotalPrice").text(aOutPrice.toLocaleString('ru-RU') + totalUnit);
+		$("#bTotalPrice").text(bOutPrice.toLocaleString('ru-RU') + totalUnit);
+		$("#cTotalPrice").text(cOutPrice.toLocaleString('ru-RU') + totalUnit);
+		$("#dTotalPrice").text(dOutPrice.toLocaleString('ru-RU') + totalUnit);
 
 		$("#total").text("Итоговая сумма: " + total.toFixed(2) + totalUnit)
 

@@ -8,18 +8,11 @@ $(function () {
 		dataType: "json", // Add datatype
 		data: form_data
 		}).done(function (data) {
-			if (data.redirect) {
-				// data.redirect contains the string URL to redirect to
-				console.log(data.redirect);
-				console.log(data.status);
-				window.location.href = data.redirect;
-			}
-			else
-			{
-				console.log(data.status);
-			}
+			console.log(data);
+			console.log(data.hasOwnProperty('redirect'));
+			window.location.href = data.redirect;
 		}).fail(function (data) {
-			console.log(data.status);
+			console.log("fail");
 		});
 	}); 
 });

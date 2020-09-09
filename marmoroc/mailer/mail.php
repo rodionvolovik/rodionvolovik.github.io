@@ -18,7 +18,7 @@ if((isset($_POST['user_name'])) && (isset($_POST['user_phone']) && $_POST['user_
     $headers .= "From: Marmoroc <info@marmoroc.com.ua>\r\n"; 
     mail($to, $subject, $message, $headers);
 
-    echo json_encode(array('status' => 'success', 'redirect' => 'thank_you.html'));
+    echo json_encode(array('status' => 'success', 'redirect' => '/thank_you.html'));
 } else {
     echo json_encode(array('status' => 'error'));
 }

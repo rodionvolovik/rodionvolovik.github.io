@@ -188,7 +188,8 @@ section,
     justify-content: center;
     display: flex;
     border-radius: 50%;
-    font-size: 30px;
+	font-size: 30px;
+	display: none;
 }
 
 .button__text
@@ -196,6 +197,7 @@ section,
 	font-size: 22px;
 	font-weight: 500;
 	margin-left: 24px;
+	display: none;
 }
 
 .small_title
@@ -306,9 +308,18 @@ section,
 
 .navbar__scrolled
 {
+	/* background: rgba(255,255,255,.6); */
 	background: #fff;
+	opacity: 0.6;
 	transition: all 200ms linear;
 	color: #415271;
+	min-height: 70px;
+	font-size: 18px;
+}
+
+.navbar__scrolled:hover
+{
+	opacity: 1;
 }
 
 .navbar a
@@ -986,6 +997,11 @@ section,
     background: #415271;
 }
 
+.process__slider .slick-arrow
+{
+	display: none!important;
+}
+
 .process__slider .slick-slide
 {
 	width: 100%;
@@ -1404,6 +1420,12 @@ section,
 	margin-right: 10px;
 	margin-bottom: 10px;
 	border: 2px solid transparent;
+	padding: 5px;
+}
+
+.pick.white
+{
+	color: #fff;
 }
 
 .constructor__color_picker > div:hover

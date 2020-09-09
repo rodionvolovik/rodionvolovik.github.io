@@ -479,6 +479,18 @@
 		padding-bottom: 120px;
 	}
 
+	.process__slider .slick-next
+	{
+		display: flex!important;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		border: none;
+		color: transparent;
+		outline: none;
+	}
+
 	.process .process__slider img
 	{
 		width: 50%;
@@ -1208,14 +1220,14 @@
 	}
 
 	.main__slider button.slick-arrow {
-		bottom: 40px;
+		bottom: 70px;
 		right: 40px;
 		width: 40px;
 		height: 40px;
 	}
 
 	.main__slider .slick-dots {
-		bottom: 40px;
+		bottom: 70px;
 		right: 50%;
 		justify-content: center;
 		margin-right: -100px;
@@ -1528,14 +1540,14 @@
 
 	.main__slider .slider_item_location,
 	.main__slider .slider_item_square {
-		bottom: 140px;
+		bottom: 160px;
 		left: 40px;
 		width: 200px;
 	}
 
 	.main__slider .slider_item_square
 	{
-		bottom: 100px;
+		bottom: 120px;
 	}
 }
 
