@@ -240,8 +240,7 @@
 		font-size: 18px;
 	}
 
-	.calc__result,
-	.calc .title
+	.calc__result
 	{
 		font-size: 25px;
 	}
@@ -432,6 +431,11 @@
 	.f6
 	{
 		font-size: 16px;
+	}
+
+	.navbar__scrolled
+	{
+		opacity: 1;
 	}
 
 	.modal__inputs
@@ -650,7 +654,7 @@
 
 	.work__info
 	{
-		height: auto;
+		height: 500px;
 		width: 400px;
 		padding: 30px;
 	}
@@ -668,6 +672,10 @@
 	.works__slider .slick-arrow
 	{
 		bottom: 0;
+	}
+
+	.works__slider .slick-dots {
+		left: calc(50% - 425px);
 	}
 
 	.clients
@@ -984,7 +992,7 @@
 	.works__slider .slick-dots
 	{
 		top: -25px;
-		left: calc(50% - 130px);
+		left: calc(50% - 220px);
 	}
 
 	.works .title
@@ -1220,14 +1228,14 @@
 	}
 
 	.main__slider button.slick-arrow {
-		bottom: 70px;
+		bottom: 150px;
 		right: 40px;
 		width: 40px;
 		height: 40px;
 	}
 
 	.main__slider .slick-dots {
-		bottom: 70px;
+		bottom: 150px;
 		right: 50%;
 		justify-content: center;
 		margin-right: -100px;
@@ -1304,11 +1312,6 @@
 	.calc__icon
 	{
 		display: none;
-	}
-
-	.calc .title
-	{
-		font-size: 22px;
 	}
 
 	.calc__count
@@ -1433,6 +1436,17 @@
 	.works__slider .slick-dots
 	{
 		margin: 0;
+		left: calc(50% - 155px);
+	}
+
+	.works__slider .slick-dots li
+	{
+		margin: 14px 5px;
+	}
+
+	.works__slider .slick-dots li:before
+	{
+		width: 25px;
 	}
 
 	.clients__item {
@@ -1540,14 +1554,14 @@
 
 	.main__slider .slider_item_location,
 	.main__slider .slider_item_square {
-		bottom: 160px;
+		bottom: 260px;
 		left: 40px;
 		width: 200px;
 	}
 
 	.main__slider .slider_item_square
 	{
-		bottom: 120px;
+		bottom: 210px;
 	}
 }
 
@@ -1566,8 +1580,8 @@
 	}
 
 	.main__text {
-		max-height: 85%;
-		min-height: 85%;
+		max-height: 70%;
+		min-height: 70%;
 		margin-right: 40px;
 	}
 
