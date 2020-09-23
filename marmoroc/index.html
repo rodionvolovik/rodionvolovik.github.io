@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta name="version" content="1.0" />
+	<meta name="description" content="Энергосберегающий фасад с вентилируемым воздушным зазором. Простой всесезонный монтаж фасадной плитки, при любых погодных условиях. До 40% снижаются затраты на энергопотребление при эксплуатации объекта. Сокращаются расходы на отопление и кондиционирование. Нам доверяют профессионалы."/>
+    <meta id="lang" lang="ru-UA">
 
-	<title>Марморок - Фасадная система</title>
+	<title>Вентилируемые фасады Марморок - заказать в Украине. Купить Фасадную плитку.</title>
 
 	<link rel="shortcut icon" href="assets/favicon.png" type="image/png">
 
@@ -41,7 +43,7 @@
 		<div class="logo"><a href="#"><img src="assets/images/logo.png"></a></div>
 		<div class="navbar__navigation d-flex justify-content-between align-items-center">
 			<div class="navbar__navigation_language active">RU</div>
-			<div class="navbar__navigation_language"><a href="ua/index.html">UA</a></div>
+			<div class="navbar__navigation_language"><a href="ua/">UA</a></div>
 			<div class="navbar__navigation_phone"><a href="tel:+38 067 949-42-66"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a></div>
 			<div id="show" class="navbar__navigation_menu d-flex flex-column justify-content-between align-items-end">
 				<div class="navbar__navigation_menu_text">Меню</div>
@@ -71,10 +73,10 @@
 			<div class="menu__separator"></div>
 			<div class="d-flex flex-row justify-content-end menu__bottom">
 				<div class="menu__lang active">
-					<a href="#">RU</a>
+					<a>RU</a>
 				</div>
 				<div class="menu__lang">
-					<a href="#">UA</a>
+					<a href="ua/">UA</a>
 				</div>
 			</div>
 			<div class="menu__bottom"><a href="tel: +38 067 949-42-66"><i class="fas fa-phone fa-rotate-90"></i>+38 067 949-42-66</a></div>
@@ -95,7 +97,7 @@
 				</div>
 				<div class="d-flex flex-column">
 					<div class="small_title f4">Email</div>
-					<input class="small_title f4" name="user_email" type="text" required>
+					<input class="small_title f4" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" required>
 				</div>
 				<div class="d-flex flex-column">
 					<div class="small_title f4">Телефон</div>
@@ -109,6 +111,7 @@
 			<div class="modal__inputs d-flex justify-content-end">
 				<button class="btn btn-blick" type="submit" name="submit">Отправить</button>
 			</div>
+			<input type="text" name="lang" value="" style="display: none;">
 		</form>
 	</section>
 	<section class="main">
@@ -180,9 +183,7 @@
 			<div class="about__description__text f5 order-1 order-lg-0">
 				<div class="title f1">Марморок</div>
 				<div>Энергосберегающий фасад с вентилируемым воздушным зазором.<br>
-				Зимой сохраняет тепло, а летом — прохладу. Надежно защищает стены<br> 
-				здания и теплоизоляцию от негативного воздействия окружающей среды<br> 
-				(ультрафиолет, осадки, ветровые нагрузки и т. д.).<br>
+				Зимой сохраняет тепло, а летом — прохладу.<br>Надежно защищает стены здания и теплоизоляцию от негативного воздействия окружающей среды (ультрафиолет, осадки, ветровые нагрузки и т. д.)<br>
 				Монтаж производится круглый год.<br>
                 Все элементы выполнены из экологически чистых материалов.<br>
 			</div>
@@ -200,27 +201,47 @@
 		<div class="process__slogan f6">Простая и надежная система сборки</div>
 		<div class="process__slider d-flex flex-column flex-lg-row justify-content-center align-items-center">
 			<div data-text="Установка монтажных консолей">
-				<img src="assets/images/steps/step_1.png">
+				<picture>
+					<source srcset="assets/images/steps/webp/step_1.webp" type="image/webp">
+					<source srcset="assets/images/steps/step_1.png" type="image/png">
+					<img src="assets/images/steps/step_1.png">
+				</picture>
 				<div class="process__slider_description f5">01. Установка монтажных консолей</div>
 				<div class="process__slider_id">.01</div>
 			</div>
 			<div data-text="Крепление горизонтальных профилей">
-				<img src="assets/images/steps/step_2.png">
+				<picture>
+					<source srcset="assets/images/steps/webp/step_2.webp" type="image/webp">
+					<source srcset="assets/images/steps/step_2.png" type="image/png">
+					<img src="assets/images/steps/step_2.png">
+				</picture>
 				<div class="process__slider_description f5">02. Крепление горизонтальных профилей</div>
 				<div class="process__slider_id">.02</div>
 			</div>
 			<div data-text="Монтаж утеплителя">
-				<img src="assets/images/steps/step_3.png">
+				<picture>
+					<source srcset="assets/images/steps/webp/step_3.webp" type="image/webp">
+					<source srcset="assets/images/steps/step_3.png" type="image/png">
+					<img src="assets/images/steps/step_3.png">
+				</picture>
 				<div class="process__slider_description f5">03. Монтаж утеплителя</div>
 				<div class="process__slider_id">.03</div>
 			</div>
 			<div data-text="Крепление вертикального профиля">
-				<img src="assets/images/steps/step_4.png">
+				<picture>
+					<source srcset="assets/images/steps/webp/step_4.webp" type="image/webp">
+					<source srcset="assets/images/steps/step_4.png" type="image/png">
+					<img src="assets/images/steps/step_4.png">
+				</picture>
 				<div class="process__slider_description f5">04. Крепление вертикального профиля</div>
 				<div class="process__slider_id">.04</div>
 			</div>
 			<div data-text="Монтаж плитки">
-				<img src="assets/images/steps/step_5.png">
+				<picture>
+					<source srcset="assets/images/steps/webp/step_5.webp" type="image/webp">
+					<source srcset="assets/images/steps/step_5.png" type="image/png">
+					<img src="assets/images/steps/step_5.png">
+				</picture>
 				<div class="process__slider_description f5">05. Монтаж плитки</div>
 				<div class="process__slider_id">.05</div>
 			</div>
@@ -350,7 +371,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<div id="total" class="calc__result"></div>
+				<div class="calc__result d-flex flex-row"><div>Итоговая сумма:&nbsp;</div><div id="total"></div></div>
 				<div class="calc__option f6">
 					<span>
 						<font style="font-size: 30px; line-height: 30px">*</font>
@@ -455,26 +476,146 @@
 				</div>
 			</div>
 			<div class="constructor__house  d-flex flex-column justify-content-end">
-				<div id="color_1" class="constructor__image active"><img src="assets/images/constructor/1.png"></div>
-				<div id="color_2" class="constructor__image"><img src="assets/images/constructor/2.png"></div>
-				<div id="color_3" class="constructor__image"><img src="assets/images/constructor/3.png"></div>
-				<div id="color_4" class="constructor__image"><img src="assets/images/constructor/4.png"></div>
-				<div id="color_5" class="constructor__image"><img src="assets/images/constructor/5.png"></div>
-				<div id="color_6" class="constructor__image"><img src="assets/images/constructor/6.png"></div>
-				<div id="color_7" class="constructor__image"><img src="assets/images/constructor/7.png"></div>
-				<div id="color_8" class="constructor__image"><img src="assets/images/constructor/8.png"></div>
-				<div id="color_9" class="constructor__image"><img src="assets/images/constructor/9.png"></div>
-				<div id="color_10" class="constructor__image"><img src="assets/images/constructor/10.png"></div>
-				<div id="color_11" class="constructor__image"><img src="assets/images/constructor/11.png"></div>
-				<div id="color_12" class="constructor__image"><img src="assets/images/constructor/12.png"></div>
-				<div id="color_13" class="constructor__image"><img src="assets/images/constructor/13.png"></div>
-				<div id="color_14" class="constructor__image"><img src="assets/images/constructor/14.png"></div>
-				<div id="color_15" class="constructor__image"><img src="assets/images/constructor/15.png"></div>
-				<div id="color_16" class="constructor__image"><img src="assets/images/constructor/16.png"></div>
-				<div id="color_17" class="constructor__image"><img src="assets/images/constructor/17.png"></div>
-				<div id="color_18" class="constructor__image"><img src="assets/images/constructor/18.png"></div>
-				<div id="color_19" class="constructor__image"><img src="assets/images/constructor/19.png"></div>
-				<div id="color_20" class="constructor__image"><img src="assets/images/constructor/20.png"></div>
+				<div id="color_1" class="constructor__image active">
+					<picture>
+						<source srcset="assets/images/constructor/webp/1.webp" type="image/webp">
+						<source srcset="assets/images/constructor/1.png" type="image/png">
+						<img src="assets/images/constructor/1.png">
+					</picture>
+				</div>
+				<div id="color_2" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/2.webp" type="image/webp">
+						<source srcset="assets/images/constructor/2.png" type="image/png">
+						<img src="assets/images/constructor/2.png">
+					</picture>
+				</div>
+				<div id="color_3" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/3.webp" type="image/webp">
+						<source srcset="assets/images/constructor/3.png" type="image/png">
+						<img src="assets/images/constructor/3.png">
+					</picture>
+				</div>
+				<div id="color_4" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/4.webp" type="image/webp">
+						<source srcset="assets/images/constructor/4.png" type="image/png">
+						<img src="assets/images/constructor/4.png">
+					</picture>
+				</div>
+				<div id="color_5" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/5.webp" type="image/webp">
+						<source srcset="assets/images/constructor/5.png" type="image/png">
+						<img src="assets/images/constructor/5.png">
+					</picture>
+				</div>
+				<div id="color_6" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/6.webp" type="image/webp">
+						<source srcset="assets/images/constructor/6.png" type="image/png">
+						<img src="assets/images/constructor/6.png">
+					</picture>
+				</div>
+				<div id="color_7" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/7.webp" type="image/webp">
+						<source srcset="assets/images/constructor/7.png" type="image/png">
+						<img src="assets/images/constructor/7.png">
+					</picture>
+				</div>
+				<div id="color_8" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/8.webp" type="image/webp">
+						<source srcset="assets/images/constructor/8.png" type="image/png">
+						<img src="assets/images/constructor/8.png">
+					</picture>
+				</div>
+				<div id="color_9" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/9.webp" type="image/webp">
+						<source srcset="assets/images/constructor/9.png" type="image/png">
+						<img src="assets/images/constructor/9.png">
+					</picture>
+				</div>
+				<div id="color_10" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/10.webp" type="image/webp">
+						<source srcset="assets/images/constructor/10.png" type="image/png">
+						<img src="assets/images/constructor/10.png">
+					</picture>
+				</div>
+				<div id="color_11" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/11.webp" type="image/webp">
+						<source srcset="assets/images/constructor/11.png" type="image/png">
+						<img src="assets/images/constructor/11.png">
+					</picture>
+				</div>
+				<div id="color_12" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/12.webp" type="image/webp">
+						<source srcset="assets/images/constructor/12.png" type="image/png">
+						<img src="assets/images/constructor/12.png">
+					</picture>
+				</div>
+				<div id="color_13" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/13.webp" type="image/webp">
+						<source srcset="assets/images/constructor/13.png" type="image/png">
+						<img src="assets/images/constructor/13.png">
+					</picture>
+				</div>
+				<div id="color_14" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/14.webp" type="image/webp">
+						<source srcset="assets/images/constructor/14.png" type="image/png">
+						<img src="assets/images/constructor/14.png">
+					</picture>
+				</div>
+				<div id="color_15" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/15.webp" type="image/webp">
+						<source srcset="assets/images/constructor/15.png" type="image/png">
+						<img src="assets/images/constructor/15.png">
+					</picture>
+				</div>
+				<div id="color_16" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/16.webp" type="image/webp">
+						<source srcset="assets/images/constructor/16.png" type="image/png">
+						<img src="assets/images/constructor/16.png">
+					</picture>
+				</div>
+				<div id="color_17" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/17.webp" type="image/webp">
+						<source srcset="assets/images/constructor/17.png" type="image/png">
+						<img src="assets/images/constructor/17.png">
+					</picture>
+				</div>
+				<div id="color_18" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/18.webp" type="image/webp">
+						<source srcset="assets/images/constructor/18.png" type="image/png">
+						<img src="assets/images/constructor/18.png">
+					</picture>
+				</div>
+				<div id="color_19" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/19.webp" type="image/webp">
+						<source srcset="assets/images/constructor/19.png" type="image/png">
+						<img src="assets/images/constructor/19.png">
+					</picture>
+				</div>
+				<div id="color_20" class="constructor__image">
+					<picture>
+						<source srcset="assets/images/constructor/webp/20.webp" type="image/webp">
+						<source srcset="assets/images/constructor/20.png" type="image/png">
+						<img src="assets/images/constructor/20.png">
+					</picture>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -488,7 +629,7 @@
 			<div class="works__portfolio">
 				<div class="works__slider d-flex">
 					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-						<div class="works__image" style="background: url('assets/images/presentation/manufactura.png'); background-size: cover; background-position: center;"></div>
+						<div class="works__image" style="background: url('assets/images/works/1.png'); background-size: cover; background-position: center;"></div>
 						
 						<div class="work__info d-flex flex-column">
 							<div class="d-flex flex-row flex-lg-column align-items-center align-items-lg-baseline">
@@ -500,12 +641,12 @@
 							</div>
 							<div class="work__description">Многофункциональный жилой комплекс с применением инновационных технологий</div>
 							<div class="work__stats"><b>Формат плитки:</b> 600 х 105 х 25 мм</div>
-							<div class="work__stats"><b>Цвет плитки:</b> #87X</div>
+							<div class="work__stats"><b>Цвет плитки:</b> V02, V05, V06, V20</div>
 							<div class="work__stats"><b>Площадь фасада:</b> 12 500 м<sup>2</sup></div>
 						</div>
 					</div>
 					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-						<div class="works__image" class="" style="background: url('assets/images/presentation/pres3.png'); background-size: cover; background-position: center;"></div>
+						<div class="works__image" class="" style="background: url('assets/images/works/4.png'); background-size: cover; background-position: center;"></div>
 					
 						<div class="work__info d-flex flex-column">
 							<div class="d-flex flex-row flex-lg-column align-items-center align-items-lg-baseline">
@@ -523,12 +664,12 @@
 									<div>600 х 205 х 25 мм</div>
 								</div>
 							</div>
-							<div class="work__stats"><b>Цвет плитки:</b> #45N</div>
+							<div class="work__stats"><b>Цвет плитки:</b> V01, V02, V07, V08, V09, V16</div>
 							<div class="work__stats"><b>Площадь фасада:</b> 15700 м<sup>2</sup></div>
 						</div>
 					</div>
 					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-						<div class="works__image" style="background: url('assets/images/presentation/pres1.png'); background-size: cover; background-position: center;"></div>
+						<div class="works__image" style="background: url('assets/images/works/2.png'); background-size: cover; background-position: center;"></div>
 						
 						<div class="work__info d-flex flex-column">
 							<div class="d-flex flex-row flex-lg-column align-items-center align-items-lg-baseline">
@@ -538,14 +679,14 @@
 								</div>
 								<div class="title f1">АТБ-Маркет</div>
 							</div>
-							<div class="work__description">Новое строительство и реконструкция магазинов сети «АТБ-Маркет». Реализовано более 250 объектов по всей территории Украины.</div>
+							<div class="work__description">Новое строительство и реконструкция магазинов сети «АТБ-Маркет». Реализовано более 360 объектов по всей территории Украины.</div>
 							<div class="work__stats"><b>Формат плитки:</b> 600 х 105 х 25 мм</div>
-							<div class="work__stats"><b>Цвет плитки:</b> #56R</div>
+							<div class="work__stats"><b>Цвет плитки:</b> V20</div>
 							<div class="work__stats"><b>Площадь фасада:</b> 45 000 м<sup>2</sup></div>
 						</div>
 					</div>
 					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
-						<div class="works__image" class="" style="background: url('assets/images/presentation/pres4.png'); background-size: cover; background-position: center;"></div>
+						<div class="works__image" class="" style="background: url('assets/images/works/5.png'); background-size: cover; background-position: center;"></div>
 					
 						<div class="work__info d-flex flex-column">
 							<div class="d-flex flex-row flex-lg-column align-items-center align-items-lg-baseline">
@@ -563,7 +704,7 @@
 										<div>600 х 205 х 25 мм</div>
 									</div>
 								</div>
-							<div class="work__stats"><b>Цвет плитки:</b> #967V</div>
+							<div class="work__stats"><b>Цвет плитки:</b> V02, V03, V10, V13, V17, V20</div>
 							<div class="work__stats"><b>Площадь фасада:</b> 11 700 м<sup>2</sup></div>
 						</div>
 					</div>
@@ -586,7 +727,7 @@
 										<div>300 х 105 х 25 мм</div>
 									</div>
 								</div>
-							<div class="work__stats"><b>Цвет плитки:</b> #967V</div>
+							<div class="work__stats"><b>Цвет плитки:</b> V01, V05, V10, V13, V14, V16, V20</div>
 							<div class="work__stats"><b>Площадь фасада:</b> 10 500 м<sup>2</sup></div>
 						</div>
 					</div>
@@ -603,7 +744,7 @@
 							</div>
 							<div class="work__description">Жилой комплекс</div>
 							<div class="work__stats"><b>Формат плитки:</b> 600 х 105 х 25 мм</div>
-							<div class="work__stats"><b>Цвет плитки:</b> #56R</div>
+							<div class="work__stats"><b>Цвет плитки:</b> V02</div>
 							<div class="work__stats"><b>Площадь фасада:</b> 11 700 м<sup>2</sup></div>
 						</div>
 					</div>
@@ -620,7 +761,7 @@
 							</div>
 							<div class="work__description">Высокоэтажный жилой комплекс</div>
 							<div class="work__stats"><b>Формат плитки:</b> 600 х 105 х 25 мм</div>
-							<div class="work__stats"><b>Цвет плитки:</b> #56R</div>
+							<div class="work__stats"><b>Цвет плитки:</b> V05</div>
 							<div class="work__stats"><b>Площадь фасада:</b> 15 000 м<sup>2</sup></div>
 						</div>
 					</div>
@@ -754,7 +895,7 @@
 				<div class="footer-logo max"><img src="assets/images/logo footer.png"></div>
 				<div class="d-flex flex-column">
 					<div class="footer__title">Язык сайта</div>
-					<a class="btn-sec" href="ua/index.html">Українська</a>
+					<a class="btn-sec" href="ua/">Українська</a>
 					<a class="btn-sec active">Русский</a>
 				</div>
 			</div>
@@ -764,7 +905,7 @@
 				<div class="d-flex flex-column flex-lg-row">
 					<div class="d-flex flex-column contact__item order-md-2 order-lg-0">
 						<div class="footer__title">Почта</div>
-						<a class="btn-sec" href="mailto:sup@marmoroc.com.ua"><i class="fas fa-envelope"></i> sup@marmoroc.com.ua</a>
+						<!-- <a class="btn-sec" href="mailto:sup@marmoroc.com.ua"><i class="fas fa-envelope"></i> sup@marmoroc.com.ua</a> -->
 						<a class="btn-sec" href="mailto:info@marmoroc.com.ua"><i class="fas fa-envelope"></i> info@marmoroc.com.ua</a>
 					</div>
 					<div class="d-flex flex-column contact__item order-1">
@@ -848,7 +989,9 @@
 			        // var title = $(slider.$slides[i]).data('title');
 			        var text = $(slider.$slides[i]).data('text');
 			        return '<div class="process__item_id">.0' + (i + 1) + '</div><div class="process__item_title">' + text + '</div>';
-			    }
+			    },
+				prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-play" style="transform: rotate(180deg)"></i></button>',
+				nextArrow: '<button type="button" class="slick-next"><i class="fas fa-play""></i></button>'
 			});
 
 			// Works slider
@@ -857,10 +1000,14 @@
 				arrows: true,
 				infinite: true,
 				autoplay: true,
-				fade: true,
+				// fade: true,
 				speed: 700,
 				prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-play" style="transform: rotate(180deg)"></i></button>',
 				nextArrow: '<button type="button" class="slick-next"><i class="fas fa-play""></i></button>'
+			});
+
+			$('.works__slider').on('click', '.slick-slide', function(){
+				$(".works__slider").slick('slickNext');
 			});
 
 			$('.collapse').collapse();
