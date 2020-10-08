@@ -73,7 +73,7 @@
                             </a>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" data-bg="red">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" data-bg="img/alba_works.jpg">
                             <div class="card-body">
                                 <ul>
                                     <li>Корпоративные сайты</li>
@@ -93,7 +93,7 @@
                             </a>
                         </div>
 
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" data-bg="black">
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" data-bg="img/bitreport.jpg">
                             <div class="card-body">
                                 Anim heard of them accusamus labore sustainable VHS.
                             </div>
@@ -108,7 +108,7 @@
                             </a>
                         </div>
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" data-bg="green">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" data-bg="img/24rolls.jpg">
                             <div class="card-body">
                                 Любой бизнес требует постоянной работы и вложений. Мы обеспечим оперативную и своевременную техническую поддержку вашего цифрового продукта.
                             </div>
@@ -118,7 +118,7 @@
                 <a class="btn-main align-self-end" href="#works">Узнать больше</a>
             </div>
             <div class="services-image col-6">
-                <div class="services-image_bg" style="background-color: red;"></div>
+                <div class="services-image_bg" style="background: url(img/alba_works.jpg) center/cover no-repeat;"></div>
             </div>
         </div>
     </section>
@@ -143,8 +143,7 @@
     <script>
         $('#accordion').on('shown.bs.collapse', function (event) {
             bg = $(event.target).attr('data-bg');
-            console.log(bg);
-            $(".services-image_bg").css("background-color", bg);
+            $(".services-image_bg").css("background", "url(" +  bg + ") center/cover no-repeat");
         })
     </script>
 </body>
