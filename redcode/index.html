@@ -3,16 +3,30 @@
 <head>
 </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery_ui_1.8.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/changing.css">
+    <meta charset="utf-8">
+    
+    <link rel="preload" href="assets/3rdparty/bootstrap/bootstrap-reboot.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="assets/3rdparty/bootstrap/bootstrap-grid.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/3rdparty/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <link rel="preload" href="assets/3rdparty/fontawesome-free-5.14.0-web/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <link rel="preload" href="assets/3rdparty/wow/css/libs/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+	<link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/changing.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/changing.js"></script>
+	<noscript><link rel="stylesheet" href="assets/3rdparty/bootstrap/bootstrap-reboot.min.css"></noscript>
+	<noscript><link rel="stylesheet" href="assets/3rdparty/bootstrap/bootstrap-grid.min.css"></noscript>
+	<noscript><link rel="stylesheet" href="assets/3rdparty/bootstrap/bootstrap.min.css"></noscript>
+	<noscript><link rel="stylesheet" href="assets/3rdparty/fontawesome-free-5.14.0-web/css/all.css"></noscript>
+	<noscript><link rel="stylesheet" href="assets/3rdparty/wow/css/libs/animate.css"></noscript>
+	<noscript><link rel="stylesheet" href="css/main.css"></noscript>
+	<noscript><link rel="stylesheet" href="css/changing.css"></noscript>
+    <noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
+    
 	<title>Web development agency Redcode</title>
 </head>
 <body>
@@ -32,86 +46,24 @@
             </div>
 		</nav>
 	</div>
-    <div class="height-full d-flex align-items-end">
+    <div class="main d-flex align-items-center">
         <div class="v-lines">
             <div class="v-lines-outer">
                 <div class="v-lines-inner"></div>
                 <div class="v-lines-shadow"></div>
             </div>
         </div>
-        <div class="container">
+        <div class="main-text d-flex flex-column">
             <h1 class="title">Digital агентство <span class="bg-red thin" style="padding: 0 10px;"> полного цикла </span></h1>
             <h1 class="text-uppercase">Технологически совершенные решения в создании</h1>
             <h1 class="changing-wrapper text-uppercase"><p class="changing" style="display: inline-block;">Вебсайта</p><span class="changing-ease">для вашего бизнеса</span></h1>
             <a class="btn-main" href="#">Оценить проект</a>
         </div>
     </div>
-    <div class="works">
-        <div class="container">
-            <div class="works__item row">
-                <div class="works__item-description col-lg-3 col-md-3 col-xs-12">
-                <div class="works__item-overlay overlay-left"><a href="#" style="display: inline-block;width: 100%;height: 100%;position:relative;"></a></div>
-                    <h2 class="works__item-description__title">Alba</h2>
-                    <div class="works__item-description__title-min">Ателье авторской мебели</div>
-                    <div class="works__item-description__summary">
-                        <ul>
-                            <li>Бизнес айдентика</li>
-                            <li>Корпоративный стиль</li>
-                            <li>Логотип</li>
-                            <li>Редизайн вебсайта</li>
-                            <li>Разработка вебсайта</li>
-                            <li>E-commerce</li>
-                        </ul>
-                    </div>
-                    <a class="works__item-description__link btn-main" href="http://alba.com.ua" target="_blank">Посетить вебсайт  <i class="fa fa-arrow-right"></i></a>
-                </div>
-                <div class="works__item-preview col-lg-9 col-md-9 col-xs-12">
-                    <div class="row" style="height: 100%">
-                        <div class="works__item-preview__transform works1" style="will-change: transform; transform: perspective(1500px) rotateX(0deg) rotateY(0deg);"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="works__item row">
-                <div class="works__item-description col-lg-3 col-md-3 col-xs-12">
-                <div class="works__item-overlay overlay-right"><a href="#" style="display: inline-block;width: 100%;height: 100%;"></a></div>
-                    <h2 class="works__item-description__title">Bitreport</h2>
-                    <div class="works__item-description__title-min">Новости криптовалютного мира</div>
-                    <div class="works__item-description__summary">
-                        <ul>
-                            <li>Логотип</li>
-                            <li>Редизайн вебсайта</li>
-                            <li>Разработка вебсайта</li>
-                        </ul>
-                    </div>
-                    <a class="works__item-description__link btn-main" href="https://bitreport.io" target="_blank">Посетить вебсайт  <i class="fa fa-arrow-right"></i></a>
-                </div>
-                <div class="works__item-preview col-lg-9 col-md-9 col-xs-12">
-                    <div class="row" style="height: 100%">
-                        <div class="works__item-preview__transform works2" style="will-change: transform; transform: perspective(1500px) rotateX(0deg) rotateY(0deg);"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="works__item row">
-                <div class="works__item-description col-lg-3 col-md-3 col-xs-12">
-                <div class="works__item-overlay overlay-right"><a href="#" style="display: inline-block;width: 100%;height: 100%;"></a></div>
-                    <h2 class="works__item-description__title">24Rolls</h2>
-                    <div class="works__item-description__title-min">Доставка японской кухни</div>
-                    <div class="works__item-description__summary">
-                        <ul>
-                            <li>Логотип</li>
-                            <li>Разработка вебсайта</li>
-                        </ul>
-                    </div>
-                    <a class="works__item-description__link btn-main" href="http://24rolls.zp.ua" target="_blank">Посетить вебсайт  <i class="fa fa-arrow-right"></i></a>
-                </div>
-                <div class="works__item-preview col-lg-9 col-md-9 col-xs-12">
-                    <div class="row" style="height: 100%">
-                        <div class="works__item-preview__transform works3" style="will-change: transform; transform: perspective(1500px) rotateX(0deg) rotateY(0deg);"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/card.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script src="assets/3rdparty/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/3rdparty/slick/slick.min.js"></script>
+	<script src="js/changing.js"></script>
 </body>
 </html>
