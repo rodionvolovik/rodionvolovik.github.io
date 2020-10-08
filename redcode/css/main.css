@@ -216,7 +216,7 @@ section
 {
     padding: 70px;
     box-shadow: 0px 25px 52px 7px #efefef;
-    height: 700px;
+    /* height: 700px; */
 }
 
 .services-accordion_title
@@ -291,7 +291,7 @@ section
 
 .card-container
 {
-    height: 320px;
+    height: 400px;
 }
 
 .card ul

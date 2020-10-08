@@ -62,24 +62,24 @@
         <h2 class="text-red text-uppercase">Что мы делаем?</h2>
         <div class="d-flex flex-row justify-content-center">
             <div id="accordion" class="services-accordion col-6 d-flex flex-column justify-content-between">
-                <div class="services-accordion_title">Основные направления<br>нашей деятельности:</div>
+                <div class="services-accordion_title">Мы - профессионалы своего дела<br>и уже более <span class="bold text-red">5 лет</span> создаем:</div>
                 <div class="card-container">
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-flex flex-row justify-content-between align-items-center">
-                                <div>01. Веб-разработка</div>
+                                <div>01. Стильные и современные веб-сайты</div>
                                 <i class="fas fa-angle-down"></i>
                                 <i class="fas fa-angle-up"></i>
                             </a>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" data-bg="red">
                             <div class="card-body">
                                 <ul>
                                     <li>Корпоративные сайты</li>
                                     <li>Интернет-магазины</li>
                                     <li>Веб приложения</li>
-                                    <li>Порталы</li>
+                                    <li>Новостные и тематические порталы</li>
                                 </ul>
                             </div>
                         </div>
@@ -87,13 +87,13 @@
                     <div class="card">
                         <div class="card-header" id="headingTwo">
                             <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"  class="d-flex flex-row justify-content-between align-items-center collapsed">
-                                <div>02. Дизайн</div>
+                                <div>02. Уникальный корпоративный стиль</div>
                                 <i class="fas fa-angle-down"></i>
                                 <i class="fas fa-angle-up"></i>
                             </a>
                         </div>
 
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" data-bg="black">
                             <div class="card-body">
                                 Anim heard of them accusamus labore sustainable VHS.
                             </div>
@@ -102,23 +102,23 @@
                     <div class="card">
                         <div class="card-header" id="headingThree">
                             <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  class="d-flex flex-row justify-content-between align-items-center collapsed">
-                                <div>03. Поддержка</div>
+                                <div>03. Предоставляем техническую поддержку 24/7</div>
                                 <i class="fas fa-angle-down"></i>
                                 <i class="fas fa-angle-up"></i>
                             </a>
                         </div>
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" data-bg="green">
                             <div class="card-body">
-                                Anim heard of them accusamus labore sustainable VHS.
+                                Любой бизнес требует постоянной работы и вложений. Мы обеспечим оперативную и своевременную техническую поддержку вашего цифрового продукта.
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="btn-main align-self-end" href="#">Узнать больше</a>
+                <a class="btn-main align-self-end" href="#works">Узнать больше</a>
             </div>
             <div class="services-image col-6">
-                <div style="background: url(img/alba_works.jpg) center/cover no-repeat;"></div>
+                <div class="services-image_bg" style="background-color: red;"></div>
             </div>
         </div>
     </section>
@@ -130,7 +130,7 @@
     <script src="assets/3rdparty/typed/lib/typed.min.js"></script>
     <script>
         var options = {
-            strings: ['вебсайта', 'интернет-магазина', 'дизайна', 'блога', 'корпоративного стиля'],
+            strings: ['вебсайта', 'интернет-магазина', 'корпоративного стиля'],
             typeSpeed: 100,
             backSpeed: 100,
             smartBackspace: true,
@@ -139,6 +139,13 @@
         };
         
         var typed = new Typed('.typed', options);
+    </script>
+    <script>
+        $('#accordion').on('shown.bs.collapse', function (event) {
+            bg = $(event.target).attr('data-bg');
+            console.log(bg);
+            $(".services-image_bg").css("background-color", bg);
+        })
     </script>
 </body>
 </html>
