@@ -58,7 +58,70 @@
             <a class="btn-main" href="#">Оценить проект</a>
         </div>
     </section>
-    <section id="services">services</section>
+    <section id="services" class="services">
+        <h2 class="text-red text-uppercase">Что мы делаем?</h2>
+        <div class="d-flex flex-row justify-content-center">
+            <div id="accordion" class="services-accordion col-6 d-flex flex-column justify-content-between">
+                <div class="services-accordion_title">Основные направления<br>нашей деятельности:</div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-flex flex-row justify-content-between align-items-center">
+                                <div>01. Веб-разработка</div>
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </a>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul>
+                                    <li>Корпоративные сайты</li>
+                                    <li>Интернет-магазины</li>
+                                    <li>Веб приложения</li>
+                                    <li>Порталы</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"  class="d-flex flex-row justify-content-between align-items-center collapsed">
+                                <div>02. Дизайн</div>
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </a>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  class="d-flex flex-row justify-content-between align-items-center collapsed">
+                                <div>03. Поддержка</div>
+                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-angle-up"></i>
+                            </a>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn-main align-self-end" href="#">Узнать больше</a>
+            </div>
+            <div class="services-image col-6">
+                <div style="background: url(img/alba_works.jpg) center/cover no-repeat;"></div>
+            </div>
+        </div>
+    </section>
     <section id="works">works</section>
 
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>

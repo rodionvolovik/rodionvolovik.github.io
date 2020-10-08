@@ -16,6 +16,13 @@ h1 {
     font-weight: 600;
 }
 
+h2
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .thin
 {
     font-weight: 300;
@@ -24,6 +31,11 @@ h1 {
 .semi-bold
 {
     font-weight: 500;
+}
+
+.normal
+{
+    font-weight: 400;
 }
 
 .bold
@@ -194,3 +206,102 @@ section
     z-index: 2;
     margin-left: 200px;
 }
+
+.services
+{
+    padding: 200px;
+}
+
+.services-accordion
+{
+    padding: 70px;
+    box-shadow: 0px 25px 52px 7px #efefef;
+    height: 700px;
+}
+
+.services-accordion_title
+{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.services-image
+{
+    padding: 50px 0 100px;
+}
+
+.services-image > div
+{
+    width: 100%;
+    height: 100%;
+}
+
+.card
+{
+    border: 0;
+}
+
+.card-header
+{
+    font-size: 20px;
+    color: #d5d5d5;
+    font-weight: 500;
+    padding: .75rem 0;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-radius: 0!important;
+    background: transparent;
+}
+
+.card-header a,
+.card-header a:hover
+{
+    color: #e70034;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.card-header a.collapsed
+{
+    color: #d5d5d5;
+}
+
+.card-header a .fa-angle-down
+{
+    display: none;
+}
+
+.card-header a.collapsed .fa-angle-up
+{
+    display: none;    
+}
+
+.card-header a.collapsed .fa-angle-down
+{
+    display: inline;
+}
+
+.card-body
+{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.card-container
+{
+    height: 320px;
+}
+
+.card ul
+{
+    list-style: none;
+}
+
+.card ul li::before {
+    content: "\2022";
+    color: red;
+    display: inline-block;
+    width: 10px;
+  }
