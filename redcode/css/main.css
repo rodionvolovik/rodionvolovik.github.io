@@ -331,3 +331,17 @@ section
 {
     margin: 50px 0;
 }
+
+.works-navigation_item
+{
+    margin-right: 25px;
+    color: #d5d5d5;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.works-navigation_item.active,
+.works-navigation_item:hover
+{
+    color: #363636;
+}
