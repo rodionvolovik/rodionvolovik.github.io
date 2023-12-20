@@ -1,0 +1,139 @@
+{
+    "about": {
+        "name": "Rodion",
+        "surname": "Volovik",
+        "tagline": "Software Engineer / Team Lead / Tech Lead",
+        "bio": "Senior Python Developer with over 8 years of experience in software engineering, including real-time systems, robotics, and IoT. Skilled in developing complex software architectures, leading technical teams, and building scalable solutions. Extensive experience with Python, C++, ROS, and Qt, with a strong focus on robotics, UAV systems, and automation. Proven track record in designing, implementing, and optimizing high-performance applications, along with excellent leadership and project management skills.",
+        "location": "Kyiv, Ukraine",
+        "phone": "+38-050-308-90-90",
+        "email":  "rodionvolovik@gmail.com"
+    },
+    "experience": [
+        {
+            "company": "AJAX Systems",
+            "location": "Kyiv, Ukraine - on-site",
+            "position": "Tech Lead, Python",
+            "period": "2023 — present",
+            "tech_stack": "",
+            "details": [
+                "Led a team of software engineers developing automation systems for devices manufacturing process",
+                "Built architecture for real-time control and data processing systems using Python and Qt",
+                "Oversaw the release process, technical leadership, and continuous integration"
+            ]
+        },
+        {
+            "company": "Vsesvit.io",
+            "position": "COO / Project Manager",
+            "period": "2023 — present",
+            "tech_stack": "",
+            "details": [
+                "Started a startup video production company with a focus on 3d graphics and VFX",
+                "Built internal processes and company roadmap",
+                "Led a communication on a pre-sale stage as well as during the ongoing project"
+            ]
+        },
+        {
+            "company": "FAB",
+            "location": "Kyiv, Ukraine / Tel-Aviv, Izrael - remote",
+            "position": "Python Software Engineer / Team Lead, Robotics",
+            "period": "2020 — 2023",
+            "tech_stack": "",
+            "details": [
+                "Developed UAV software using Python and ROS, including path planning and collision detection",
+                "Implemented algorithms for obstacle avoidance using LiDAR and sensor fusion",
+                "Managed a team through project planning, task assignments, code reviews, and testing",
+                "Conducted integration testing and performance optimization for autonomous systems"
+            ]
+        },
+        {
+            "company": "GlobalLogic",
+            "location": "Kyiv, Ukraine - on-site/remote",
+            "position": "Software Engineer (C++/Qt) / Deputy Team Lead",
+            "period": "2017 — 2020",
+            "tech_stack": "",
+            "details": [
+                "Developed software for real-time data visualization and processing over CAN and FlexRay networks",
+                "Implemented efficient data decoding and visualization pipelines for automotive applications",
+                "Progressed from Trainee to Middle Software Engineer, gaining deep expertise in C++ and Qt"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Unit Factory (42 Network)",
+            "course": "Programming in C",
+            "period": "2016 — 2017",
+            "info": "Intensive hands-on training in low-level programming and algorithms",
+            "links": [
+                {
+                    "title": "42fr",
+                    "link": "image"
+                },
+                {
+                    "title": "UNIT Factory",
+                    "link": "image"
+                }
+            ]
+        },
+        {
+            "institution": "Zaporizhzhya national university",
+            "course": "Applied Physics",
+            "period": "2010 — 2016",
+            "info": "Diploma thesis: The study of the distribution of the temperature field in the surface layers of the metal parts of complex profile under the influence of laser radiation.",
+            "links": [
+                {
+                    "title": "Article: DEVELOPMENT OF A THREE-DIMENSIONAL MODEL OF A GAS TURBINE ENGINE COMPRESSOR BLADE PROCESSED BY A CONTINUOUS LASER, page 96",
+                    "link": "http://journal.zntu.edu.ua/nmt/files/NMT12016/NMT(1)_2016.pdf"
+                }
+            ]
+        }
+    ],
+    "projects": [
+    ],
+    "skills": {
+        "soft": [
+            "Team Leadership and Mentoring",
+            "Effective Communication",
+            "Problem Solving and Critical Thinking",
+            "Project Management and Planning"
+        ],
+        "hard": [
+            {
+                "title": "Programming Languages",
+                "list": "Python, C++, C"
+            },
+            {
+                "title": "Frameworks and Libraries",
+                "list": "ROS, Qt, PyQt, FastAPI, Flask, asyncio"
+            },
+            {
+                "title": "Middleware and Protocols",
+                "list": "CAN, FlexRay, MQTT, WebSockets"
+            },
+            {
+                "title": "Robotics and Control",
+                "list": "Path planning, SLAM, sensor fusion, collision avoidance, PX4, Ardupilot, SITL, MAVLink, MAVProxy, Gazebo"
+            },
+            {
+                "title": "Embedded Systems",
+                "list": "Real-time data processing, sensor integration"
+            },
+            {
+                "title": "DevOps and CI/CD",
+                "list": "Docker, Jenkins, Git, GitHub"
+            },
+            {
+                "title": "Testing and Code Quality",
+                "list": "pytest, unittest, TDD, BDD, static code analysis"
+            },
+            {
+                "title": "Version Control",
+                "list": "Git, GitHub, GitLab"
+            },
+            {
+                "title": "Project Management",
+                "list": "Agile (Scrum, Kanban), Jira, Confluence"
+            }
+        ]
+    }
+}
