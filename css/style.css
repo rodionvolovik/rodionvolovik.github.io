@@ -1,13 +1,96 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
+:root {
+    --font-size: 16px;
+    --font-main-color: #000;
+    --font-secondary-color: #D3D3D3;
+    --font-heading-size: 4rem;
+    --font-subheading-size: 2rem;
+    --font-headings-weight: bold;
+    --font-heading-family: Inter;
+    --font-family: Roboto Flex;
+    --horizontal-padding-body-lg: 100px;
+    --vertical-padding-body-lg: 50px;
+    --section-bottom-margin: 100px;
+    --slider-item-width-lg: 450px;
 }
 
-.dummy_content {
+.flex-row-justified {
     display: flex;
-    font-size: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body {
+    font-family: var(--font-heading-family);
+    font-size: var(--font-size);
+    color: var(--font-main-color);
+    padding: var(--vertical-padding-body-lg) var(--horizontal-padding-body-lg);
+    overflow-x: hidden;
+}
+
+.logo {
+    .animated-logo {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    display: flex;
+    font-size: var(--font-subheading-size);
+    font-weight: var(--font-headings-weight);
+}
+
+.logo:hover {
+    .animated-logo {
+        display: flex;
+    }
+}
+
+.header-main {
+    .logo {
+        font-family: var(--font-heading-family);
+    }
+
+    margin-bottom: var(--section-bottom-margin);
+}
+
+.content-slider {
+    .content-slider-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .content-slider-item {
+        width: var(--slider-item-width-lg);
+        margin-right: 50px;
+        padding: 30px;
+        border: 1px solid;
+        border-radius: 20px;
+        color: var(--font-main-color);
+        font-size: var(--font-subheading-size);
+        font-weight: var(--font-headings-weight);
+    }
+    .header {
+        display: flex;
+        margin-bottom: 50px;
+        font-family: var(--font-heading-family);
+    }
+
+    margin-bottom: var(--section-bottom-margin);
+}
+
+.content-line-slider {
+    .content-slider-item {
+        color: var(--font-secondary-color);
+        font-size: var(--font-heading-size);
+        font-weight: var(--font-headings-weight);
+        font-family: var(--font-heading-family);
+        padding: 0;
+        border: none;
+    }
+
+    .content-slider-item.active {
+        color: var(--font-main-color);
+    }
 }
