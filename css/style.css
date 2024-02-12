@@ -1,11 +1,16 @@
 :root {
     --font-style: Inter, sans-serif;
-    --font-size-title: 36px;
-    --font-size-sub-title: 24px;
-    --font-size: 18px;
-    --padding-px: 50px;
+    --font-size-title: 24px;
+    --font-size-sub-title: 18px;
+    --font-size: 14px;
+    --indentation-px: 30px;
     --color: #000000;
     --color-sec: #dedede;
+    --transition-px: calc(var(--indentation-px) * -0.2);
+}
+
+@media (max-width: 100px) {
+    
 }
 
 body {
@@ -13,8 +18,22 @@ body {
     width: 100%;
     font-family: var(--font-style);
     font-size: var(--font-size);
-    padding: calc(var(--padding-px)) calc(2 * var(--padding-px));
+    padding: calc(var(--indentation-px)) calc(2 * var(--indentation-px));
     margin: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.header {
+    margin-bottom: calc(2 * var(--indentation-px));
 }
 
 .title {
@@ -30,24 +49,28 @@ body {
 }
 
 .lang-switch, .btn-prim {
-    margin: 0 50px;
+    margin: 0 calc(0.5 * var(--indentation-px));
+}
+
+.header .btn-prim:last-child {
+    margin-right: 0;
 }
 
 .lang-switch .active {
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .lang-switch > div:not(.separator) {
     margin: 5px;
+}
 
-    :hover {
-        font-weight: 600;
-    }
+.lang-switch > div:not(.active) {
+    cursor: pointer;
 }
 
 .btn-prim {
     border: 3px solid;
-    padding: 20px 25px;
+    padding: calc(0.4 * var(--indentation-px)) calc(0.5 * var(--indentation-px));
     font-weight: 800;
     position: relative;
     cursor: pointer;
@@ -68,11 +91,11 @@ body {
 .btn-prim:hover:before {
     visibility: visible;
     background: #000000;
-    transform: translate(-10px, -10px);
+    transform: translate(var(--transition-px), var(--transition-px));
 }
 
 .btn-prim:hover div {
-    transform: translate(-10px, -10px);
+    transform: translate(var(--transition-px), var(--transition-px));
     color: #ffffff;
     transition: ease-out 0.3s;
 }
@@ -82,4 +105,27 @@ body {
 }
 .btn-prim:active div {
     transform: translate(0px, 0px);
+}
+
+.spy-header {
+    margin-bottom: calc(2 * var(--indentation-px));
+    font-size: var(--font-size-sub-title);
+    overflow: hidden;
+}
+
+.spy-header div {
+    margin-right: 100px;
+    word-break: keep-all;
+    line-break: unset;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.spy-header div:first-child {
+}
+
+.spy-header .active {
+    font-size: var(--font-size-title);
+    font-weight: 900;
+    text-transform: uppercase;
 }

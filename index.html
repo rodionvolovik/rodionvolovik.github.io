@@ -5,8 +5,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
 ">
     <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+"></script>
 </head>
-<body>
+<body class="d-flex flex-column">
     <div class="header d-flex flex-row justify-content-between align-items-center">
         <div class="d-flex flex-column">
             <div class="d-flex sub-title">Private Entrepreneur</div>
@@ -18,9 +21,60 @@
                 <div class="separator">|</div>
                 <div class="">ua</div>
             </div>
-            <div class="btn-prim"><div>Book a meeting</div></div>
-            <div class="btn-prim"><div>Request portfolio</div></div>
+            <div class="btn-prim noselect">
+                <div>Book a meeting</div>
+            </div>
+            <div class="btn-prim noselect">
+                <div>Request portfolio</div>
+            </div>
         </div>
     </div>
+    <div class="d-flex flex-column flex-fill">
+        <div class="spy-header d-flex flex-row align-items-center">
+            <div class="active">Video Production</div>
+            <div class="">Websites Development</div>
+            <div class="">Software Development</div>
+        </div>
+        <div class="spy-block d-flex flex-row">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="spy-block d-flex flex-row">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="spy-block d-flex flex-row">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // We'll read the rate from each <div>.
+            $(".parallax").each(function () {
+                var $this = $(this);
+
+                // We need to remember the element's original
+                // top offset as a reference point.
+                    $this.data("top", $this.offset().top);
+
+                // We've used a custom attribute in the HTML
+                // to specify the scrolling rate.
+                $this.data("rate", $this.attr("data-parallax-rate"));
+            });
+
+            $(window).scroll(function () {
+            // Whenever the window scrolls, we reposition
+            // each parallax element.
+                $(".parallax").each(function () {
+                    var scrollTop = $(window).scrollTop();
+                    var rate = $(this).data("rate");
+                    var thisTop  = scrollTop - scrollTop * rate
+                    $(this).css("top", $(this).data("top") + thisTop);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
