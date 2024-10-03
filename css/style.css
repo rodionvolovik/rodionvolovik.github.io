@@ -3,23 +3,32 @@
     --font-size-title: 24px;
     --font-size-sub-title: 18px;
     --font-size: 14px;
-    --indentation-px: 30px;
+    --indentation-px: 20px;
     --color: #000000;
     --color-sec: #dedede;
-    --transition-px: calc(var(--indentation-px) * -0.2);
+    --transition-px: calc(var(--indentation-px) * -0.1);
 }
 
-@media (max-width: 100px) {
-    
+@media (max-width: 768px) {
+    :root {
+        --indentation-px: 10px;
+    }
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    max-width: 800px;
     font-family: var(--font-style);
     font-size: var(--font-size);
-    padding: calc(var(--indentation-px)) calc(2 * var(--indentation-px));
+    padding: calc(2 * var(--indentation-px));
     margin: 0;
+}
+
+div {
+    margin: calc(var(--indentation-px) * 1.5) var(--indentation-px);
+}
+
+section {
+    margin-bottom: calc(3 * var(--indentation-px));
 }
 
 .noselect {
@@ -32,13 +41,22 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.header {
-    margin-bottom: calc(2 * var(--indentation-px));
+/* ================== */
+/* BOOTSTRAP OVERLOAD */
+/* ================== */
+
+.btn {  /* bootstrap overload */
+    --bs-btn-font-size: var(--font-size);
 }
+
+/* ============== */
+/* CUSTOM CLASSES */
+/* ============== */
 
 .title {
     font-weight: 900;
     font-size: var(--font-size-title);
+    text-transform: uppercase;
     line-height: 44px;
 }
 
@@ -48,32 +66,37 @@ body {
     line-height: 29px;
 }
 
-.lang-switch, .btn-prim {
-    margin: 0 calc(0.5 * var(--indentation-px));
+.badge {
+    display: inline-block;
+    padding: calc(var(--indentation-px) * 0.2) calc(var(--indentation-px) * 0.5);
+    color: #000000;
+    border: 2px solid #000;
 }
 
-.header .btn-prim:last-child {
-    margin-right: 0;
-}
-
-.lang-switch .active {
-    font-weight: 900;
-}
-
-.lang-switch > div:not(.separator) {
-    margin: 5px;
-}
-
-.lang-switch > div:not(.active) {
+.badge:hover {
     cursor: pointer;
+    transform: translate(0, calc(1.5 * var(--transition-px)));
+    transition: ease-out 0.3s;
 }
 
+.list-item {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============= */
+/* BUTTONS START */
+/* ============= */
 .btn-prim {
     border: 3px solid;
+    border-radius: 0;
     padding: calc(0.4 * var(--indentation-px)) calc(0.5 * var(--indentation-px));
     font-weight: 800;
     position: relative;
     cursor: pointer;
+    margin-bottom: var(--indentation-px);
 }
 
 .btn-prim:before {
@@ -89,13 +112,12 @@ body {
 }
 
 .btn-prim:hover:before {
-    visibility: visible;
-    background: #000000;
-    transform: translate(var(--transition-px), var(--transition-px));
+    transform: translate(0, calc(1.5 * var(--transition-px)));
 }
 
-.btn-prim:hover div {
-    transform: translate(var(--transition-px), var(--transition-px));
+.btn-prim:hover {
+    transform: translate(0, calc(1.5 * var(--transition-px)));
+    background: #000000;
     color: #ffffff;
     transition: ease-out 0.3s;
 }
@@ -103,29 +125,6 @@ body {
 .btn-prim:active:before {
     transform: translate(0px, 0px);
 }
-.btn-prim:active div {
+.btn-prim:active {
     transform: translate(0px, 0px);
-}
-
-.spy-header {
-    margin-bottom: calc(2 * var(--indentation-px));
-    font-size: var(--font-size-sub-title);
-    overflow: hidden;
-}
-
-.spy-header div {
-    margin-right: 100px;
-    word-break: keep-all;
-    line-break: unset;
-    white-space: nowrap;
-    text-align: center;
-}
-
-.spy-header div:first-child {
-}
-
-.spy-header .active {
-    font-size: var(--font-size-title);
-    font-weight: 900;
-    text-transform: uppercase;
 }
