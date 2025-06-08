@@ -19,7 +19,7 @@ const experience = data.experience
 
 <style scoped>
 .experience {
-  padding: 2rem;
+  padding: var(--padding-rem);
 }
 .job {
   margin-bottom: 1.5rem;

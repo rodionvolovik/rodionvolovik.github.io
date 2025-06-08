@@ -17,7 +17,7 @@ const projects = data.projects
 
 <style scoped>
 .projects {
-  padding: 2rem;
+  padding: var(--padding-rem);
 }
 
 .project {

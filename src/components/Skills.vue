@@ -26,7 +26,7 @@ const hard = data.skills.hard
 
 <style scoped>
 .skills {
-  padding: 2rem;
+  padding: var(--padding-rem);
 }
 .hard,
 .soft {

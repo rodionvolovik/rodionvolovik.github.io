@@ -32,7 +32,9 @@ const urls = [
         <p>{{ about.phone }}</p>
         <p>{{ about.email }}</p>
         <div class="qr-codes">
-          <QrCode v-for="u in urls" :url="u.url" :image="u.image" :icon="u.icon" :title="u.title"/>
+          <a v-for="u in urls" :href="u.url" target="_blank">
+            <QrCode :url="u.url" :image="u.image" :icon="u.icon" :title="u.title"/>
+          </a>
         </div>
       </div>
       <div class="a-block">
@@ -50,11 +52,17 @@ const urls = [
 }
 .a-block {
   text-align: left;
-  padding: 2rem;
+  padding: var(--padding-rem);
 }
 .qr-codes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+a {
+  color: #222222;
+}
+a:hover {
+  background: transparent;
 }
 </style>

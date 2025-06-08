@@ -33,7 +33,7 @@ function openLink(link) {
 
 <style scoped>
 .education {
-  padding: 2rem;
+  padding: var(--padding-rem);
 }
 
 .institution {

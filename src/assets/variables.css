@@ -1,0 +1,9 @@
+:root {
+    --padding-rem: 2rem;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --padding-rem: 0.25rem;
+    }
+}
