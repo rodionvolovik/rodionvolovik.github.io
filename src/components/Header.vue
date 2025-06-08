@@ -6,7 +6,7 @@ const about = data.about;
 const urls = [
   {
     "url": "https://t.me/rrr0042",
-    "title": "telegram",
+    "title": "write me",
     "icon": "pi pi-telegram"
   },
   {
